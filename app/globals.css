@@ -16,7 +16,10 @@
 /*   } */
 /* } */
 
-body {
+html {
+	@apply bg-black
+}
 
-	@apply bg-gradient-to-b from-slate-800 to-gray-900 min-h-screen
+body {
+	@apply bg-gradient-to-b from-slate-800/75 to-blue-950/75 min-h-screen
 }
