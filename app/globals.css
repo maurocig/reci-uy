@@ -21,5 +21,5 @@ html {
 }
 
 body {
-	@apply bg-gradient-to-b from-slate-800/75 to-blue-950/75 min-h-screen
+	@apply bg-gradient-to-br from-slate-800/80 via-sky-950/80 to-blue-950/75 min-h-screen
 }
