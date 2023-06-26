@@ -1,26 +1,45 @@
-import { Product } from '@/types';
-import Image from 'next/image';
+import { Product } from "@/types";
+import Image from "next/image";
+import { FaChevronRight } from "react-icons/fa";
+import Button from "./ui/Button";
 
 type ItemProps = {
-   product: Product;
-   key: string;
+  product: Product;
+  key: string;
 };
 
 export default function Item({ product, key }: ItemProps) {
-   return (
-      <div className="flex flex-col justify-between overflow-hidden rounded-md bg-slate-500">
-         <div className="flex flex-col p-4 bg-white h-3/4 place-items-center">
-            <Image
-               src={product.thumbnail}
-               width={300}
-               height={300}
-               alt="Product Image"
-               className="object-contain aspect-square"
-            />
-         </div>
-         <p className="text-lg font-semibold text-white flex items-center h-[50px] pl-3" key={key}>
-            {product.title}
-         </p>
+  return (
+    <button className="group relative flex flex-col justify-between overflow-hidden rounded-md bg-slate-200 duration-200 hover:scale-[103%] hover:drop-shadow-3xl">
+      <div className="flex h-3/4 flex-col place-items-center bg-white p-5 ">
+        <Image
+          src={product.thumbnail}
+          width={300}
+          height={300}
+          alt="Product Image"
+          className="aspect-square object-contain transition-all duration-300 group-hover:scale-[103%]"
+        />
       </div>
-   );
+      <div className="absolute flex h-full w-full flex-col items-center justify-between transition-all">
+        <p
+          className="flex h-[60px] w-full items-center pl-6 text-start text-lg font-semibold text-gray-900"
+          key={key}
+        >
+          {product.title}
+        </p>
+
+        <div className="mb-3 transition-all duration-500 group-hover:opacity-100 sm:opacity-0">
+          <Button className="shadow-xl">
+            Ver equipo <FaChevronRight className="m-0 inline p-0" />
+          </Button>
+        </div>
+
+        {/*
+        <p className="bg-gradient-to-b from-transparent to-slate-900/40 p-3 text-[1rem] text-blue-700 opacity-0 transition-all  duration-500 group-hover:opacity-100  lg:text-lg">
+          {product.shortDescription}
+        </p> 
+		  */}
+      </div>
+    </button>
+  );
 }

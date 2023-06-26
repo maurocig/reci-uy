@@ -29,8 +29,7 @@ export const equipos = [
       brand: 'Thermo King',
       line: 'VP Truck',
       model: 'V-500',
-      shortDescription:
-         'La serie V-500 le ofrece una performance óptima, consumiendo menos combustible y de forma silenciosa.',
+      shortDescription: 'Performance óptima, consumiendo menos combustible y de forma silenciosa.',
       price: 200,
       thumbnail:
          'https://res.cloudinary.com/lp01/image/upload/v1658452150/reci-react/thermoking/s_C3_A9rie-v-500-max-thermo-king_mzrhj1.jpg',
@@ -42,8 +41,7 @@ export const equipos = [
       brand: 'Thermo King',
       line: 'Truck',
       model: 'T-600',
-      shortDescription:
-         'Las unidades T-600R permiten control de temperatura preciso, menor consumo de combustible y operación silenciosa',
+      shortDescription: 'Control de temperatura preciso, menor consumo de combustible y operación silenciosa',
       price: 300,
       thumbnail:
          'https://res.cloudinary.com/lp01/image/upload/v1658452183/reci-react/thermoking/img_produto_T600R_nv-1536x610_e243ks.jpg',
@@ -55,8 +53,7 @@ export const equipos = [
       brand: 'Thermo King',
       line: 'Truck',
       model: 'T-800',
-      shortDescription:
-         'Las unidades T-600R permiten control de temperatura preciso, menor consumo de combustible y operación silenciosa',
+      shortDescription: 'Control de temperatura preciso, menor consumo de combustible y operación silenciosa',
       price: 500,
       thumbnail:
          'https://res.cloudinary.com/lp01/image/upload/v1658452226/reci-react/thermoking/t800_ibnudf.png',
