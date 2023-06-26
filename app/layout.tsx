@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google';
 import Navbar from './Navbar';
 import './globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ['latin'], preload: false });
 
 export const metadata = {
    title: 'Reci Importaciones',
