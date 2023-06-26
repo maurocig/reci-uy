@@ -17,19 +17,19 @@ export default function Item({ product, key }: ItemProps) {
           width={300}
           height={300}
           alt="Product Image"
-          className="aspect-square object-contain transition-all duration-300 group-hover:scale-[103%]"
+          className="aspect-square object-contain transition-all duration-200 group-hover:scale-[106%]"
         />
       </div>
       <div className="absolute flex h-full w-full flex-col items-center justify-between transition-all">
         <p
-          className="flex h-[60px] w-full items-center pl-6 text-start text-lg font-semibold text-gray-900"
+          className="flex h-[60px] w-full items-center pl-6 text-start text-lg font-semibold text-gray-900  "
           key={key}
         >
           {product.title}
         </p>
 
-        <div className="mb-3 transition-all duration-500 group-hover:opacity-100 sm:opacity-0">
-          <Button className="shadow-xl">
+        <div className="mb-3 ">
+          <Button className="shadow-xl transition-all group-hover:opacity-100 sm:opacity-0">
             Ver equipo <FaChevronRight className="m-0 inline p-0" />
           </Button>
         </div>

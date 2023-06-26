@@ -11,7 +11,7 @@ export default function Button({
   return (
     <div
       className={twMerge(
-        "mb-4 block w-full rounded-full bg-blue-950 px-8 py-3 font-semibold text-white outline-8 transition hover:opacity-75 disabled:cursor-not-allowed disabled:opacity-50",
+        "mb-4 flex w-full items-center gap-2 rounded-full bg-emerald-500/90 px-8 py-3 font-semibold text-black outline-8 transition hover:opacity-75 disabled:cursor-not-allowed disabled:opacity-50",
         className
       )}
     >
