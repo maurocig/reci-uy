@@ -22,23 +22,21 @@ export default function Item({ product, key }: ItemProps) {
       </div>
       <div className="absolute flex h-full w-full flex-col items-center justify-between transition-all">
         <p
-          className="flex h-[60px] w-full items-center pl-6 text-start text-lg font-semibold text-gray-900  "
+          className="ml-2 mt-2 flex items-center self-start rounded-full bg-blue-400/20 px-6 py-1 text-start text-lg font-semibold text-gray-900 "
           key={key}
         >
           {product.title}
         </p>
 
-        <div className="mb-3 ">
+        <div className="mb-0 ">
           <Button className="shadow-xl transition-all group-hover:opacity-100 sm:opacity-0">
-            Ver equipo <FaChevronRight className="m-0 inline p-0" />
+            Ver producto <FaChevronRight className="m-0 inline p-0" />
           </Button>
         </div>
 
-        {/*
-        <p className="bg-gradient-to-b from-transparent to-slate-900/40 p-3 text-[1rem] text-blue-700 opacity-0 transition-all  duration-500 group-hover:opacity-100  lg:text-lg">
+        <p className="hidden bg-gradient-to-b from-transparent to-slate-900/40 p-3 text-[1rem] text-blue-700 opacity-0 transition-all duration-500  group-hover:opacity-100 sm:block  lg:text-lg">
           {product.shortDescription}
-        </p> 
-		  */}
+        </p>
       </div>
     </button>
   );

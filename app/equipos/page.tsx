@@ -24,7 +24,7 @@ export default function EquiposPage() {
       <section className="mb-16">
         <h2 className="text-2xl font-semibold">Línea Truck</h2>
         <p className="mb-4 text-lg text-slate-400">
-          Camiones medianos a grandes
+          Camiones medianos y grandes
         </p>
         <ItemList products={truck} />
       </section>
