@@ -1,5 +1,6 @@
 // local import
 import ItemList from "@/components/ItemList";
+import Spacer from "@/components/ui/Spacer";
 import { Product } from "@/types.js";
 import { carrocerias } from "../../public/assets/carrocerias.js";
 
@@ -32,14 +33,17 @@ export default function carroceriasPage() {
         <h2 className="text-2xl font-semibold">Carga refrigerada</h2>
         <p className="mb-4 text-lg text-slate-400">Línea Liderkit</p>
         <ItemList products={refrigeradosLk} />
+        <Spacer className="h-8" />
         <p className="mb-4 text-lg text-slate-400">Línea Fibrasil</p>
         <ItemList products={refrigeradosFb} />
       </section>
+
       <section className="mb-16">
         <h2 className="text-2xl font-semibold">Carga seca</h2>
         <p className="mb-4 text-lg text-slate-400">Línea Liderkit</p>
         <ItemList products={seca} />
       </section>
+
       <section className="mb-16">
         <h2 className="text-2xl font-semibold">Congelados</h2>
         <p className="mb-4 text-lg text-slate-400">

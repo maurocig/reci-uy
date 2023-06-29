@@ -1,5 +1,9 @@
-type SpacerProps = {};
+import { twMerge } from "tailwind-merge";
 
-export default function Spacer({}: SpacerProps) {
-   return <div className="h-4 w-100"></div>;
+type SpacerProps = {
+  className?: string;
+};
+
+export default function Spacer({ className = "" }: SpacerProps) {
+  return <div className={`${className}`}></div>;
 }

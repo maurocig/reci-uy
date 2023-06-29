@@ -1,8 +1,7 @@
 export const carrocerias = [
   {
     title: "Isotermos",
-    thumbnail:
-      "https://res.cloudinary.com/lp01/image/upload/f_auto,q_auto/v1/reci-uy/productos/isotermo",
+    thumbnail: "/images/carrocerias/edit/isotermo.png",
     productType: "carrocerias",
     brand: "Liderkit",
     line: "Carga refrigerada",
@@ -13,8 +12,7 @@ export const carrocerias = [
   },
   {
     title: "Aluminio",
-    thumbnail:
-      "https://res.cloudinary.com/lp01/image/upload/v1687874526/reci-uy/productos/aluminio.jpg",
+    thumbnail: "/images/carrocerias/edit/aluminio.png",
     productType: "carrocerias",
     brand: "Liderkit",
     line: "Carga seca",
@@ -26,8 +24,7 @@ export const carrocerias = [
   },
   {
     title: "Sandwich",
-    thumbnail:
-      "https://res.cloudinary.com/lp01/image/upload/v1687875907/reci-uy/productos/sandwich_w.jpg",
+    thumbnail: "/images/carrocerias/edit/sandwich.png",
     productType: "carrocerias",
     brand: "Liderkit",
     line: "Carga seca",
@@ -39,8 +36,7 @@ export const carrocerias = [
   },
   {
     title: "Plywood",
-    thumbnail:
-      "https://res.cloudinary.com/lp01/image/upload/f_auto,q_auto/v1/reci-uy/productos/plywood",
+    thumbnail: "/images/carrocerias/edit/plywood.png",
     productType: "carrocerias",
     brand: "Liderkit",
     line: "Carga seca",
@@ -52,8 +48,7 @@ export const carrocerias = [
   },
   {
     title: "Poliéster",
-    thumbnail:
-      "https://res.cloudinary.com/lp01/image/upload/f_auto,q_auto/v1/reci-uy/productos/polyester",
+    thumbnail: "/images/carrocerias/edit/poliester.png",
     productType: "carrocerias",
     brand: "Liderkit",
     line: "Carga seca",
@@ -65,16 +60,14 @@ export const carrocerias = [
   },
   {
     title: "Botellero",
+    thumbnail: "/images/carrocerias/edit/botellero3.png",
     productType: "carrocerias",
-    variant: [],
     brand: "Liderkit",
-    materiales: ["Acero galvanizado", "Lona", "Aluminio", "Plywood"],
-    model: ["T"],
+    line: "Carga seca",
+    model: "T",
     shortDescription:
       "Sistema de doble apertura lateral, ideal para el reparto de mercaderías que requieren una rápida y fácil descarga como bebidas.",
     price: 7000,
-    thumbnail:
-      "https://res.cloudinary.com/lp01/image/upload/v1658438898/reci-react/Liderkit/productos-web-lk/botellero-paneles-01_nahwnv.png",
     stock: 2,
   },
 ];

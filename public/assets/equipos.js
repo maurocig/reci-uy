@@ -1,6 +1,6 @@
 export const equipos = [
   {
-    title: "C-250e MAX",
+    title: "Serie Ce",
     productType: "equipos",
     brand: "Thermo King",
     line: "VP Truck",
@@ -8,12 +8,11 @@ export const equipos = [
     shortDescription:
       "Reparto de cargas sensibles a la temperatura en vehículos de pequeño tamaño",
     price: 100,
-    thumbnail:
-      "https://res.cloudinary.com/lp01/image/upload/v1658452061/reci-react/thermoking/img_produto_serie-ce_nv-e1620736949377_tek4px.jpg",
+    thumbnail: "/images/equipos/c-450.png",
     stock: 5,
   },
   {
-    title: "RV-380",
+    title: "Serie RV",
     productType: "equipos",
     brand: "Thermo King",
     line: "VP Truck",
@@ -21,12 +20,11 @@ export const equipos = [
     shortDescription:
       "Diseño personalizado para camiones de pequeño y mediano porte.",
     price: 100,
-    thumbnail:
-      "https://res.cloudinary.com/lp01/image/upload/v1658447555/reci-react/thermoking/18_equipamentos_giiro_v380_z1tmym.png",
+    thumbnail: "/images/equipos/rv-380.png",
     stock: 5,
   },
   {
-    title: "V-500",
+    title: "Serie V",
     productType: "equipos",
     brand: "Thermo King",
     line: "VP Truck",
@@ -34,8 +32,7 @@ export const equipos = [
     shortDescription:
       "Performance óptima, consumiendo menos combustible y de forma silenciosa.",
     price: 200,
-    thumbnail:
-      "https://res.cloudinary.com/lp01/image/upload/v1658452150/reci-react/thermoking/s_C3_A9rie-v-500-max-thermo-king_mzrhj1.jpg",
+    thumbnail: "/images/equipos/v-500.png",
     stock: 7,
   },
   {
