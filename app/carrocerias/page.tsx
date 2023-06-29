@@ -39,7 +39,7 @@ export default function carroceriasPage() {
       </section>
 
       <section className="mb-16">
-        <h2 className="text-2xl font-semibold">Carga seca</h2>
+        <h2 className="text-2xl font-semibold">Carga general</h2>
         <p className="mb-4 text-lg text-slate-400">Línea Liderkit</p>
         <ItemList products={seca} />
       </section>

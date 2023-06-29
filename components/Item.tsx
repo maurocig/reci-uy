@@ -24,7 +24,7 @@ export default function Item({ showDescription, product, key }: ItemProps) {
       {/* overlay */}
       <div className="absolute flex h-full w-full flex-col items-center justify-between transition-all">
         <p
-          className="ml-2 mt-2 flex items-center self-start rounded-full bg-blue-400/20 px-6 py-1 text-start text-lg font-semibold text-gray-900 "
+          className="ml-3 mt-3 flex items-center self-start rounded-full bg-blue-400/20 px-6 py-1 text-start text-lg font-semibold text-gray-900 "
           key={key}
         >
           {product.title}
