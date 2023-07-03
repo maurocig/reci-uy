@@ -44,8 +44,7 @@ export const equipos = [
     shortDescription:
       "Control de temperatura preciso, menor consumo de combustible y operación silenciosa",
     price: 300,
-    thumbnail:
-      "https://res.cloudinary.com/lp01/image/upload/v1658452183/reci-react/thermoking/img_produto_T600R_nv-1536x610_e243ks.jpg",
+    thumbnail: "/images/equipos/t-600ok.png",
     stock: 9,
   },
   {
@@ -57,8 +56,7 @@ export const equipos = [
     shortDescription:
       "Control de temperatura preciso, menor consumo de combustible y operación silenciosa",
     price: 500,
-    thumbnail:
-      "https://res.cloudinary.com/lp01/image/upload/v1658452226/reci-react/thermoking/t800_ibnudf.png",
+    thumbnail: "/images/equipos/t-800.png",
     stock: 4,
   },
   {
@@ -70,8 +68,7 @@ export const equipos = [
     shortDescription:
       "Líder en eficiencia y performance, ofrece máximo control de temperatura gracias al controlador Smart Reefer SR3 y sistema OptiSet Plus.",
     price: 500,
-    thumbnail:
-      "https://res.cloudinary.com/lp01/image/upload/v1658452253/reci-react/thermoking/img_produto_SLXI_400_01_y3cmen.png",
+    thumbnail: "/images/equipos/slxi-400.png",
     stock: 3,
   },
 ];
