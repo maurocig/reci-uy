@@ -11,8 +11,8 @@ type ItemProps = {
 
 export default function Item({ showDescription, product, key }: ItemProps) {
   return (
-    <button className="group relative flex aspect-square w-full flex-col justify-between overflow-hidden rounded-md bg-slate-200 duration-200 hover:scale-[103%] hover:drop-shadow-3xl">
-      <div className="relative h-full w-full overflow-hidden rounded-md bg-gradient-to-b from-gray-100 to-sky-200">
+    <button className="group relative flex aspect-square w-full flex-col justify-between overflow-hidden rounded-md bg-slate-200 shadow-lg duration-200 hover:scale-[103%] hover:drop-shadow-3xl">
+      <div className="relative h-full w-full overflow-hidden rounded-md bg-gradient-to-b from-gray-100 to-sky-200 ring-gray-400">
         <Image
           src={product.thumbnail}
           fill
@@ -24,7 +24,7 @@ export default function Item({ showDescription, product, key }: ItemProps) {
       {/* overlay */}
       <div className="absolute flex h-full w-full flex-col items-center justify-between transition-all">
         <p
-          className="ml-3 mt-3 flex items-center self-start rounded-full bg-blue-400/20 px-6 py-1 text-start text-lg font-semibold text-gray-900 "
+          className="ml-3 mt-3 flex items-center self-start rounded-full bg-blue-400/20 bg-gradient-to-br from-white/40 px-6 py-1 text-start text-lg font-semibold text-gray-900 shadow-sm shadow-black/20 ring-black"
           key={key}
         >
           {product.title}

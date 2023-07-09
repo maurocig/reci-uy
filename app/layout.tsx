@@ -18,8 +18,8 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navbar />
         <div className="grid gap-4 p-4 sm:grid-cols-[auto_1fr] ">
-          <Sidebar className="" />
-          <main className="flex min-h-[calc(100vh-113px)] flex-col rounded-md bg-slate-700/30 px-6 pt-4 text-slate-200">
+          <Sidebar className="mt-[80px]" />
+          <main className="mt-[80px] flex min-h-[calc(100vh-113px)] flex-col rounded-md bg-gradient-to-b from-slate-100/5 to-teal-100/5 px-6 pt-4 text-slate-200 backdrop-filter ">
             {children}
           </main>
         </div>
