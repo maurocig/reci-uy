@@ -20,7 +20,11 @@ export default function ItemList({
               product={product}
               showDescription={showDescription}
               key={`producto${i}`}
-              tagColor={product.brand === "Liderkit" ? "orange-500" : "sky-500"}
+              tagColor={
+                product.brand === "Liderkit"
+                  ? "bg-gradient-to-b from-orange-500/70 to-orange-400/70 "
+                  : "bg-gradient-to-b from-sky-200/70 to-sky-100/70 "
+              }
             />
           </div>
         );

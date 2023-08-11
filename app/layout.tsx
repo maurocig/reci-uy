@@ -21,7 +21,7 @@ export default function RootLayout({
           <Sidebar className="mt-[65px] hidden md:block" />
           <main
             className="to-blue-200-15 via-teal-200/15 mt-[65px] flex min-h-[calc(100vh-113px)] flex-col
-					rounded-md from-slate-200/5 p-0 text-slate-200 backdrop-filter 
+					rounded-lg from-slate-200/5 p-0 text-slate-200 backdrop-filter 
 					md:bg-gradient-to-b md:p-4 "
           >
             {children}

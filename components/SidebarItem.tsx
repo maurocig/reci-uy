@@ -19,7 +19,7 @@ export default function SidebarItem({
     <Link href={url}>
       <div
         className={twMerge(
-          "flex min-w-full items-center rounded-md p-3 text-gray-200 transition duration-200 hover:bg-white/10 ",
+          "flex min-w-full items-center rounded-lg px-3 py-2 text-gray-200 transition duration-200 hover:bg-white/10 ",
           active && "bg-slate-200/90 text-black hover:bg-slate-200/80"
         )}
       >

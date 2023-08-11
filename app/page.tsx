@@ -11,18 +11,13 @@ import { TbSnowflake } from "react-icons/tb";
 export default function Home() {
   return (
     <div className="space-y-6">
-      {/*
-      <h1 className="flex items-center gap-2 text-2xl sm:hidden">
-        <HiHome />
-        Inicio
-      </h1>
-			*/}
       <Banner
         title="Especialistas en transporte carretero"
         description="Contamos con más de 20 años de experiencia en el rubro."
         buttonText="Conocer más"
         image="/images/portada-a.jpeg"
       />
+
       <section className="flex flex-col items-center">
         <h2 className="mb-4 text-2xl font-semibold">Productos</h2>
         <div className="grid min-h-[100px] w-full max-w-[500px] grid-cols-3 gap-2 sm:gap-5 ">
