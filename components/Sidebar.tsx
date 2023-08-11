@@ -7,6 +7,7 @@ import { IoIosSnow, IoMdSnow } from "react-icons/io";
 import { MdInfo } from "react-icons/md";
 import { RiTruckFill } from "react-icons/ri";
 import { TbSnowflake } from "react-icons/tb";
+import { twMerge } from "tailwind-merge";
 import Box from "./Box";
 import SidebarItem from "./SidebarItem";
 import Spacer from "./ui/Spacer";
@@ -70,9 +71,9 @@ export default function Sidebar({ className }: SidebarProps) {
   ];
 
   return (
-    <div className={className}>
+    <div className={twMerge("min-w-[230px] ", className)}>
       {/* INICIO */}
-      <Box>
+      <Box className="">
         {mainItems.map((item, i) => (
           <SidebarItem
             name={item.name}
