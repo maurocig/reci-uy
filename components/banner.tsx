@@ -39,7 +39,7 @@ export default function Banner({
               robotoFlex.className
             )}
           >
-            <h2 className="text-2xl font-bold leading-5 text-slate-800 sm:text-2xl lg:text-4xl">
+            <h2 className="text-2xl font-semibold leading-5 text-slate-800 sm:text-2xl lg:text-4xl">
               {title}
             </h2>
             <p className="m-0 hidden text-lg sm:block" style={{ margin: 0 }}>
