@@ -1,6 +1,6 @@
 "use client";
 
-import { useMobileMenuToggle } from "@/hooks/useMobileMenuToggle";
+import { useMobileMenuToggle } from "@/hooks/useMobileMenu";
 import { HiOutlineMenu } from "react-icons/hi";
 
 type MenuToggleProps = {};

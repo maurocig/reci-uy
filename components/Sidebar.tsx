@@ -13,7 +13,7 @@ import SidebarItem from "./SidebarItem";
 import Spacer from "./ui/Spacer";
 
 type SidebarProps = {
-  className: string;
+  className?: string;
 };
 
 export default function Sidebar({ className }: SidebarProps) {

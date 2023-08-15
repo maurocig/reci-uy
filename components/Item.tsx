@@ -3,7 +3,7 @@ import { Product } from "@/types";
 import Image from "next/image";
 import { FaChevronRight } from "react-icons/fa";
 import { twMerge } from "tailwind-merge";
-import Button from "./ui/Button";
+import { Button } from "./ui/button";
 
 type ItemProps = {
   product: Product;

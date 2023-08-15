@@ -1,3 +1,18 @@
+"use client";
+
+import Sidebar from "@/components/Sidebar";
+import { Button } from "@/components/ui/button";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetFooter,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import { useMobileMenu } from "@/hooks/useMobileMenu";
 import { MenuIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,6 +21,8 @@ import { FaHamburger } from "react-icons/fa";
 type NavbarProps = {};
 
 export default function Navbar({}: NavbarProps) {
+  const mobileMenu = useMobileMenu();
+
   return (
     <div className="fixed z-50 flex h-[65px] w-full items-center justify-between bg-gradient-to-br from-slate-100 to-white/[65%] px-4 shadow-lg shadow-black/25 backdrop-blur-lg backdrop-filter">
       <div className="">
@@ -14,8 +31,8 @@ export default function Navbar({}: NavbarProps) {
             <Image
               src="/images/logo.png"
               alt="Logotipo de Reci"
-              className="object-contain"
               fill
+              className="object-contain"
             />
           </div>
         </Link>
@@ -23,9 +40,7 @@ export default function Navbar({}: NavbarProps) {
         {/* IMPORTACIONES */}
         {/* </p> */}
       </div>
-      <div className="">
-        <MenuIcon size={35} className="md:hidden" />
-      </div>
+      <MenuIcon size={35} className="md:hidden" onClick={mobileMenu.onOpen} />
     </div>
   );
 }

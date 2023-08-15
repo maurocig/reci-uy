@@ -2,11 +2,11 @@
 
 import { useEffect, useState } from "react";
 
-import MobileMenuModal from "@/components/modals/MobileMenuModal";
+import { MobileMenuSheet } from "@/components/modals/mobile-menu-sheet";
 
 type modalProviderProps = {};
 
-export function ModalProvider() {
+export function MobileMenuProvider() {
   // Avoid server sync errors when using modals on server components:
   const [isMounted, setIsMounted] = useState(false);
   useEffect(() => {
@@ -18,5 +18,5 @@ export function ModalProvider() {
     return null;
   }
 
-  return <MobileMenuModal />;
+  return <MobileMenuSheet />;
 }

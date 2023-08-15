@@ -1,4 +1,5 @@
 import Sidebar from "@/components/Sidebar";
+import { MobileMenuProvider } from "@/providers/mobile-menu-provider";
 import { robotoFlex } from "./fonts";
 import "./globals.css";
 import Navbar from "./navbar";
@@ -16,6 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={robotoFlex.className}>
+        <MobileMenuProvider />
         <Navbar />
         <div className="grid grid-cols-1 gap-4 p-4 md:grid-cols-[auto_1fr] ">
           <Sidebar className="mt-[65px] hidden md:block" />

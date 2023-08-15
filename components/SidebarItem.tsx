@@ -1,3 +1,4 @@
+import { useMobileMenu } from "@/hooks/useMobileMenu";
 import Link from "next/link";
 import { IconType } from "react-icons";
 import { twMerge } from "tailwind-merge";
@@ -15,8 +16,16 @@ export default function SidebarItem({
   icon: Icon,
   active,
 }: SidebarItemProps) {
+  const mobileMenu = useMobileMenu();
+
+  const closeMenuIfOpen = () => {
+    if (mobileMenu.isOpen) {
+      mobileMenu.onClose();
+    }
+  };
+
   return (
-    <Link href={url}>
+    <Link href={url} onClick={closeMenuIfOpen}>
       <div
         className={twMerge(
           "flex min-w-full items-center rounded-lg px-3 py-2 text-gray-200 transition duration-200 hover:bg-white/10 ",
