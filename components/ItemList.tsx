@@ -2,8 +2,8 @@ import { Product } from "@/types";
 import Image from "next/image";
 import Item from "./Item";
 
-interface ProductItem extends Product {
-  twClass: string;
+export interface ProductItem extends Product {
+  twClass?: string;
 }
 
 type ItemListProps = {

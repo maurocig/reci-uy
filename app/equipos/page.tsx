@@ -1,5 +1,5 @@
 // local import
-import ItemList from "@/components/ItemList";
+import ItemList, { ProductItem } from "@/components/ItemList";
 import { Product } from "@/types.js";
 import { equipos } from "../../public/assets/equipos.js";
 

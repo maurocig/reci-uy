@@ -24,16 +24,18 @@ export function MobileMenuSheet() {
         <Button variant="outline">Open</Button>
       </SheetTrigger>
 */}
-      <SheetContent className="bg-slate-800/95">
+      <SheetContent className="border-none bg-slate-800/95 shadow-lg">
         <SheetHeader>
           <SheetTitle className="text-white">Menú</SheetTitle>
         </SheetHeader>
         <Sidebar />
+        {/*
         <SheetFooter>
           <SheetClose asChild>
             <Button type="submit">Save changes</Button>
           </SheetClose>
         </SheetFooter>
+*/}
       </SheetContent>
     </Sheet>
   );

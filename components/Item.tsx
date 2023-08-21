@@ -7,7 +7,7 @@ import { Button } from "./ui/button";
 
 type ItemProps = {
   product: Product;
-  key: string;
+  // key: string;
   showDescription?: boolean;
   tagColor?: string | undefined;
 };
@@ -15,7 +15,7 @@ type ItemProps = {
 export default function Item({
   showDescription,
   product,
-  key,
+  // key,
   tagColor,
 }: ItemProps) {
   return (
@@ -36,7 +36,7 @@ export default function Item({
             `ml-3 mt-3 flex items-center self-start rounded-full px-6 py-1 text-start font-semibold text-gray-900 shadow-md shadow-black/20 ring-black`,
             tagColor
           )}
-          key={key}
+          // key={key}
         >
           {product.title}
         </p>
@@ -48,7 +48,7 @@ export default function Item({
         )}
 
         <div className="mb-4 transition-all ">
-          <Button className="text-md font-semibold opacity-100 shadow-lg transition-all ease-in group-hover:opacity-100 sm:opacity-0">
+          <Button className="text-md backrop-blur-md rounded-full bg-slate-800/90 font-semibold opacity-100 shadow-lg filter transition-all ease-in group-hover:opacity-100 sm:opacity-0">
             Ver producto <FaChevronRight className="m-0 inline p-0" />
           </Button>
         </div>
