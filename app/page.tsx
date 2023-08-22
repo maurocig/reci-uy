@@ -11,7 +11,7 @@ export default function Home() {
       icon: TbSnowflake,
       text: "Equipos de frío",
       url: "/equipos",
-      imageUrl: "/images/link-icons/equipo-trailer.jpg",
+      imageUrl: "/images/equipo-trailer.jpg",
     },
     {
       icon: RiTruckFill,
@@ -23,7 +23,7 @@ export default function Home() {
       icon: FaTruckLoading,
       text: "Accesorios",
       url: "/accesorios",
-      imageUrl: "/images/link-icons/rampa-palfinger.jpg",
+      imageUrl: "/images/rampa-palfinger.jpg",
     },
   ];
 
