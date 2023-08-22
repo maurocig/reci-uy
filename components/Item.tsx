@@ -15,11 +15,13 @@ type ItemProps = {
 export default function Item({
   showDescription,
   product,
-  // key,
   tagColor,
 }: ItemProps) {
   return (
-    <button className="group relative flex aspect-[5/3] w-full flex-col justify-between overflow-hidden rounded-lg bg-slate-200 shadow-lg duration-200 hover:scale-[103%] hover:drop-shadow-3xl sm:aspect-square">
+    <div
+      role="button"
+      className="group relative flex aspect-[3/2] w-full flex-col justify-between overflow-hidden rounded-lg bg-slate-200 shadow-lg duration-200 hover:scale-[103%] hover:drop-shadow-3xl sm:aspect-square"
+    >
       <div className="relative h-full w-full overflow-hidden rounded-lg bg-gradient-to-b from-gray-100 to-sky-200 ring-gray-400">
         <Image
           src={product.thumbnail}
@@ -33,10 +35,9 @@ export default function Item({
       <div className="absolute flex h-full w-full flex-col items-center justify-between transition-all">
         <p
           className={twMerge(
-            `ml-3 mt-3 flex items-center self-start rounded-full px-6 py-1 text-start font-semibold text-gray-900 shadow-md shadow-black/20 ring-black`,
+            `ml-3 mt-3 flex items-center self-start rounded-full px-6 py-1 text-start font-semibold text-gray-900 shadow-black/20 ring-black transition group-hover:shadow-md`,
             tagColor
           )}
-          // key={key}
         >
           {product.title}
         </p>
@@ -48,11 +49,11 @@ export default function Item({
         )}
 
         <div className="mb-4 transition-all ">
-          <Button className="text-md backrop-blur-md rounded-full bg-slate-800/90 font-semibold opacity-100 shadow-lg filter transition-all ease-in group-hover:opacity-100 sm:opacity-0">
-            Ver producto <FaChevronRight className="m-0 inline p-0" />
+          <Button className="text-md backrop-blur-md rounded-full bg-emerald-500/90 px-6 text-slate-800 opacity-100 shadow-lg filter transition-all ease-in group-hover:opacity-100 sm:opacity-0">
+            Ver producto <FaChevronRight className="ml-2 inline p-0" />
           </Button>
         </div>
       </div>
-    </button>
+    </div>
   );
 }

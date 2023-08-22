@@ -17,13 +17,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={robotoFlex.className}>
-        <MobileMenuProvider />
         <Navbar />
+        <MobileMenuProvider />
         <div className="grid grid-cols-1 gap-4 p-4 md:grid-cols-[auto_1fr] ">
           <Sidebar className="mt-[65px] hidden md:block" />
           <main
-            className="to-blue-200-15 via-teal-200/15 mt-[65px] flex min-h-[calc(100vh-113px)] flex-col
-					rounded-lg from-slate-200/5 p-0 text-slate-200 backdrop-filter 
+            className="mt-[65px] flex min-h-[calc(100vh-113px)] flex-col rounded-lg from-slate-200/10
+					via-teal-200/10 to-blue-200/5 p-0 text-slate-200 backdrop-filter 
 					md:bg-gradient-to-b md:p-4 "
           >
             {children}

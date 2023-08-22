@@ -1,5 +1,6 @@
 // local import
 import ItemList, { ProductItem } from "@/components/ItemList";
+import BannerCategory from "@/components/banner-category";
 import { Product } from "@/types.js";
 import { equipos } from "../../public/assets/equipos.js";
 
@@ -15,32 +16,31 @@ export default function EquiposPage() {
   });
 
   return (
-    <div>
-      <section className="mb-16">
+    <div className="">
+      <BannerCategory
+        image="/images/link-icons/equipo-trailer.jpg"
+        title="Equipos de frío"
+        description="Línea completa Thermo King."
+        className="bg-gradient-to-r from-slate-200 via-slate-200/80 to-transparent md:via-slate-300/20 "
+      />
+
+      <div className="mb-16 mt-8">
         <h2 className="text-2xl font-semibold">Línea VP Truck</h2>
         <p className="mb-4 text-lg text-slate-400">Camiones pequeños y vans</p>
         <ItemList products={vp} />
-      </section>
-      <section className="mb-16">
+      </div>
+      <div className="mb-16">
         <h2 className="text-2xl font-semibold">Línea Truck</h2>
         <p className="mb-4 text-lg text-slate-400">
           Camiones medianos y grandes
         </p>
         <ItemList products={truck} />
-      </section>
-      <section className="mb-16">
+      </div>
+      <div className="mb-16">
         <h2 className="text-2xl font-semibold">Trailer</h2>
         <p className="mb-4 text-lg text-slate-400">Trailers y semirremolques</p>
         <ItemList products={trailer} />
-      </section>
+      </div>
     </div>
   );
-
-  /* <div> */
-  /*    <h2 className="mb-6 text-2xl">Línea Thermo King</h2> */
-  /*    <h3 className="text-lg text-gray-300">Serie Truck</h3> */
-  /*    <h3 className="text-lg text-gray-300">Serie V</h3> */
-  /*    <h3 className="text-lg text-gray-300">Serie C</h3> */
-  /*    <h3 className="text-lg text-gray-300">Trailer</h3> */
-  /* </div> */
 }

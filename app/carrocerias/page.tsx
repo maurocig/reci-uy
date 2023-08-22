@@ -1,4 +1,3 @@
-// local import
 import ItemList from "@/components/ItemList";
 import Spacer from "@/components/ui/Spacer";
 import { Product } from "@/types.js";

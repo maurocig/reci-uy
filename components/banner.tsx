@@ -46,8 +46,8 @@ export default function Banner({
               {description}
             </p>
             <Link href={"/nosotros"}>
-              <Button className="sm:text-md text-sm hover:bg-opacity-80">
-                {buttonText} <ChevronRight />
+              <Button className="sm:text-md rounded-full bg-emerald-500 px-6 py-3 text-sm transition duration-300 ease-in-out hover:bg-opacity-90 sm:bg-opacity-50">
+                {buttonText} <ChevronRight className="ml-1" />
               </Button>
             </Link>
           </div>

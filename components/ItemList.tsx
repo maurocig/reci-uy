@@ -1,3 +1,5 @@
+"use client";
+
 import { Product } from "@/types";
 import Image from "next/image";
 import Item from "./Item";
@@ -27,18 +29,16 @@ export default function ItemList({
         product.twClass = "bg-white";
         return;
     }
-    console.log(product);
   });
 
   return (
     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
       {products.map((product, i) => {
         return (
-          <div key={`productDiv${i}`}>
+          <div key={`${product.model}${i}`}>
             <Item
               product={product}
               showDescription={showDescription}
-              key={`producto${i}`}
               tagColor={product.twClass}
             />
           </div>

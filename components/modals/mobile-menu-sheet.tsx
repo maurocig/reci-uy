@@ -1,3 +1,4 @@
+"use client";
 import Sidebar from "@/components/Sidebar";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -19,23 +20,11 @@ export function MobileMenuSheet() {
 
   return (
     <Sheet open={mobileMenu.isOpen} onOpenChange={mobileMenu.onClose}>
-      {/*
-      <SheetTrigger asChild>
-        <Button variant="outline">Open</Button>
-      </SheetTrigger>
-*/}
-      <SheetContent className="border-none bg-slate-800/95 shadow-lg">
+      <SheetContent className="border-none shadow-lg bg-slate-800/95">
         <SheetHeader>
           <SheetTitle className="text-white">Menú</SheetTitle>
         </SheetHeader>
         <Sidebar />
-        {/*
-        <SheetFooter>
-          <SheetClose asChild>
-            <Button type="submit">Save changes</Button>
-          </SheetClose>
-        </SheetFooter>
-*/}
       </SheetContent>
     </Sheet>
   );

@@ -1,31 +1,63 @@
 import Banner from "@/components/banner";
-import HomeItem from "@/components/home-item";
-import { HomeIcon } from "lucide-react";
-import Image from "next/image";
-import { CiWarning } from "react-icons/ci";
-import { FaTruckLoading } from "react-icons/fa";
-import { HiHome } from "react-icons/hi";
+import HomeIconsSection from "@/components/home-icons-section";
+import { FaTruckLoading, FaWrench } from "react-icons/fa";
+import { IoIosPeople, IoMdPeople } from "react-icons/io";
 import { RiTruckFill } from "react-icons/ri";
 import { TbSnowflake } from "react-icons/tb";
 
 export default function Home() {
+  const productItems = [
+    {
+      icon: TbSnowflake,
+      text: "Equipos de frío",
+      url: "/equipos",
+      imageUrl: "/images/link-icons/equipo-trailer.jpg",
+    },
+    {
+      icon: RiTruckFill,
+      text: "Carrocerías",
+      url: "/carrocerias",
+      imageUrl: "/images/link-icons/carroceria-lk.jpg",
+    },
+    {
+      icon: FaTruckLoading,
+      text: "Accesorios",
+      url: "/accesorios",
+      imageUrl: "",
+    },
+  ];
+
+  const serviceItems = [
+    {
+      icon: FaWrench,
+      text: "Servicio técnico",
+      url: "/servicios#servicio-tecnico",
+      imageUrl: "",
+    },
+    {
+      icon: IoIosPeople,
+      text: "Asesoramiento",
+      url: "/servicios#asesoramiento",
+      imageUrl: "",
+    },
+    {
+      icon: FaTruckLoading,
+      text: "Accesorios",
+      url: "/accesorios",
+      imageUrl: "",
+    },
+  ];
+
   return (
     <div className="space-y-6">
       <Banner
         title="Especialistas en transporte carretero"
         description="Contamos con más de 20 años de experiencia en el rubro."
         buttonText="Conocer más"
-        image="/images/portada-a.jpeg"
+        image="/images/portada-b.jpeg"
       />
 
-      <section className="flex flex-col items-center">
-        <h2 className="mb-4 text-2xl font-semibold">Productos</h2>
-        <div className="grid min-h-[100px] w-full max-w-[500px] grid-cols-3 gap-2 sm:gap-5 ">
-          <HomeItem icon={TbSnowflake} text="Equipos de frío" url="/equipos" />
-          <HomeItem icon={RiTruckFill} text="Carrocerías" url="/carrocerias" />
-          <HomeItem icon={FaTruckLoading} text="Accesorios" url="/accesorios" />
-        </div>
-      </section>
+      <HomeIconsSection title="Productos" items={productItems} />
     </div>
   );
 }
