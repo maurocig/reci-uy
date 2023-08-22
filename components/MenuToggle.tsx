@@ -1,15 +1,15 @@
 "use client";
 
-import { useMobileMenuToggle } from "@/hooks/useMobileMenu";
+import { useMobileMenu } from "@/hooks/useMobileMenu";
 import { HiOutlineMenu } from "react-icons/hi";
 
 type MenuToggleProps = {};
 
 export default function MenuToggle({}: MenuToggleProps) {
-  const { isOpen, onToggle } = useMobileMenuToggle();
+  const { isOpen, onClose } = useMobileMenu();
 
   const handleClick = () => {
-    onToggle(isOpen);
+    onClose();
   };
 
   return (
