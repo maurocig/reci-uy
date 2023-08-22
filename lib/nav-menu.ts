@@ -1,5 +1,8 @@
 import { usePathname } from "next/navigation";
-import { HiHome } from "react-icons/hi";
+import { FaTruckLoading, FaWrench } from "react-icons/fa";
+import { HiHome, HiMail } from "react-icons/hi";
+import { MdInfo } from "react-icons/md";
+import { RiTruckFill } from "react-icons/ri";
 import { TbSnowflake } from "react-icons/tb";
 
 let pathname = "";
