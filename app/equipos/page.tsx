@@ -18,7 +18,7 @@ export default function EquiposPage() {
   return (
     <div className="">
       <BannerCategory
-        image="/images/link-icons/equipo-trailer.jpg"
+        image="/images/equipo-trailer.jpg"
         title="Equipos de frío"
         description="Línea Thermo King."
         className="bg-gradient-to-r from-slate-200 via-slate-200/80 to-slate-200/30 backdrop-blur-[1px] md:via-slate-300/20 md:to-transparent md:backdrop-blur-0 "

@@ -7,7 +7,7 @@ export default function AccesoriosPage() {
       <BannerCategory
         title="Accesorios"
         description="lorem ipsum"
-        image="/images/link-icons/rampa-palfinger.jpg"
+        image="/images/rampa-palfinger.jpg"
         bgPosition="bg-[bottom_right]"
         className="bg-gradient-to-r from-slate-300 via-slate-200/80 to-transparent backdrop-blur-[2px] md:backdrop-blur-0"
       />

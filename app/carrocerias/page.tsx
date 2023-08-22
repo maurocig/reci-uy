@@ -30,7 +30,7 @@ export default function carroceriasPage() {
   return (
     <div>
       <BannerCategory
-        image="/images/link-icons/carroceria-lk.jpg"
+        image="/images/carroceria-lk.jpg"
         title="Carrocerías"
         description="Líneas Liderkit y Fibrasil."
         className="bg-gradient-to-r from-slate-200 via-slate-200/80 to-slate-200/30 backdrop-blur-[1px] md:via-slate-300/20 md:to-transparent md:backdrop-blur-0 "
