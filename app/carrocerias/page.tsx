@@ -1,4 +1,5 @@
 import ItemList from "@/components/ItemList";
+import BannerCategory from "@/components/banner-category";
 import Spacer from "@/components/ui/Spacer";
 import { Product } from "@/types.js";
 import { carrocerias } from "../../public/assets/carrocerias.js";
@@ -28,7 +29,21 @@ export default function carroceriasPage() {
 
   return (
     <div>
-      <section className="mb-16">
+      <BannerCategory
+        image="/images/link-icons/carroceria-lk.jpg"
+        title="Carrocerías"
+        description="Líneas Liderkit y Fibrasil."
+        className="bg-gradient-to-r from-slate-200 via-slate-200/80 to-slate-200/30 backdrop-blur-[1px] md:via-slate-300/20 md:to-transparent md:backdrop-blur-0 "
+        bgPosition="bg-[right_top_-3rem] md:bg-[right_top_-3rem] lg:bg-[right_top_-7rem] xl:bg-[right_top_-13rem]"
+      />
+      <Spacer />
+      <section>
+        <h2 className="text-2xl font-semibold">Carga general</h2>
+        <p className="mb-4 text-lg text-slate-400">Línea Liderkit</p>
+        <ItemList products={seca} />
+      </section>
+      <Spacer />
+      <section>
         <h2 className="text-2xl font-semibold">Carga refrigerada</h2>
         <p className="mb-4 text-lg text-slate-400">Línea Liderkit</p>
         <ItemList products={refrigeradosLk} />
@@ -36,20 +51,15 @@ export default function carroceriasPage() {
         <p className="mb-4 text-lg text-slate-400">Línea Fibrasil</p>
         <ItemList products={refrigeradosFb} />
       </section>
-
-      <section className="mb-16">
-        <h2 className="text-2xl font-semibold">Carga general</h2>
-        <p className="mb-4 text-lg text-slate-400">Línea Liderkit</p>
-        <ItemList products={seca} />
-      </section>
-
-      <section className="mb-16">
+      <Spacer />
+      <section>
         <h2 className="text-2xl font-semibold">Congelados</h2>
         <p className="mb-4 text-lg text-slate-400">
           Línea Fibrasil con placas eutéticas.
         </p>
         <ItemList products={congelada} />
       </section>
+      <Spacer />
     </div>
   );
 
