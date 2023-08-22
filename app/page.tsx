@@ -23,7 +23,7 @@ export default function Home() {
       icon: FaTruckLoading,
       text: "Accesorios",
       url: "/accesorios",
-      imageUrl: "",
+      imageUrl: "/images/link-icons/rampa-palfinger.jpg",
     },
   ];
 
