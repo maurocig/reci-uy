@@ -17,7 +17,7 @@ export default function Home() {
       icon: RiTruckFill,
       text: "Carrocerías",
       url: "/carrocerias",
-      imageUrl: "/images/link-icons/carroceria-lk.jpg",
+      imageUrl: "/images/liderkit-atras.jpg",
     },
     {
       icon: FaTruckLoading,
