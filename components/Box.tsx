@@ -9,7 +9,7 @@ export default function Box({ children, className }: BoxProps) {
   return (
     <div
       className={twMerge(
-        `flex flex-col gap-2 rounded-lg bg-gradient-to-br from-slate-200/5 via-teal-200/5 to-slate-400/5 p-3 sm:max-h-[400px]`,
+        `flex flex-col gap-2 rounded-lg bg-gradient-to-br from-slate-800/30 to-slate-800/20 p-3 shadow-md backdrop-blur-lg sm:max-h-[400px]`,
         className
       )}
     >

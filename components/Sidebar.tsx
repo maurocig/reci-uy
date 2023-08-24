@@ -73,7 +73,7 @@ export default function Sidebar({ className }: SidebarProps) {
   return (
     <div className={twMerge("min-w-[230px] ", className)}>
       {/* INICIO */}
-      <Box className="">
+      <Box>
         {mainItems.map((item, i) => (
           <SidebarItem
             name={item.name}

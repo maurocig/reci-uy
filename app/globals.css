@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 html {
-	@apply bg-black
+	@apply bg-gray-700
 }
 
 body {
-	@apply bg-gradient-to-br from-slate-700/80 via-sky-950/80 to-blue-950/75 min-h-screen
+	@apply bg-gradient-to-br from-slate-700/40 shadow-xl via-teal-700/40 to-blue-600/20 min-h-screen
 }
