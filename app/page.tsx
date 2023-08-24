@@ -1,55 +1,56 @@
-import Banner from "@/components/banner";
-import HomeIconsSection from "@/components/home-icons-section";
-import { FaTruckLoading, FaWrench } from "react-icons/fa";
-import { IoIosPeople, IoMdPeople } from "react-icons/io";
-import { RiTruckFill } from "react-icons/ri";
-import { TbSnowflake } from "react-icons/tb";
+import Box from '@/components/Box';
+import Banner from '@/components/banner';
+import HomeIconsSection from '@/components/home-icons-section';
+import { FaTruckLoading, FaWrench } from 'react-icons/fa';
+import { IoIosPeople, IoMdPeople } from 'react-icons/io';
+import { RiTruckFill } from 'react-icons/ri';
+import { TbSnowflake } from 'react-icons/tb';
 
 export default function Home() {
   const productItems = [
     {
       icon: TbSnowflake,
-      text: "Equipos de frío",
-      url: "/equipos",
-      imageUrl: "/images/equipo-trailer.jpg",
+      text: 'Equipos de frío',
+      url: '/equipos',
+      imageUrl: '/images/equipo-trailer.jpg',
     },
     {
       icon: RiTruckFill,
-      text: "Carrocerías",
-      url: "/carrocerias",
-      imageUrl: "/images/liderkit-atras.jpg",
+      text: 'Carrocerías',
+      url: '/carrocerias',
+      imageUrl: '/images/liderkit-atras.jpg',
     },
     {
       icon: FaTruckLoading,
-      text: "Accesorios",
-      url: "/accesorios",
-      imageUrl: "/images/rampa-palfinger.jpg",
+      text: 'Accesorios',
+      url: '/accesorios',
+      imageUrl: '/images/rampa-palfinger.jpg',
     },
   ];
 
   const serviceItems = [
     {
       icon: FaWrench,
-      text: "Servicio técnico",
-      url: "/servicios#servicio-tecnico",
-      imageUrl: "",
+      text: 'Servicio técnico',
+      url: '/servicios#servicio-tecnico',
+      imageUrl: '',
     },
     {
       icon: IoIosPeople,
-      text: "Asesoramiento",
-      url: "/servicios#asesoramiento",
-      imageUrl: "",
+      text: 'Asesoramiento',
+      url: '/servicios#asesoramiento',
+      imageUrl: '',
     },
     {
       icon: FaTruckLoading,
-      text: "Accesorios",
-      url: "/accesorios",
-      imageUrl: "",
+      text: 'Accesorios',
+      url: '/accesorios',
+      imageUrl: '',
     },
   ];
 
   return (
-    <div className="space-y-6">
+    <div className="flex flex-col space-y-4">
       <Banner
         title="Especialistas en transporte carretero"
         description="Contamos con más de 20 años de experiencia en el rubro."
@@ -57,7 +58,9 @@ export default function Home() {
         image="/images/portada-b.jpeg"
       />
 
-      <HomeIconsSection title="Productos" items={productItems} />
+      <Box>
+        <HomeIconsSection title="Productos" items={productItems} />
+      </Box>
     </div>
   );
 }

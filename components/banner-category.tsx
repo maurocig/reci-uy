@@ -1,10 +1,10 @@
-import { robotoFlex } from "@/app/fonts";
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
-import { ChevronRight } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
-import { twMerge } from "tailwind-merge";
+import { robotoFlex } from '@/app/fonts';
+import { Button } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
+import { ChevronRight } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { twMerge } from 'tailwind-merge';
 
 type BannerCategoryProps = {
   image: string;
@@ -26,17 +26,17 @@ export default function BannerCategory({
   return (
     <div
       className={cn(
-        "aspect-[5/3] max-h-[400px] w-full rounded-lg bg-cover bg-no-repeat sm:aspect-video ",
+        'aspect-[5/3] max-h-[400px] w-full rounded-lg bg-cover bg-no-repeat sm:aspect-video shadow-md ',
         bgPosition
       )}
       style={{ backgroundImage: `url(${image})` }}
     >
       {/* overlay */}
-      <div className={twMerge("h-full w-full rounded-lg ", className)}>
-        <div className="flex h-full w-full items-center justify-start space-y-2 rounded-b-lg text-start text-slate-800 sm:w-2/3 md:space-y-3 lg:w-1/2">
+      <div className={twMerge('h-full w-full rounded-lg ', className)}>
+        <div className="flex items-center justify-start w-full h-full space-y-2 rounded-b-lg text-start text-slate-800 sm:w-2/3 md:space-y-3 lg:w-1/2">
           <div
             className={twMerge(
-              "flex w-full flex-col items-start rounded-b-lg p-4 pl-6",
+              'flex w-full flex-col items-start rounded-b-lg p-4 pl-6',
               robotoFlex.className
             )}
           >
