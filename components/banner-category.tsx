@@ -26,7 +26,7 @@ export default function BannerCategory({
   return (
     <div
       className={cn(
-        'aspect-[5/3] max-h-[400px] w-full rounded-lg bg-cover bg-no-repeat sm:aspect-video shadow-md ',
+        'aspect-[5/3] max-h-[350px] w-full rounded-lg bg-cover bg-no-repeat sm:aspect-video shadow-md ',
         bgPosition
       )}
       style={{ backgroundImage: `url(${image})` }}

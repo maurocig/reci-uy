@@ -17,7 +17,7 @@ export default function EquiposPage() {
   });
 
   return (
-    <div className="flex flex-col space-y-4">
+    <div className="flex flex-col space-y-4 lg:space-y-6">
       <BannerCategory
         image="/images/equipo-trailer.jpg"
         title="Equipos de frío"
@@ -25,19 +25,19 @@ export default function EquiposPage() {
         className="bg-gradient-to-r shadow-lg from-slate-200 via-slate-200/80 to-slate-200/30 backdrop-blur-[1px] md:via-slate-300/20 md:to-transparent md:backdrop-blur-0 "
         bgPosition="sm:bg-[right_top_-5rem] md:bg-[right_top_-10rem] lg:bg-[right_top_-10rem] xl:bg-[right_top_-20rem]"
       />
-      <Box className="">
+      <Box className="lg:p-6">
         <h2 className="text-2xl font-semibold">Línea VP Truck</h2>
         <p className="mb-4 text-lg text-slate-400">Camiones pequeños y vans</p>
         <ItemList products={vp} />
       </Box>
-      <Box>
+      <Box className="lg:p-6">
         <h2 className="text-2xl font-semibold">Línea Truck</h2>
         <p className="mb-4 text-lg text-slate-400">
           Camiones medianos y grandes
         </p>
         <ItemList products={truck} />
       </Box>
-      <Box>
+      <Box className="lg:p-6">
         <h2 className="text-2xl font-semibold">Trailer</h2>
         <p className="mb-4 text-lg text-slate-400">Trailers y semirremolques</p>
         <ItemList products={trailer} />

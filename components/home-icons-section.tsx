@@ -1,11 +1,11 @@
-import HomeItem, { HomeItemProps } from "@/components/home-item";
-import { HomeIcon } from "lucide-react";
-import Image from "next/image";
-import { CiWarning } from "react-icons/ci";
-import { FaTruckLoading } from "react-icons/fa";
-import { HiHome } from "react-icons/hi";
-import { RiTruckFill } from "react-icons/ri";
-import { TbSnowflake } from "react-icons/tb";
+import HomeItem, { HomeItemProps } from '@/components/home-item';
+import { HomeIcon } from 'lucide-react';
+import Image from 'next/image';
+import { CiWarning } from 'react-icons/ci';
+import { FaTruckLoading } from 'react-icons/fa';
+import { HiHome } from 'react-icons/hi';
+import { RiTruckFill } from 'react-icons/ri';
+import { TbSnowflake } from 'react-icons/tb';
 
 type HomeIconsSectionProps = {
   items: HomeItemProps[];
@@ -19,8 +19,8 @@ export default function HomeIconsSection({
   return (
     <section className="flex flex-col items-center">
       {/* Mobile */}
-      <div className="flex w-full flex-col items-center">
-        <h2 className="mb-4 w-full text-center text-2xl font-semibold sm:text-start">
+      <div className="flex flex-col items-center w-full">
+        <h2 className="w-full mb-2 text-xl font-semibold text-center sm:text-start">
           {title}
         </h2>
         <div className="grid min-h-[100px] w-full max-w-[500px] grid-cols-3 gap-2 sm:max-w-full sm:gap-5 ">

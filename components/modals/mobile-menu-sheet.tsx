@@ -20,7 +20,7 @@ export function MobileMenuSheet() {
 
   return (
     <Sheet open={mobileMenu.isOpen} onOpenChange={mobileMenu.onClose}>
-      <SheetContent className="transition border-none shadow-lg w-fit bg-gradient-to-br from-slate-900/90 via-slate-800/80 to-teal-900/90">
+      <SheetContent className="transition border-none shadow-lg w-fit bg-gradient-to-br from-slate-700/90 via-slate-600/90 to-teal-700/90">
         <SheetHeader>
           <SheetTitle className="text-white">Menú</SheetTitle>
         </SheetHeader>
