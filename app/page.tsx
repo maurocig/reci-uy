@@ -2,9 +2,18 @@ import Box from '@/components/Box';
 import Banner from '@/components/banner';
 import FeatureList from '@/components/feature-list';
 import HomeIconsSection from '@/components/home-icons-section';
-import { CheckSquare, Diamond, LucideWrench, Square } from 'lucide-react';
+import {
+  CalendarCheck,
+  CalendarCheck2,
+  CheckSquare,
+  Diamond,
+  FileText,
+  LucideWrench,
+  Square,
+  Wrench,
+} from 'lucide-react';
 import Image from 'next/image';
-import { FaTruckLoading, FaWrench } from 'react-icons/fa';
+import { FaList, FaTruckLoading, FaWrench } from 'react-icons/fa';
 import { IoIosPeople, IoMdPeople } from 'react-icons/io';
 import { RiTruckFill } from 'react-icons/ri';
 import { TbSnowflake } from 'react-icons/tb';
@@ -61,22 +70,27 @@ export default function Home() {
         image="/images/portada-b.jpeg"
       />
 
+      {/* Productos */}
       <Box className="lg:p-6">
         <HomeIconsSection title="Productos" items={productItems} />
       </Box>
 
+      {/* Servicio técnico */}
       <Box className="lg:p-6">
         <div className="grid w-full gap-4 lg:gap-6 h-fit sm:grid-cols-2 md:grid-cols-3">
-          <div className="p-4 border rounded-lg shadow-lg md:col-span-2 border-cyan-100/80 bg-cyan-100/10 md:p-6 ">
-            <h2 className="flex items-center w-full gap-2 text-xl font-semibold text-center sm:text-start">
-              <FaWrench className="inline" size={20} /> Servicio técnico
+          <div className="bg-opacity-0 rounded-lg md:col-span-2 border-cyan-100/80 ">
+            <h2 className="flex items-center w-full gap-2 mt-0 text-2xl font-semibold text-center sm:text-start">
+              <Wrench className="inline" size={17} /> Servicio técnico
             </h2>
-            <p>Realizado por técnicos especializados Thermo King.</p>
+            <p className="ml-4">
+              Realizado por técnicos especializados Thermo King.
+            </p>
             <FeatureList
               features={[
-                'Repuestos originales',
                 'Personal especializado',
+                'Repuestos originales',
                 'Venta y colocación',
+                'Service y mantenimiento',
               ]}
             />
           </div>
@@ -91,18 +105,19 @@ export default function Home() {
         </div>
       </Box>
 
+      {/* Panel split */}
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:gap-6">
         <Box className="lg:p-6">
-          <h2 className="flex items-center w-full gap-2 text-xl font-semibold text-center sm:text-start">
-            <FaWrench className="inline" /> Asesoramiento
+          <h2 className="flex items-center w-full gap-2 text-2xl font-semibold text-center sm:text-start">
+            <FileText className="inline" size={17} /> Asesoramiento
           </h2>
           <div
             style={{
-              backgroundImage: 'url(./images/asesoramiento-stock.jpeg)',
+              backgroundImage: 'url(./images/asesoramiento-2.jpg)',
             }}
-            className="bg-cover rounded-lg"
+            className="bg-left-bottom bg-cover rounded-lg"
           >
-            <div className="p-4 overflow-hidden rounded-lg backdrop-blur-sm lg:p-6">
+            <div className="p-4 overflow-hidden text-white rounded-lg backdrop-brightness-50 backdrop-blur-sm lg:p-6">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Non esse
               quibusdam sed doloremque magni quae omnis, asperiores iusto itaque
               at delectus voluptas laudantium odit voluptate, fugit, tempore
@@ -111,8 +126,8 @@ export default function Home() {
           </div>
         </Box>
         <Box className="lg:p-6">
-          <h2 className="w-full text-xl font-semibold text-center sm:text-start">
-            Servicio post venta
+          <h2 className="flex items-center w-full gap-2 text-2xl font-semibold text-center sm:text-start">
+            <CalendarCheck2 className="inline" size={18} /> Servicio post venta
           </h2>
           <div
             style={{
@@ -120,7 +135,7 @@ export default function Home() {
             }}
             className="bg-cover rounded-lg"
           >
-            <div className="p-4 rounded-lg overflow:hidden backdrop-blur-sm bg-slate-700/20 lg:p-6">
+            <div className="p-4 rounded-lg overflow:hidden backdrop-brightness-75 backdrop-blur-sm bg-slate-700/20 lg:p-6">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Non esse
               quibusdam sed doloremque magni quae omnis, asperiores iusto itaque
               at delectus voluptas laudantium odit voluptate, fugit, tempore

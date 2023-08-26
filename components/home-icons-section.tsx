@@ -1,5 +1,5 @@
 import HomeItem, { HomeItemProps } from '@/components/home-item';
-import { HomeIcon } from 'lucide-react';
+import { HomeIcon, Package } from 'lucide-react';
 import Image from 'next/image';
 import { CiWarning } from 'react-icons/ci';
 import { FaTruckLoading } from 'react-icons/fa';
@@ -20,9 +20,12 @@ export default function HomeIconsSection({
     <section className="flex flex-col items-center">
       {/* Mobile */}
       <div className="flex flex-col items-center w-full">
-        <h2 className="w-full mb-2 text-xl font-semibold text-center sm:text-start">
-          {title}
-        </h2>
+        <div className="flex items-center w-full gap-2 mb-2">
+          <Package className="inline" size={16} />
+          <h2 className="inline w-full text-2xl font-semibold text-center sm:text-start">
+            {title}
+          </h2>
+        </div>
         <div className="grid min-h-[100px] w-full max-w-[500px] grid-cols-3 gap-2 sm:max-w-full sm:gap-5 ">
           {items.map((item) => (
             <>

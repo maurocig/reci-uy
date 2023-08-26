@@ -51,7 +51,7 @@ export default function Sidebar({ className }: SidebarProps) {
 
   const otherItems = [
     {
-      name: 'Servicio técnico',
+      name: 'Servicios',
       url: '/servicios',
       icon: FaWrench,
       active: pathname === '/servicios',
