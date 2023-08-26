@@ -22,7 +22,7 @@ export default function Banner({
 }: BannerProps) {
   return (
     <div
-      className="aspect-[5/3] max-h-[350px] w-full rounded-lg bg-cover bg-center sm:aspect-video"
+      className="h-[350px] w-full rounded-lg bg-cover bg-center"
       style={{ backgroundImage: `url(${image})` }}
     >
       {/* overlay */}
