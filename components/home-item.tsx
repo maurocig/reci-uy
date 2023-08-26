@@ -1,8 +1,8 @@
-import { cn } from "@/lib/utils";
-import Image from "next/image";
-import Link from "next/link";
-import { IconType } from "react-icons";
-import { twMerge } from "tailwind-merge";
+import { cn } from '@/lib/utils';
+import Image from 'next/image';
+import Link from 'next/link';
+import { IconType } from 'react-icons';
+import { twMerge } from 'tailwind-merge';
 
 export type HomeItemProps = {
   icon: IconType;
@@ -28,13 +28,13 @@ export default function HomeItem({
             `flex h-full w-full flex-col items-center justify-start gap-2 rounded-lg bg-white/30 bg-cover p-1 backdrop-blur-sm transition hover:bg-white/50 sm:aspect-square sm:justify-center sm:p-2 sm:text-lg lg:aspect-[16/10]`
           )}
         >
-          <div className="rounded-full border-slate-800 p-4 py-4 transition duration-200 sm:border-none">
+          <div className="p-4 py-4 transition duration-200 rounded-full border-slate-800 sm:border-none">
             <Icon
               size={0}
               className="text-[40px] md:text-[50px] lg:text-[60px]"
             />
           </div>
-          <p className="text-center font-semibold md:text-xl">{text}</p>
+          <p className="font-semibold text-center md:text-xl">{text}</p>
         </div>
       </div>
     </Link>

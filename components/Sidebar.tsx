@@ -74,7 +74,7 @@ export default function Sidebar({ className }: SidebarProps) {
     <div className={twMerge('min-w-[230px] ', className)}>
       <div className="fixed min-w-[230px] space-y-4 lg:space-y-6 flex flex-col">
         {/* INICIO */}
-        <Box>
+        <Box className="flex flex-col gap-2">
           {mainItems.map((item, i) => (
             <SidebarItem
               name={item.name}
@@ -86,7 +86,7 @@ export default function Sidebar({ className }: SidebarProps) {
           ))}
         </Box>
         {/* Productos */}
-        <Box>
+        <Box className="flex flex-col gap-2">
           {productItems.map((item, i) => (
             <SidebarItem
               active={item.active}
@@ -98,7 +98,7 @@ export default function Sidebar({ className }: SidebarProps) {
           ))}
         </Box>
         {/* Otros */}
-        <Box>
+        <Box className="flex flex-col gap-2">
           {otherItems.map((item, i) => (
             <SidebarItem
               active={item.active}

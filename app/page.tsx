@@ -82,7 +82,7 @@ export default function Home() {
             <h2 className="flex items-center w-full gap-2 mt-0 text-2xl font-semibold text-center sm:text-start">
               <Wrench className="inline" size={17} /> Servicio técnico
             </h2>
-            <p className="ml-4">
+            <p className="ml-6">
               Realizado por técnicos especializados Thermo King.
             </p>
             <FeatureList
@@ -108,7 +108,7 @@ export default function Home() {
       {/* Panel split */}
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:gap-6">
         <Box className="lg:p-6">
-          <h2 className="flex items-center w-full gap-2 text-2xl font-semibold text-center sm:text-start">
+          <h2 className="flex items-center w-full gap-2 mb-2 text-2xl font-semibold text-center sm:text-start">
             <FileText className="inline" size={17} /> Asesoramiento
           </h2>
           <div
@@ -126,7 +126,7 @@ export default function Home() {
           </div>
         </Box>
         <Box className="lg:p-6">
-          <h2 className="flex items-center w-full gap-2 text-2xl font-semibold text-center sm:text-start">
+          <h2 className="flex items-center w-full gap-2 mb-2 text-2xl font-semibold text-center sm:text-start">
             <CalendarCheck2 className="inline" size={18} /> Servicio post venta
           </h2>
           <div

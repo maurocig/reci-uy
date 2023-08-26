@@ -26,7 +26,7 @@ export default function EquiposPage() {
         bgPosition="sm:bg-[right_top_-5rem] md:bg-[right_top_-10rem] lg:bg-[right_top_-10rem] xl:bg-[right_top_-20rem]"
       />
       <Box className="lg:p-6">
-        <h2 className="text-2xl font-semibold">Línea VP Truck</h2>
+        <h2 className="mb-0 text-2xl font-semibold">Línea VP Truck</h2>
         <p className="mb-4 text-lg text-slate-400">Camiones pequeños y vans</p>
         <ItemList products={vp} />
       </Box>

@@ -22,9 +22,7 @@ export default function HomeIconsSection({
       <div className="flex flex-col items-center w-full">
         <div className="flex items-center w-full gap-2 mb-2">
           <Package className="inline" size={16} />
-          <h2 className="inline w-full text-2xl font-semibold text-center sm:text-start">
-            {title}
-          </h2>
+          <h2 className="inline w-full text-2xl font-semibold ">{title}</h2>
         </div>
         <div className="grid min-h-[100px] w-full max-w-[500px] grid-cols-3 gap-2 sm:max-w-full sm:gap-5 ">
           {items.map((item) => (

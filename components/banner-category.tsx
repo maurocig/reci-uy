@@ -44,7 +44,7 @@ export default function BannerCategory({
               {title}
             </h2>
             <p
-              className="m-0 text-xl drop-shadow-lg md:drop-shadow-darker"
+              className="m-0 text-2xl drop-shadow-lg md:drop-shadow-darker"
               style={{ margin: 0 }}
             >
               {description}
