@@ -146,7 +146,12 @@ export default function Home() {
       </div>
 
       <Box>
-        <div>banner logos</div>
+        <div className="flex justify-around w-full">
+          <div>ThermoKing </div>
+          <div>Liderkit</div>
+          <div>Fibrasil</div>
+          <div>videfrigo</div>
+        </div>
       </Box>
     </div>
   );
