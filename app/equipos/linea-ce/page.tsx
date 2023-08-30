@@ -6,8 +6,9 @@ type LineaCePageProps = {};
 export default function LineaCePage({}: LineaCePageProps) {
   return (
     <div>
-      Linea Ce
       <ItemList
+        title="Linea Ce"
+        description="Alto rendimiento y blah"
         products={[
           {
             title: 'C-200',
