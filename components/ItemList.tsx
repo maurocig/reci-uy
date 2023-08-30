@@ -2,6 +2,7 @@
 
 import { Product } from '@/types';
 import Image from 'next/image';
+import Link from 'next/link';
 import Item from './Item';
 
 export interface ProductItem extends Product {
@@ -36,11 +37,14 @@ export default function ItemList({
       {products.map((product, i) => {
         return (
           <div key={`${product.model}${i}`}>
-            <Item
-              product={product}
-              showDescription={showDescription}
-              tagColor={product.twClass}
-            />
+            <Link href={product.url || ''}>
+              <Item
+                product={product}
+                showDescription={showDescription}
+                tagColor={product.twClass}
+                buttonText={'Ver productos'}
+              />
+            </Link>
           </div>
         );
       })}

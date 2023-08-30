@@ -150,7 +150,6 @@ export default function Home() {
           <div>ThermoKing </div>
           <div>Liderkit</div>
           <div>Fibrasil</div>
-          <div>videfrigo</div>
         </div>
       </Box>
     </div>

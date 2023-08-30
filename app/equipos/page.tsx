@@ -33,7 +33,7 @@ export default function EquiposPage() {
       <Box className="lg:p-6">
         <h2 className="text-2xl font-semibold">Línea Truck</h2>
         <p className="mb-4 text-lg text-slate-400">
-          Camiones medianos y grandes
+          Unidades autónomas para camiones medianos y grandes
         </p>
         <ItemList products={truck} />
       </Box>
