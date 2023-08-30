@@ -26,33 +26,20 @@ export default function carroceriasPage() {
         bgPosition="bg-[right_top_-3rem] md:bg-[right_top_-3rem] lg:bg-[right_top_-7rem] xl:bg-[right_top_-13rem]"
       />
       <Box className="lg:p-6">
-        <h2 className="text-2xl font-semibold">Carga general</h2>
-        <p className="mb-4 text-lg text-slate-400">Línea Liderkit</p>
-        <ItemList products={seca} />
+        <ItemList
+          title="Carga general"
+          description="Línea Liderkit"
+          products={seca}
+        />
       </Box>
       <Box className="lg:p-6">
-        <h2 className="text-2xl font-semibold">Carga refrigerada</h2>
-        <p className="mb-4 text-lg text-slate-400">
-          Líneas Liderkit y Fibrasil
-        </p>
-        <ItemList products={refrigerados} />
-      </Box>
-      <Box className="lg:p-6">
-        <h2 className="text-2xl font-semibold">Congelados</h2>
-        <p className="mb-4 text-lg text-slate-400">
-          Línea Fibrasil con placas eutéticas.
-        </p>
-        <ItemList products={congelada} />
+        <ItemList
+          title="Carga refrigerada"
+          description="Líneas Liderkit y Fibrasil"
+          products={refrigerados}
+        />
       </Box>
       <Spacer />
     </div>
   );
-
-  /* <div> */
-  /*    <h2 className="mb-6 text-2xl">L√≠nea Thermo King</h2> */
-  /*    <h3 className="text-lg text-gray-300">Serie Truck</h3> */
-  /*    <h3 className="text-lg text-gray-300">Serie V</h3> */
-  /*    <h3 className="text-lg text-gray-300">Serie C</h3> */
-  /*    <h3 className="text-lg text-gray-300">Trailer</h3> */
-  /* </div> */
 }

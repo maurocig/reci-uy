@@ -12,11 +12,15 @@ export interface ProductItem extends Product {
 type ItemListProps = {
   products: ProductItem[];
   showDescription?: boolean;
+  title: string;
+  description: string;
 };
 
 export default function ItemList({
   products,
   showDescription = false,
+  title,
+  description,
 }: ItemListProps) {
   products.forEach((product) => {
     switch (product.brand) {
@@ -33,21 +37,27 @@ export default function ItemList({
   });
 
   return (
-    <div className="grid grid-cols-1 gap-4 sm:gap-4 lg:gap-6 sm:grid-cols-2 lg:grid-cols-3 ">
-      {products.map((product, i) => {
-        return (
-          <div key={`${product.model}${i}`}>
-            <Link href={product.url || ''}>
-              <Item
-                product={product}
-                showDescription={showDescription}
-                tagColor={product.twClass}
-                buttonText={'Ver productos'}
-              />
-            </Link>
-          </div>
-        );
-      })}
+    <div>
+      <h2 className="mb-0 text-2xl font-semibold">{title}</h2>
+      <p className="mb-4 text-lg text-slate-400">{description}</p>
+      <div className="grid grid-cols-1 gap-4 sm:gap-4 lg:gap-6 sm:grid-cols-2 lg:grid-cols-3 ">
+        {products.map((product, i) => {
+          return (
+            <div key={`${product.model}${i}`}>
+              <div>
+                <Link href={product.url || ''}>
+                  <Item
+                    product={product}
+                    showDescription={showDescription}
+                    tagColor={product.twClass}
+                    buttonText={'Ver productos'}
+                  />
+                </Link>
+              </div>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }

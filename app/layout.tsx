@@ -1,5 +1,6 @@
 import Sidebar from '@/components/Sidebar';
 import { MobileMenuProvider } from '@/providers/mobile-menu-provider';
+import { Balancer } from 'react-wrap-balancer';
 import { robotoFlex } from './fonts';
 import './globals.css';
 import Navbar from './navbar';

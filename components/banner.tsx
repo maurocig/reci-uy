@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Balancer } from 'react-wrap-balancer';
 import { twMerge } from 'tailwind-merge';
 
 type BannerProps = {
@@ -39,7 +40,7 @@ export default function Banner({
               robotoFlex.className
             )}
           >
-            <h2 className="text-2xl font-semibold leading-5 text-slate-800 sm:text-2xl lg:text-4xl">
+            <h2 className="text-3xl font-semibold leading-8 text-slate-800 lg:text-4xl">
               {title}
             </h2>
             <p className="hidden m-0 text-lg sm:block" style={{ margin: 0 }}>

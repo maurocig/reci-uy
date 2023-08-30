@@ -39,7 +39,7 @@ export const equipos = [
     url: '/equipos/linea/v',
   },
   {
-    title: 'T-600R',
+    title: 'T-600 R',
     productType: 'equipos',
     brand: 'Thermo King',
     line: 'Truck',
@@ -52,7 +52,7 @@ export const equipos = [
     url: '/equipos/linea-t',
   },
   {
-    title: 'T-800R',
+    title: 'T-800 R',
     productType: 'equipos',
     brand: 'Thermo King',
     line: 'Truck',
@@ -65,7 +65,7 @@ export const equipos = [
     url: '/equipos/linea-t',
   },
   {
-    title: 'T-1200R',
+    title: 'T-1200 R',
     productType: 'equipos',
     brand: 'Thermo King',
     line: 'Truck',
