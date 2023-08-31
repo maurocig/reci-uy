@@ -148,7 +148,7 @@ export default function Home() {
       </div>
 
       {/* <Box className="bg-red-500 bg-opacity-100"> */}
-      <div className="p-4 rounded-lg shadow-lg bg-white/40 lg:p-6">
+      <div className="p-4 rounded-lg shadow-lg bg-white/20 lg:p-6">
         <BannerLogos
           logosUrl={[
             '/images/logos/logo-lk.png',
