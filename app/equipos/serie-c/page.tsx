@@ -40,13 +40,13 @@ export default function LineaCePage({}: LineaCePageProps) {
         </div>
       </div>
 
-      <div className="grid w-full grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3 ">
+      <div className="grid w-full grid-cols-1 gap-4 lg:gap-6 lg:grid-cols-2 xl:grid-cols-3 ">
         <div
-          className="block  min-h-[300px] col-span-1 bg-cover rounded-lg drop-shadow-darker bg-top-center lg:col-span-1"
+          className="block order-2 lg:order-1 min-h-[300px] col-span-1 bg-cover rounded-lg drop-shadow-darker bg-top-center lg:col-span-1"
           style={{ backgroundImage: 'url(/images/c450-vw.jpg)' }}
         ></div>
 
-        <Box className="flex flex-col col-span-1 gap-2 xl:col-span-2 ">
+        <Box className="flex flex-col col-span-1 gap-3 lg:order-2 xl:col-span-2 ">
           <span>
             <h2 className="flex items-center w-full gap-2 mt-0 text-2xl font-semibold text-center sm:text-start">
               Descripción
