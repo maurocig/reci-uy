@@ -10,7 +10,7 @@ export const equipos = [
     price: 100,
     thumbnail: '/images/equipos/c-450.png',
     stock: 5,
-    url: '/equipos/linea-ce',
+    url: '/equipos/serie-c',
   },
   {
     title: 'Serie RV',
@@ -23,7 +23,7 @@ export const equipos = [
     price: 100,
     thumbnail: '/images/equipos/rv-380.png',
     stock: 5,
-    url: '/equipos/linea-rv',
+    url: '/equipos/serie-rv',
   },
   {
     title: 'Serie V',
@@ -36,7 +36,7 @@ export const equipos = [
     price: 200,
     thumbnail: '/images/equipos/v-500.png',
     stock: 7,
-    url: '/equipos/linea/v',
+    url: '/equipos/serie-v',
   },
   {
     title: 'T-600 R',
@@ -49,7 +49,7 @@ export const equipos = [
     price: 300,
     thumbnail: '/images/equipos/t-600ok.png',
     stock: 9,
-    url: '/equipos/linea-t',
+    url: '/equipos/serie-t',
   },
   {
     title: 'T-800 R',
@@ -62,7 +62,7 @@ export const equipos = [
     price: 500,
     thumbnail: '/images/equipos/t-800.png',
     stock: 4,
-    url: '/equipos/linea-t',
+    url: '/equipos/serie-t',
   },
   {
     title: 'T-1200 R',
@@ -75,7 +75,7 @@ export const equipos = [
     price: 500,
     thumbnail: '/images/equipos/t-1200.png',
     stock: 4,
-    url: '/equipos/linea-t',
+    url: '/equipos/serie-t',
   },
   {
     title: 'SLXi 400',

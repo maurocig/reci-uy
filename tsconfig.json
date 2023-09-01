@@ -28,7 +28,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "db/migrate.js"
+    "db/migrate.js",
+    ".next/types/app/equipos/linea-ce/page.tsx"
   ],
   "exclude": ["node_modules"]
 }

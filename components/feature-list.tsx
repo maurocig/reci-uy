@@ -7,10 +7,13 @@ type FeatureListProps = {
 export default function FeatureList({ features }: FeatureListProps) {
   return (
     <div>
-      <ul className="mt-4 ml-6">
-        {features.map((item) => (
-          <li key={item} className="flex items-center gap-2">
-            <CheckSquare className="inline" size={14} /> {item}
+      <ul className="flex flex-col gap-2 mt-4 ml-2 lg:ml-3">
+        {features.map((feature) => (
+          <li key={feature} className="flex items-center gap-2">
+            <div className="flex items-start content-start w-6">
+              <CheckSquare className="inline" size={16} />
+            </div>
+            <div className="w-full">{feature}</div>
           </li>
         ))}
       </ul>

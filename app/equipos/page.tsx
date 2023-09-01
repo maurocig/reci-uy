@@ -30,6 +30,7 @@ export default function EquiposPage() {
           title="Línea VP Truck"
           description="Camiones pequeños y vans"
           products={vp}
+          buttonText="Ver productos"
         />
       </Box>
       <Box className="lg:p-6">

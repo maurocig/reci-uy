@@ -28,7 +28,7 @@ export default function Item({
           src={product.thumbnail}
           fill
           alt="Product Image"
-          className="relative object-cover transition-all duration-100 group-hover:drop-shadow-lg group-hover:scale-[103%]"
+          className="relative object-cover transition-all duration-100 group-hover:drop-shadow-xl drop-shadow-lg group-hover:scale-[103%]"
         />
       </div>
 

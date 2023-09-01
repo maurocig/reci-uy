@@ -1,5 +1,6 @@
 'use client';
 
+import { cn } from '@/lib/utils';
 import { Product } from '@/types';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -14,6 +15,8 @@ type ItemListProps = {
   showDescription?: boolean;
   title: string;
   description: string;
+  gridCols?: string;
+  buttonText?: string;
 };
 
 export default function ItemList({
@@ -21,6 +24,8 @@ export default function ItemList({
   showDescription = false,
   title,
   description,
+  gridCols,
+  buttonText,
 }: ItemListProps) {
   products.forEach((product) => {
     switch (product.brand) {
@@ -40,7 +45,12 @@ export default function ItemList({
     <div>
       <h2 className="mb-0 text-2xl font-semibold">{title}</h2>
       <p className="mb-4 text-lg text-slate-400">{description}</p>
-      <div className="grid grid-cols-1 gap-4 sm:gap-4 lg:gap-6 sm:grid-cols-2 lg:grid-cols-3 ">
+      <div
+        className={cn(
+          'grid grid-cols-1 gap-4 sm:gap-4 lg:gap-6 sm:grid-cols-2 lg:grid-cols-3 ',
+          gridCols
+        )}
+      >
         {products.map((product, i) => {
           return (
             <div key={`${product.model}${i}`}>
@@ -50,7 +60,7 @@ export default function ItemList({
                     product={product}
                     showDescription={showDescription}
                     tagColor={product.twClass}
-                    buttonText={'Ver productos'}
+                    buttonText={buttonText || 'Ver producto'}
                   />
                 </Link>
               </div>
