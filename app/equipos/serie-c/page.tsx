@@ -40,37 +40,6 @@ export default function LineaCePage({}: LineaCePageProps) {
         </div>
       </div>
 
-      <Box className="grid grid-cols-1 gap-4 lg:gap-6 sm:grid-cols-2 ">
-        <div className="relative w-full ">
-          <Image
-            src={'/images/equipos/raw/c-series-cover-1.jpg'}
-            alt="Servicio técnico"
-            fill
-            className="object-cover object-center rounded-lg shadow-lg"
-          />
-        </div>
-        <div className="mb-2 bg-opacity-0 rounded-lg border-cyan-100/80 ">
-          <h2 className="flex items-center w-full gap-2 mt-0 text-2xl font-semibold text-center sm:text-start">
-            <ListChecks className="inline" size={17} /> Características
-          </h2>
-          {/*
-          <p className="ml-6">
-            Realizado por técnicos especializados Thermo King.
-          </p>
-						*/}
-          <FeatureList
-            features={[
-              'Alimentados por tracción directa',
-              'Protección fiable para cargas secas y congeladas',
-              'Gran volumen del caudal de aire',
-              'La mayor capacidad de refrigeración del sector',
-              'Nuevo controlador para un funcionamiento sin errores',
-              'Protección integral con repuestos y servicios Thermo King',
-            ]}
-          />
-        </div>
-      </Box>
-
       <div className="grid w-full grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3 ">
         <div
           className="block  min-h-[300px] col-span-1 bg-cover rounded-lg drop-shadow-darker bg-top-center lg:col-span-1"
@@ -108,6 +77,37 @@ export default function LineaCePage({}: LineaCePageProps) {
           </p>
         </Box>
       </div>
+
+      <Box className="grid grid-cols-1 gap-4 lg:gap-6 sm:grid-cols-2 ">
+        <div className="relative w-full ">
+          <Image
+            src={'/images/equipos/raw/c-series-cover-1.jpg'}
+            alt="Servicio técnico"
+            fill
+            className="object-cover object-center rounded-lg shadow-lg"
+          />
+        </div>
+        <div className="mb-2 bg-opacity-0 rounded-lg border-cyan-100/80 ">
+          <h2 className="flex items-center w-full gap-2 mt-0 text-2xl font-semibold text-center sm:text-start">
+            <ListChecks className="inline" size={17} /> Características
+          </h2>
+          {/*
+          <p className="ml-6">
+            Realizado por técnicos especializados Thermo King.
+          </p>
+						*/}
+          <FeatureList
+            features={[
+              'Alimentados por tracción directa',
+              'Protección fiable para cargas secas y congeladas',
+              'Gran volumen del caudal de aire',
+              'La mayor capacidad de refrigeración del sector',
+              'Nuevo controlador para un funcionamiento sin errores',
+              'Protección integral con repuestos y servicios Thermo King',
+            ]}
+          />
+        </div>
+      </Box>
 
       <Box>
         <ItemList
