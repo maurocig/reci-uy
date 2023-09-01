@@ -60,7 +60,7 @@ export default function LineaCePage({}: LineaCePageProps) {
 						*/}
           <FeatureList
             features={[
-              'Alimentado por tracción directa',
+              'Alimentados por tracción directa',
               'Protección fiable para cargas secas y congeladas',
               'Gran volumen del caudal de aire',
               'La mayor capacidad de refrigeración del sector',
@@ -71,37 +71,47 @@ export default function LineaCePage({}: LineaCePageProps) {
         </div>
       </Box>
 
-      <Box>
-        <div className="flex flex-col col-span-1 gap-2 xl:col-span-2">
-          <div>
+      <div className="grid w-full grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3 ">
+        <div
+          className="block  min-h-[300px] col-span-1 bg-cover rounded-lg drop-shadow-darker bg-top-center lg:col-span-1"
+          style={{ backgroundImage: 'url(/images/c450-vw.jpg)' }}
+        ></div>
+
+        <Box className="flex flex-col col-span-1 gap-2 xl:col-span-2 ">
+          <span>
             <h2 className="flex items-center w-full gap-2 mt-0 text-2xl font-semibold text-center sm:text-start">
               Descripción
             </h2>
             <h3 className="text-lg text-gray-400">
               Enfocados en eficiencia y durabilidad
             </h3>
-          </div>
-          <p className="">
-            La serie Ce ofrece la solución ideal para aquellos operadores que
+          </span>
+          <p className="hidden">
+            La serie C ofrece la solución ideal para aquellos operadores que
             transportan mercancía sensible a la temperatura en vehículos de
             pequeño y mediano tamaño.
           </p>
           <p>
-            Los equipos Ce están diseñados para satisfacer a la perfección las
+            Estos equipos están diseñados para satisfacer a la perfección las
             exigentes demandas de las operaciones de distribución con múltiples
             entregas, incluso cuando la temperatura exterior alcanza niveles
-            extremos de frío y calor. Un descenso de la temperatura más rápido
-            se traduce en un menor tiempo de recuperación de las aperturas de
-            las puertas y una mayor protección de la carga. Los nuevos
-            controladores en cabina garantizan un funcionamiento sencillo y
-            exento de errores.
+            extremos de frío y calor.
           </p>
-        </div>
-      </Box>
+          <p>
+            Un descenso de la temperatura más rápido se traduce en un menor
+            tiempo de recuperación de las aperturas de las puertas y una mayor
+            protección de la carga.
+          </p>
+          <p>
+            Los nuevos controladores en cabina garantizan un funcionamiento
+            sencillo y exento de errores.
+          </p>
+        </Box>
+      </div>
 
       <Box>
         <ItemList
-          title="Modelos Ce"
+          title="Modelos Serie C"
           description="Todos los modelos en esta serie"
           products={[
             {
