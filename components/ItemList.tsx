@@ -38,7 +38,8 @@ export default function ItemList({
         product.twClass = 'bg-sky-300';
         return;
       case 'Thermo King Line':
-        product.twClass = 'bg-sky-700 text-white';
+        // product.twClass = 'bg-sky-700 text-white text-lg';
+        product.twClass = 'bg-sky-300 text-lg ';
         return;
       case 'Fibrasil':
         product.twClass = 'bg-white';

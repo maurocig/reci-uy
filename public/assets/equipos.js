@@ -1,7 +1,7 @@
 export const equipos = [
   {
     id: '1',
-    title: 'SERIE C',
+    title: 'Serie C',
     productType: 'equipos',
     brand: 'Thermo King Line',
     line: 'VP Truck',
@@ -15,7 +15,7 @@ export const equipos = [
   },
   {
     id: '2',
-    title: 'SERIE RV',
+    title: 'Serie RV',
     productType: 'equipos',
     brand: 'Thermo King Line',
     line: 'VP Truck',
@@ -29,7 +29,7 @@ export const equipos = [
   },
   {
     id: '3',
-    title: 'SERIE V',
+    title: 'Serie V',
     productType: 'equipos',
     brand: 'Thermo King Line',
     line: 'VP Truck',

@@ -89,6 +89,27 @@ export default function LineaCePage({}: LineaCePageProps) {
         </div>
         <div className="mb-2 bg-opacity-0 rounded-lg border-cyan-100/80 ">
           <h2 className="flex items-center w-full gap-2 mt-0 text-2xl font-semibold text-center sm:text-start">
+            Modelos de gran capacidad
+          </h2>
+          <p className="mb-3 text-lg text-gray-400">
+            Nuevas unidades para camiones de gran porte.
+          </p>
+          <p className="mb-2">
+            La Línea C-Series se ha ampliado para incluir soluciones óptimas de
+            control de temperatura para camiones grandes de hasta 52 m³.
+          </p>
+          <p>
+            Los nuevos y potentes modelos <b>C-550</b>, <b>C-650</b> y{' '}
+            <b>C-750</b> ofrecen todos los beneficios que espera de la Línea
+            C-Series, incluida una gran capacidad de condensación, construcción
+            liviana y diseño compacto.
+          </p>
+        </div>
+      </Box>
+
+      <Box>
+        <div className="mb-2 bg-opacity-0 rounded-lg border-cyan-100/80 ">
+          <h2 className="flex items-center w-full gap-2 mt-0 mb-2 text-2xl font-semibold text-center sm:text-start">
             <ListChecks className="inline" size={17} /> Características
           </h2>
           {/*
@@ -96,16 +117,26 @@ export default function LineaCePage({}: LineaCePageProps) {
             Realizado por técnicos especializados Thermo King.
           </p>
 						*/}
-          <FeatureList
-            features={[
-              'Alimentados por tracción directa',
-              'Protección fiable para cargas secas y congeladas',
-              'Gran volumen del caudal de aire',
-              'La mayor capacidad de refrigeración del sector',
-              'Nuevo controlador para un funcionamiento sin errores',
-              'Protección integral con repuestos y servicios Thermo King',
-            ]}
-          />
+          <div className="grid grid-cols-1 gap-2 text-lg lg:gap-4 lg:grid-cols-2">
+            <FeatureList
+              features={[
+                'Diseño ligero y compacto',
+                'Mayor caudal de aire',
+                'Protección fiable para cargas secas y congeladas',
+                'Controlador renovado para un funcionamiento sin errores',
+                'Carga de refrigerante reducida',
+              ]}
+            />
+            <FeatureList
+              features={[
+                'Alimentados por tracción directa',
+                'La mayor capacidad de refrigeración del sector',
+                'Protección integral con repuestos y servicios Thermo King',
+                'Eficiencia y sostenibilidad incrementadas',
+                'Rendimiento de calefacción optimizado',
+              ]}
+            />
+          </div>
         </div>
       </Box>
 

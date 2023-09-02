@@ -7,7 +7,7 @@ type FeatureListProps = {
 export default function FeatureList({ features }: FeatureListProps) {
   return (
     <div>
-      <ul className="flex flex-col gap-2 mt-4 ml-2 lg:ml-3">
+      <ul className="flex flex-col gap-2 ml-2 lg:ml-3">
         {features.map((feature) => (
           <li key={feature} className="flex items-center gap-2">
             <div className="flex items-start content-start w-6">
