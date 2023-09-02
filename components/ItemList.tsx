@@ -17,6 +17,7 @@ type ItemListProps = {
   description: string;
   gridCols?: string;
   buttonText?: string;
+  newTab?: boolean;
 };
 
 export default function ItemList({
@@ -26,6 +27,7 @@ export default function ItemList({
   description,
   gridCols,
   buttonText,
+  newTab,
 }: ItemListProps) {
   products.forEach((product) => {
     switch (product.brand) {
@@ -34,6 +36,9 @@ export default function ItemList({
         return;
       case 'Thermo King':
         product.twClass = 'bg-sky-300';
+        return;
+      case 'Thermo King Line':
+        product.twClass = 'bg-sky-700 text-white';
         return;
       case 'Fibrasil':
         product.twClass = 'bg-white';
@@ -55,7 +60,7 @@ export default function ItemList({
           return (
             <div key={`${product.model}${i}`}>
               <div>
-                <Link href={product.url || ''}>
+                <Link href={product.url || ''} target={newTab ? '_blank' : ''}>
                   <Item
                     product={product}
                     showDescription={showDescription}

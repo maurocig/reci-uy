@@ -31,7 +31,7 @@ export default function LineaCePage({}: LineaCePageProps) {
           </button>
           <div className="ml-9 ">
             <h2 className="text-3xl font-semibold text-white drop-shadow-darker">
-              Serie CE
+              Serie C
             </h2>
             <p className="text-xl text-gray-300 drop-shadow-darker">
               Rendimiento líder del mercado para camiones y furgonetas.
@@ -113,9 +113,10 @@ export default function LineaCePage({}: LineaCePageProps) {
         <ItemList
           title="Modelos Serie C"
           description="Todos los modelos en esta serie"
+          newTab
           products={[
             {
-              title: 'C 150',
+              title: 'C-150e',
               brand: 'Thermo King',
               model: 'C-150',
               productType: 'equipos',
@@ -123,10 +124,10 @@ export default function LineaCePage({}: LineaCePageProps) {
               stock: 1,
               thumbnail: '/images/equipos/c-150-350.png',
               shortDescription: 'laksjdf',
-              url: '/sldkjf',
+              url: 'https://europe.thermoking.com/es/direct-drive/discover-the-range/c-150e',
             },
             {
-              title: 'C 250',
+              title: 'C-250e',
               brand: 'Thermo King',
               model: 'C-250',
               productType: 'equipos',
@@ -134,10 +135,10 @@ export default function LineaCePage({}: LineaCePageProps) {
               stock: 1,
               thumbnail: '/images/equipos/c-150-350.png',
               shortDescription: 'laksjdf',
-              url: '/sldkjf',
+              url: 'https://europe.thermoking.com/es/direct-drive/discover-the-range/c-250e-max',
             },
             {
-              title: 'C 350',
+              title: 'C-350e',
               brand: 'Thermo King',
               model: 'C-350',
               productType: 'equipos',
@@ -145,10 +146,10 @@ export default function LineaCePage({}: LineaCePageProps) {
               stock: 1,
               thumbnail: '/images/equipos/c-150-350.png',
               shortDescription: 'laksjdf',
-              url: '/sldkjf',
+              url: 'https://europe.thermoking.com/es/direct-drive/discover-the-range/c-350e-max',
             },
             {
-              title: 'C 450',
+              title: 'C-450e',
               brand: 'Thermo King',
               model: 'C-450',
               productType: 'equipos',
@@ -156,10 +157,10 @@ export default function LineaCePage({}: LineaCePageProps) {
               stock: 1,
               thumbnail: '/images/equipos/c-450-750.png',
               shortDescription: 'laksjdf',
-              url: '/sldkjf',
+              url: 'https://europe.thermoking.com/es/direct-drive/discover-the-range/c-450e-max',
             },
             {
-              title: 'C 550',
+              title: 'C-550',
               brand: 'Thermo King',
               model: 'C-550',
               productType: 'equipos',
@@ -167,10 +168,10 @@ export default function LineaCePage({}: LineaCePageProps) {
               stock: 1,
               thumbnail: '/images/equipos/c-450-750.png',
               shortDescription: 'laksjdf',
-              url: '/sldkjf',
+              url: 'https://europe.thermoking.com/es/mediaroom/thermo-king-amplia-su-cartera-de-unidades-de-la-serie-c-con-una-nueva-gama-para-camiones-pequenos-y-furgonetas',
             },
             {
-              title: 'C 650',
+              title: 'C-650',
               brand: 'Thermo King',
               model: 'C-650',
               productType: 'equipos',
@@ -178,10 +179,10 @@ export default function LineaCePage({}: LineaCePageProps) {
               stock: 1,
               thumbnail: '/images/equipos/c-450-750.png',
               shortDescription: 'laksjdf',
-              url: '/sldkjf',
+              url: 'https://europe.thermoking.com/es/mediaroom/thermo-king-amplia-su-cartera-de-unidades-de-la-serie-c-con-una-nueva-gama-para-camiones-pequenos-y-furgonetas',
             },
             {
-              title: 'C 750',
+              title: 'C-750',
               brand: 'Thermo King',
               model: 'C-750',
               productType: 'equipos',
@@ -189,7 +190,7 @@ export default function LineaCePage({}: LineaCePageProps) {
               stock: 1,
               thumbnail: '/images/equipos/c-450-750.png',
               shortDescription: 'laksjdf',
-              url: '/sldkjf',
+              url: 'https://europe.thermoking.com/es/mediaroom/thermo-king-amplia-su-cartera-de-unidades-de-la-serie-c-con-una-nueva-gama-para-camiones-pequenos-y-furgonetas',
             },
           ]}
           gridCols="xl:grid-cols-4 "

@@ -1,5 +1,6 @@
 import { cn } from '@/lib/utils';
 import { Product } from '@/types';
+import { Snowflake, SnowflakeIcon } from 'lucide-react';
 import Image from 'next/image';
 import { FaChevronRight } from 'react-icons/fa';
 import { twMerge } from 'tailwind-merge';
@@ -40,7 +41,13 @@ export default function Item({
             tagColor
           )}
         >
-          {product.title}
+          {product.title}{' '}
+          {tagColor === 'bg-sky-300' && product.line !== 'Trailer' && (
+            <span className="flex items-center justify-start ml-2 text-xs text-blue-800">
+              <SnowflakeIcon className="inline mr-[2px]" size={11} />
+              MAX
+            </span>
+          )}
         </p>
 
         {showDescription && (

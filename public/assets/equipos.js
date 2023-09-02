@@ -1,8 +1,9 @@
 export const equipos = [
   {
-    title: 'Serie Ce',
+    id: '1',
+    title: 'SERIE C',
     productType: 'equipos',
-    brand: 'Thermo King',
+    brand: 'Thermo King Line',
     line: 'VP Truck',
     model: 'C-250',
     shortDescription:
@@ -13,9 +14,10 @@ export const equipos = [
     url: '/equipos/serie-c',
   },
   {
-    title: 'Serie RV',
+    id: '2',
+    title: 'SERIE RV',
     productType: 'equipos',
-    brand: 'Thermo King',
+    brand: 'Thermo King Line',
     line: 'VP Truck',
     model: 'RV-380',
     shortDescription:
@@ -26,9 +28,10 @@ export const equipos = [
     url: '/equipos/serie-rv',
   },
   {
-    title: 'Serie V',
+    id: '3',
+    title: 'SERIE V',
     productType: 'equipos',
-    brand: 'Thermo King',
+    brand: 'Thermo King Line',
     line: 'VP Truck',
     model: 'V-500',
     shortDescription:
@@ -39,6 +42,7 @@ export const equipos = [
     url: '/equipos/serie-v',
   },
   {
+    id: '4',
     title: 'T-600 R',
     productType: 'equipos',
     brand: 'Thermo King',
@@ -52,6 +56,7 @@ export const equipos = [
     url: '/equipos/serie-t',
   },
   {
+    id: '6',
     title: 'T-800 R',
     productType: 'equipos',
     brand: 'Thermo King',
@@ -65,6 +70,7 @@ export const equipos = [
     url: '/equipos/serie-t',
   },
   {
+    id: '7',
     title: 'T-1200 R',
     productType: 'equipos',
     brand: 'Thermo King',
@@ -78,6 +84,7 @@ export const equipos = [
     url: '/equipos/serie-t',
   },
   {
+    id: '8',
     title: 'SLXi 400',
     productType: 'equipos',
     brand: 'Thermo King',
@@ -91,6 +98,7 @@ export const equipos = [
     url: '/equipos/trailer',
   },
   {
+    id: '9',
     title: 'A 500',
     productType: 'equipos',
     brand: 'Thermo King',
@@ -104,6 +112,7 @@ export const equipos = [
     url: '/equipos/trailer',
   },
   {
+    id: '10',
     title: 'Precedent',
     productType: 'equipos',
     brand: 'Thermo King',
