@@ -20,7 +20,7 @@ export default function BannerLogos({
             src={url}
             alt="logotipo"
             fill
-            className="relative object-cover h-[50px] drop-shadow-darker"
+            className="relative object-contain h-[50px] drop-shadow-darker"
           />
         </div>
       ))}

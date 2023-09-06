@@ -23,7 +23,7 @@ export const equipos = [
     shortDescription:
       'Diseño personalizado para camiones de pequeño y mediano porte.',
     price: 100,
-    thumbnail: '/images/equipos/rv-380.png',
+    thumbnail: '/images/equipos/rv-580.png',
     stock: 5,
     url: '/equipos/serie-rv',
   },

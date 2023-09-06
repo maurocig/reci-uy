@@ -37,7 +37,8 @@ export default function Item({
       <div className="absolute flex flex-col items-center justify-between w-full h-full transition-all">
         <p
           className={twMerge(
-            `ml-3 mt-3 flex items-center self-start rounded-full px-6 py-1 text-start font-semibold text-gray-900 ring-black transition group-hover:shadow-md`,
+            `ml-3 mt-3 flex items-center self-start rounded-full shadow-sm px-6 py-1 text-start
+						 font-semibold text-gray-900 ring-black transition group-hover:shadow-md`,
             tagColor
           )}
         >
@@ -46,8 +47,8 @@ export default function Item({
             product.line !== 'Trailer' &&
             product.line !== 'Truck' && (
               <span className="flex items-center justify-start ml-2 text-xs text-blue-800">
-                <SnowflakeIcon className="inline mr-[2px]" size={11} />
                 MAX
+                <SnowflakeIcon className="inline ml-1" size={11} />
               </span>
             )}
         </p>

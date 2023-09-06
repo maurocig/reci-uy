@@ -8,9 +8,9 @@ import { ArrowLeft, ArrowLeftCircle, ListChecks, Sheet } from 'lucide-react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
-type LineaCePageProps = {};
+type SerieCPageProps = {};
 
-export default function LineaCePage({}: LineaCePageProps) {
+export default function SerieCPage({}: SerieCPageProps) {
   const router = useRouter();
   return (
     <div className="grid gap-4 grid-cols lg:gap-6">
@@ -95,8 +95,8 @@ export default function LineaCePage({}: LineaCePageProps) {
             Nuevas unidades para camiones de gran porte.
           </p>
           <p className="mb-2">
-            La Línea C-Series se ha ampliado para incluir soluciones óptimas de
-            control de temperatura para camiones grandes de hasta 52 m³.
+            La Serie C se ha ampliado para incluir soluciones óptimas de control
+            de temperatura para camiones grandes de hasta 52 m³.
           </p>
           <p>
             Los nuevos y potentes modelos <b>C-550</b>, <b>C-650</b> y{' '}
