@@ -29,25 +29,28 @@ export default function Banner({
       {/* overlay */}
       <div
         className={twMerge(
-          'h-full w-full rounded-lg bg-gradient-to-b from-transparent via-white/50 to-white/90 lg:via-white/20 lg:to-white/50',
+          'h-full w-full rounded-lg bg-gradient-to-b from-transparent via-slate-100/50 to-blue-300/50 lg:via-white/20 lg:to-white/50',
           className
         )}
       >
         <div className="flex flex-col items-center justify-end w-full h-full space-y-2 text-center rounded-b-lg text-slate-800 md:space-y-3">
           <div
             className={twMerge(
-              'flex w-full flex-col items-center space-y-2 rounded-b-lg p-4 lg:backdrop-blur-md',
+              'flex w-full flex-col items-center space-y-2 rounded-b-lg p-4 lg:backdrop-blur-md bg-gradient-to-b lg:to-blue-300/50  lg:from-slate-400/40 ',
               robotoFlex.className
             )}
           >
-            <h2 className="text-3xl font-semibold leading-8 text-slate-800 lg:text-4xl">
+            <h2 className="text-3xl font-semibold leading-8 text-slate-800 lg:text-4xl drop-shadow-darker">
               {title}
             </h2>
-            <p className="hidden m-0 text-lg sm:block" style={{ margin: 0 }}>
+            <p
+              className="hidden m-0 text-lg sm:block drop-shadow-md"
+              style={{ margin: 0 }}
+            >
               {description}
             </p>
             <Link href={'/nosotros'}>
-              <Button className="px-6 py-3 text-sm transition duration-300 ease-in-out rounded-full sm:text-md bg-emerald-500 hover:bg-opacity-90 sm:bg-opacity-50">
+              <Button className="px-6 py-3 text-sm transition duration-300 ease-in-out rounded-full shadow-md hover:shadow-lg sm:text-md bg-emerald-500 hover:bg-opacity-90 sm:bg-opacity-50">
                 {buttonText} <ChevronRight className="ml-1" />
               </Button>
             </Link>

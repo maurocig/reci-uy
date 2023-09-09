@@ -84,7 +84,7 @@ export default function Home() {
             <h2 className="flex items-center w-full gap-2 mt-0 text-2xl font-semibold text-center sm:text-start">
               <Wrench className="inline" size={17} /> Servicio técnico
             </h2>
-            <p className="ml-6">
+            <p className="mb-2 xl:text-lg text-gray-400 ms-[25px]">
               Realizado por técnicos especializados Thermo King.
             </p>
             <FeatureList
@@ -113,17 +113,24 @@ export default function Home() {
           <h2 className="flex items-center w-full gap-2 mb-2 text-2xl font-semibold text-center sm:text-start">
             <FileText className="inline" size={17} /> Asesoramiento
           </h2>
+
           <div
             style={{
               backgroundImage: 'url(./images/asesoramiento-2.jpg)',
             }}
             className="bg-left-bottom bg-cover rounded-lg"
           >
-            <div className="p-4 overflow-hidden text-white rounded-lg backdrop-brightness-50 backdrop-blur-sm lg:p-6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non esse
-              quibusdam sed doloremque magni quae omnis, asperiores iusto itaque
-              at delectus voluptas laudantium odit voluptate, fugit, tempore
-              assumenda explicabo magnam!
+            <div className="h-full p-4 space-y-4 text-lg text-white rounded-lg overflow:hidden backdrop-brightness-75 backdrop-blur-sm bg-slate-800/70 lg:p-6">
+              <p>
+                Nuestro compromiso es brindarle un asesoramiento experto y
+                personalizado para ayudarlo a tomar decisiones informadas.
+              </p>
+              <p>
+                Nuestro equipo de profesionales con experiencia en la industria
+                lo guiará a lo largo de todo el proceso de selección,
+                asegurándose de que obtenga la solución perfecta que se adapte a
+                sus necesidades específicas.
+              </p>
             </div>
           </div>
         </Box>
@@ -135,13 +142,20 @@ export default function Home() {
             style={{
               backgroundImage: 'url(./images/serie-t.jpg)',
             }}
-            className="bg-cover rounded-lg"
+            className="h-full bg-cover rounded-lg"
           >
-            <div className="p-4 rounded-lg overflow:hidden backdrop-brightness-75 backdrop-blur-sm bg-slate-700/20 lg:p-6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non esse
-              quibusdam sed doloremque magni quae omnis, asperiores iusto itaque
-              at delectus voluptas laudantium odit voluptate, fugit, tempore
-              assumenda explicabo magnam!
+            <div className="h-full p-4 space-y-4 text-lg text-white rounded-lg overflow:hidden backdrop-brightness-75 backdrop-blur-sm bg-slate-800/60 lg:p-6">
+              <p>
+                Sabemos que la confiabilidad y el rendimiento continuo de sus
+                activos son esenciales para su negocio de transporte carretero.
+                Por eso, además de la venta de equipamiento también ofrecemos un
+                excepcional servicio post venta.
+              </p>
+              <p>
+                Ofrecemos un soporte integral que abarca desde la resolución de
+                problemas técnicos hasta la disponibilidad de repuestos
+                originales.
+              </p>
             </div>
           </div>
         </Box>

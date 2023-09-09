@@ -4,6 +4,7 @@ import Box from '@/components/Box';
 import Item from '@/components/Item';
 import ItemList from '@/components/ItemList';
 import FeatureList from '@/components/feature-list';
+import Spacer from '@/components/ui/Spacer';
 import { ArrowLeft, ArrowLeftCircle, ListChecks, Sheet } from 'lucide-react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
@@ -109,9 +110,10 @@ export default function SerieCPage({}: SerieCPageProps) {
 
       <Box>
         <div className="mb-2 bg-opacity-0 rounded-lg border-cyan-100/80 ">
-          <h2 className="flex items-center w-full gap-2 mt-0 mb-2 text-2xl font-semibold text-center sm:text-start">
+          <h2 className="flex items-center w-full gap-2 mt-0 text-2xl font-semibold text-center sm:text-start">
             <ListChecks className="inline" size={17} /> Características
           </h2>
+          <Spacer className="h-4" />
           {/*
           <p className="ml-6">
             Realizado por técnicos especializados Thermo King.
@@ -129,7 +131,7 @@ export default function SerieCPage({}: SerieCPageProps) {
             />
             <FeatureList
               features={[
-                'Alimentados por tracción directa',
+                'Alimentados por transmisión directa',
                 'La mayor capacidad de refrigeración del sector',
                 'Protección integral con repuestos y servicios Thermo King',
                 'Eficiencia y sostenibilidad incrementadas',

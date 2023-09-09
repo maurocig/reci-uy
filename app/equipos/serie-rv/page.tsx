@@ -4,6 +4,7 @@ import Box from '@/components/Box';
 import Item from '@/components/Item';
 import ItemList from '@/components/ItemList';
 import FeatureList from '@/components/feature-list';
+import Spacer from '@/components/ui/Spacer';
 import { ArrowLeft, ArrowLeftCircle, ListChecks, Sheet } from 'lucide-react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
@@ -34,7 +35,7 @@ export default function SerieRvPage({}: SerieRvPageProps) {
               Serie RV
             </h2>
             <p className="text-xl text-gray-300 drop-shadow-darker">
-              Vehículos con Enfriamiento Rápido, Confiables y Revolucionarios
+              Enfriamiento rápido, confiables y revolucionarios.
             </p>
           </div>
         </div>
@@ -72,6 +73,7 @@ export default function SerieRvPage({}: SerieRvPageProps) {
           <h2 className="flex w-full gap-2 mt-0 text-2xl font-semibold text-center items-cener sm:text-start">
             Características
           </h2>
+          <Spacer className="h-4" />
           {/*
           <p className="mb-3 text-lg text-gray-400">
             Mayor capacidad y mayor eficiencia

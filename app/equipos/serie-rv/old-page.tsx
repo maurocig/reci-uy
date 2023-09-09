@@ -129,7 +129,7 @@ export default function SerieRvPage({}: SerieRvPageProps) {
             />
             <FeatureList
               features={[
-                'Alimentados por tracción directa',
+                'Alimentados por transmisión directa',
                 'La mayor capacidad de refrigeración del sector',
                 'Protección integral con repuestos y servicios Thermo King',
                 'Eficiencia y sostenibilidad incrementadas',
