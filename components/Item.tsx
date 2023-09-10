@@ -22,14 +22,14 @@ export default function Item({
   return (
     <div
       role="button"
-      className="group relative flex aspect-[3/2] w-full flex-col justify-between overflow-hidden rounded-lg bg-slate-200 shadow-lg hover:scale-[102%] duration-100  hover:drop-shadow-lg sm:aspect-square"
+      className="group relative flex aspect-[3/2] w-full flex-col justify-between overflow-hidden rounded-lg bg-slate-200 shadow-lg sm:aspect-square"
     >
       <div className="relative w-full h-full overflow-hidden rounded-lg bg-gradient-to-b from-gray-100 to-sky-200 ring-gray-400">
         <Image
           src={product.thumbnail}
           fill
           alt="Product Image"
-          className="relative object-cover transition-all duration-100 group-hover:drop-shadow-xl drop-shadow-lg group-hover:scale-[103%]"
+          className="relative object-cover transition drop-shadow-lg group-hover:scale-105 group-hover:drop-shadow-xl"
         />
       </div>
 
@@ -38,7 +38,7 @@ export default function Item({
         <p
           className={twMerge(
             `ml-3 mt-3 flex items-center self-start rounded-full shadow-sm px-6 py-1 text-start
-						 font-semibold text-gray-900 ring-black transition group-hover:shadow-md`,
+						 font-semibold text-gray-900 ring-black transition `,
             tagColor
           )}
         >
@@ -54,13 +54,13 @@ export default function Item({
         </p>
 
         {showDescription && (
-          <p className="hidden p-3 transition-all duration-100 opacity-0 bg-gradient-to-b from-transparent to-slate-900/40 group-hover:opacity-100 sm:block ">
+          <p className="hidden p-3 transition-all opacity-0 bg-gradient-to-b from-transparent to-slate-900/40 group-hover:opacity-100 sm:block ">
             {product.shortDescription}
           </p>
         )}
 
         <div className="mb-4 transition-all ">
-          <Button className="px-6 transition-all ease-in rounded-full shadow-lg opacity-100 text-md backrop-blur-md bg-emerald-500/90 text-slate-800 filter group-hover:opacity-100 sm:opacity-0">
+          <Button className="px-6 transition rounded-full shadow-lg opacity-100 text-md bg-emerald-500 text-slate-800 filter group-hover:opacity-100 sm:opacity-0">
             {buttonText} <FaChevronRight className="inline p-0 ml-2" />
           </Button>
         </div>
