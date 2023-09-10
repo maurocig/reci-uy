@@ -78,7 +78,7 @@ export default function Home() {
       </Box>
 
       {/* Servicio técnico */}
-      <Box className="lg:p-6">
+      <Box className="">
         <div className="grid w-full gap-6 lg:gap-6 h-fit sm:grid-cols-2 ">
           <div className="bg-opacity-0 rounded-lg border-cyan-100/80 ">
             <h2 className="flex items-center w-full gap-2 mt-0 text-2xl font-semibold text-center sm:text-start">
@@ -109,18 +109,15 @@ export default function Home() {
 
       {/* Panel split */}
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:gap-6">
-        <Box className="lg:p-6">
-          <h2 className="flex items-center w-full gap-2 mb-2 text-2xl font-semibold text-center sm:text-start">
-            <FileText className="inline" size={17} /> Asesoramiento
-          </h2>
-
-          <div
-            style={{
-              backgroundImage: 'url(./images/asesoramiento-2.jpg)',
-            }}
-            className="bg-left-bottom bg-cover rounded-lg"
-          >
-            <div className="h-full p-4 space-y-4 text-lg text-white rounded-lg overflow:hidden backdrop-brightness-75 backdrop-blur-sm bg-slate-800/70 lg:p-6">
+        <div
+          // style={{ backgroundImage: 'url(/images/asesoramiento-2.jpg' }}
+          className="bg-center bg-cover rounded-lg bg-opacity-5 "
+        >
+          <Box className="lg:p-6 backdrop-blur">
+            <h2 className="flex items-center w-full gap-2 mb-2 text-2xl font-semibold text-center sm:text-start">
+              <FileText className="inline" size={17} /> Asesoramiento
+            </h2>
+            <div className="space-y-2">
               <p>
                 Nuestro compromiso es brindarle un asesoramiento experto y
                 personalizado para ayudarlo a tomar decisiones informadas.
@@ -132,19 +129,19 @@ export default function Home() {
                 sus necesidades específicas.
               </p>
             </div>
-          </div>
-        </Box>
-        <Box className="lg:p-6">
-          <h2 className="flex items-center w-full gap-2 mb-2 text-2xl font-semibold text-center sm:text-start">
-            <CalendarCheck2 className="inline" size={18} /> Servicio post venta
-          </h2>
-          <div
-            style={{
-              backgroundImage: 'url(./images/serie-t.jpg)',
-            }}
-            className="h-full bg-cover rounded-lg"
-          >
-            <div className="h-full p-4 space-y-4 text-lg text-white rounded-lg overflow:hidden backdrop-brightness-75 backdrop-blur-sm bg-slate-800/60 lg:p-6">
+          </Box>
+        </div>
+        <div
+          // style={{ backgroundImage: 'url(/images/asesoramiento-stock.jpeg' }}
+          className="bg-center bg-cover rounded-lg bg-opacity-5 "
+        >
+          <Box className="lg:p-6 backdrop-blur">
+            <h2 className="flex items-center w-full gap-2 mb-2 text-2xl font-semibold text-center sm:text-start">
+              <CalendarCheck2 className="inline" size={18} /> Servicio post
+              venta
+            </h2>
+
+            <div className="space-y-2">
               <p>
                 Sabemos que la confiabilidad y el rendimiento continuo de sus
                 activos son esenciales para su negocio de transporte carretero.
@@ -152,13 +149,12 @@ export default function Home() {
                 excepcional servicio post venta.
               </p>
               <p>
-                Ofrecemos un soporte integral que abarca desde la resolución de
-                problemas técnicos hasta la disponibilidad de repuestos
-                originales.
+                Nuestro soporte integral abarca desde la resolución de problemas
+                técnicos hasta la disponibilidad de repuestos originales.
               </p>
             </div>
-          </div>
-        </Box>
+          </Box>
+        </div>
       </div>
 
       {/* <Box className="bg-red-500 bg-opacity-100"> */}

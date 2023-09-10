@@ -60,7 +60,7 @@ export default function Item({
         )}
 
         <div className="mb-4 transition-all ">
-          <Button className="px-6 transition rounded-full shadow-lg opacity-100 text-md bg-emerald-500 text-slate-800 filter group-hover:opacity-100 sm:opacity-0">
+          <Button className="px-6 overflow-hidden transition rounded-full shadow-lg opacity-100 text-md bg-emerald-500 text-slate-800 filter group-hover:opacity-100 sm:opacity-0">
             {buttonText} <FaChevronRight className="inline p-0 ml-2" />
           </Button>
         </div>

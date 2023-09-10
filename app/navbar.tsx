@@ -24,7 +24,7 @@ export default function Navbar({}: NavbarProps) {
   const mobileMenu = useMobileMenu();
 
   return (
-    <div className="fixed z-50 flex flex-col h-[65px] w-full items-center justify-center bg-gradient-to-br from-slate-100 to-white/[65%] shadow-lg shadow-black/25 backdrop-blur-lg backdrop-filter">
+    <div className="fixed z-50 flex flex-col h-[65px] w-full items-center justify-center bg-gradient-to-br from-slate-100 to-white/80 shadow-lg shadow-black/25 backdrop-blur-sm backdrop-filter">
       <div className="flex self-center justify-between w-full px-4 7xl:px-0 max-w-7xl">
         <div className="">
           <Link href={'/'}>

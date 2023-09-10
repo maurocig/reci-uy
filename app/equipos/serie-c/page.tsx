@@ -119,23 +119,24 @@ export default function SerieCPage({}: SerieCPageProps) {
             Realizado por técnicos especializados Thermo King.
           </p>
 						*/}
-          <div className="grid grid-cols-1 gap-2 text-lg lg:gap-4 lg:grid-cols-2">
+          <div className="grid grid-cols-1 gap-2 text-lg lg:gap-4 lg:grid-cols-5">
             <FeatureList
+              className="lg:col-span-2"
               features={[
                 'Diseño ligero y compacto',
                 'Mayor caudal de aire',
-                'Protección fiable para cargas secas y congeladas',
-                'Controlador renovado para un funcionamiento sin errores',
-                'Carga de refrigerante reducida',
+                'Alimentados por transmisión directa',
               ]}
             />
             <FeatureList
+              className="lg:col-span-3"
               features={[
-                'Alimentados por transmisión directa',
-                'La mayor capacidad de refrigeración del sector',
+                'Carga de refrigerante reducida',
                 'Protección integral con repuestos y servicios Thermo King',
-                'Eficiencia y sostenibilidad incrementadas',
-                'Rendimiento de calefacción optimizado',
+                'Controlador renovado para un funcionamiento sin errores',
+                // 'Rendimiento de calefacción optimizado',
+                // 'La mayor capacidad de refrigeración del sector',
+                // 'Eficiencia y sostenibilidad incrementadas',
               ]}
             />
           </div>

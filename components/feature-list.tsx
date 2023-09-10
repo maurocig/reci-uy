@@ -2,11 +2,12 @@ import { Check, CheckSquare } from 'lucide-react';
 
 type FeatureListProps = {
   features: string[];
+  className?: string;
 };
 
-export default function FeatureList({ features }: FeatureListProps) {
+export default function FeatureList({ features, className }: FeatureListProps) {
   return (
-    <div>
+    <div className={className || ''}>
       <ul className="flex flex-col gap-2 ml-2 lg:ml-3">
         {features.map((feature) => (
           <li key={feature} className="flex items-center gap-2">

@@ -92,17 +92,17 @@ export default function SerieVPage({}: SerieVPageProps) {
           <div className="grid grid-cols-1 gap-2 text-lg lg:gap-4 lg:grid-cols-2">
             <FeatureList
               features={[
-                'Rendimiento óptimo',
-                'Menor consumo de combustible',
-                'Transmisión directa',
                 'Funcionamiento dual (eléctrico y carretero)',
+                'Sin motor diesel',
+                'Nivel de ruido reducido',
+                // 'Transmisión directa',
               ]}
             />
             <FeatureList
               features={[
-                'Eficiencia y sostenibilidad mejoradas',
-                'Mayor capacidad de refrigeración',
-                'Protección completa con repuestos y servicios Thermo King',
+                // 'Eficiencia y sostenibilidad mejoradas',
+                'Alta capacidad de refrigeración',
+                'Bajo nivel de emisiones',
                 'Rendimiento de calefacción optimizado',
               ]}
             />

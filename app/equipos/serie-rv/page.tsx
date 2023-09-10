@@ -79,19 +79,21 @@ export default function SerieRvPage({}: SerieRvPageProps) {
             Mayor capacidad y mayor eficiencia
           </p>
 					*/}
-          <div className="grid grid-cols-1 gap-2 text-lg lg:gap-4 lg:grid-cols-2">
+          <div className="grid grid-cols-1 text-lg lg:gap-4 lg:grid-cols-5">
             <FeatureList
+              className="lg:col-span-2"
               features={[
-                'Serpentina del evaporador más grande para un intercambio de calor más rápido',
-                'Pre-enfriamiento rápido para una mayor eficiencia',
+                // 'Serpentina del evaporador más grande para un intercambio de calor más rápido',
+                'Pre-enfriamiento rápido',
                 'Robusto compresor TK',
-                'Nuevo sistema de control eléctrico con alta confiabilidad',
+                'Nuevo sistema de control eléctrico',
               ]}
             />
             <FeatureList
+              className="lg:col-span-3"
               features={[
-                'Mayor capacidad de enfriamiento para una mejor protección de la carga',
-                'Ligero y compacto para una instalación fácil, especialmente para vehículos ligeros y mini',
+                // 'Mayor capacidad de enfriamiento para una mejor protección de la carga',
+                'Ligero y compacto para una instalación fácil',
                 'Menos carga de refrigerante para entornos delicados',
                 'Diseño de relé extraíble para un mejor mantenimiento',
               ]}
