@@ -2,8 +2,8 @@
 
 import { cn } from '@/lib/utils';
 import { Product } from '@/types';
-import Image from 'next/image';
 import Link from 'next/link';
+import { IconType } from 'react-icons';
 import Item from './Item';
 
 export interface ProductItem extends Product {
@@ -17,6 +17,7 @@ type ItemListProps = {
   description: string;
   gridCols?: string;
   buttonText?: string;
+  buttonIcon?: IconType;
   newTab?: boolean;
 };
 
@@ -28,6 +29,7 @@ export default function ItemList({
   gridCols,
   buttonText,
   newTab,
+  buttonIcon,
 }: ItemListProps) {
   products.forEach((product) => {
     switch (product.brand) {
@@ -38,7 +40,6 @@ export default function ItemList({
         product.twClass = 'bg-sky-300';
         return;
       case 'Thermo King Line':
-        // product.twClass = 'bg-sky-700 text-white text-lg';
         product.twClass = 'bg-sky-300 text-lg ';
         return;
       case 'Fibrasil':
@@ -67,6 +68,7 @@ export default function ItemList({
                     showDescription={showDescription}
                     tagColor={product.twClass}
                     buttonText={buttonText || 'Ver producto'}
+                    buttonIcon={buttonIcon}
                   />
                 </Link>
               </div>

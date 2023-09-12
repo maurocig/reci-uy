@@ -2,6 +2,7 @@ import { cn } from '@/lib/utils';
 import { Product } from '@/types';
 import { Snowflake, SnowflakeIcon } from 'lucide-react';
 import Image from 'next/image';
+import { IconType } from 'react-icons';
 import { FaChevronRight } from 'react-icons/fa';
 import { twMerge } from 'tailwind-merge';
 import { Button } from './ui/button';
@@ -9,6 +10,7 @@ import { Button } from './ui/button';
 type ItemProps = {
   product: Product;
   buttonText: string;
+  buttonIcon?: IconType;
   showDescription?: boolean;
   tagColor?: string | undefined;
 };
@@ -17,6 +19,7 @@ export default function Item({
   showDescription,
   product,
   tagColor,
+  buttonIcon: ButtonIcon,
   buttonText,
 }: ItemProps) {
   return (
@@ -29,7 +32,7 @@ export default function Item({
           src={product.thumbnail}
           fill
           alt="Product Image"
-          className="relative object-cover transition drop-shadow-lg group-hover:scale-105 group-hover:drop-shadow-xl"
+          className="relative object-cover transition rounded-xl group-hover:rounded-xl drop-shadow-lg group-hover:scale-105 group-hover:drop-shadow-xl"
         />
       </div>
 
@@ -61,7 +64,12 @@ export default function Item({
 
         <div className="mb-4 transition-all ">
           <Button className="px-6 overflow-hidden transition rounded-full shadow-lg opacity-100 text-md bg-emerald-500 text-slate-800 filter group-hover:opacity-100 sm:opacity-0">
-            {buttonText} <FaChevronRight className="inline p-0 ml-2" />
+            {buttonText}{' '}
+            {ButtonIcon ? (
+              <ButtonIcon className="inline p-0 ml-2" />
+            ) : (
+              <FaChevronRight className="inline p-0 ml-2" />
+            )}
           </Button>
         </div>
       </div>
