@@ -8,6 +8,7 @@ import Spacer from '@/components/ui/Spacer';
 import { ArrowLeft, ArrowLeftCircle, ListChecks, Sheet } from 'lucide-react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
+import { HiExternalLink } from 'react-icons/hi';
 
 type SerieCPageProps = {};
 
@@ -147,6 +148,8 @@ export default function SerieCPage({}: SerieCPageProps) {
         <ItemList
           title="Modelos Serie C"
           description="Todos los modelos en esta serie"
+          buttonText="Ver producto"
+          buttonIcon={HiExternalLink}
           newTab
           products={[
             {

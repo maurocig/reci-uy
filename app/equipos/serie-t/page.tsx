@@ -50,7 +50,7 @@ export default function SerieTPage({}: SerieTPageProps) {
 
       <div className="grid w-full grid-cols-1 gap-4 lg:gap-6 lg:grid-cols-2 xl:grid-cols-3 ">
         <div
-          className="block order-2 lg:order-1 min-h-[300px] col-span-1 bg-cover rounded-lg drop-shadow-darker bg-[top_right_-12rem] lg:col-span-1"
+          className="block order-2 lg:order-1 min-h-[300px] col-span-1 bg-cover rounded-lg drop-shadow-darker bg-center md:bg-[top_right_-12rem] lg:col-span-1"
           style={{ backgroundImage: 'url(/images/serie-t-billboard.jpg)' }}
         ></div>
 

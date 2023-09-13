@@ -89,13 +89,22 @@ export const equipos = [
     productType: 'equipos',
     brand: 'Thermo King',
     line: 'Trailer',
-    model: 'SLXI 400',
+    series: 'Serie SLXi',
+    model: 'slxi-400',
     shortDescription:
-      'Líder en eficiencia y performance, ofrece máximo control de temperatura gracias al controlador Smart Reefer SR3 y sistema OptiSet Plus.',
+      'La próxima generación de equipos de refrigeración para el transporte',
     price: 500,
     thumbnail: '/images/equipos/slxi-400.png',
+    billboardImage: '/images/slxi-400-billboard.jpg',
+    image: '/images/slxi-400.jpg',
     stock: 3,
-    url: '/equipos/trailer',
+    url: '/equipos/trailer/slxi-400',
+    urlSpecs: 'https://thermokingzapp.com/download/pdf-collection/SLXi_ES.pdf',
+    urlTk:
+      'https://europe.thermoking.com/es/slxi/slxi-range-and-specifications/slxi-400',
+
+    description:
+      'El equipo SLXi 400 de Thermo King representa la vanguardia en soluciones de refrigeración para el transporte. Con una capacidad excepcional y un diseño que prioriza la eficiencia, esta unidad redefine la forma en que se maneja el control de temperatura durante el transporte de mercancías. Desarrollado tras rigurosas pruebas y años de experiencia, el SLXi 400 ofrece un rendimiento de élite con un consumo de energía optimizado, garantizando que tus productos lleguen en perfectas condiciones a su destino, sin importar las condiciones externas.',
   },
   {
     id: '9',
@@ -103,13 +112,15 @@ export const equipos = [
     productType: 'equipos',
     brand: 'Thermo King',
     line: 'Trailer',
-    model: 'A-500',
+    model: 'a-500',
     shortDescription:
       'Líder en eficiencia y performance, ofrece máximo control de temperatura gracias al controlador Smart Reefer SR3 y sistema OptiSet Plus.',
     price: 500,
     thumbnail: '/images/equipos/a-500.png',
     stock: 3,
-    url: '/equipos/trailer',
+    url: '/equipos/trailer/a-500',
+    urlTk:
+      'https://europe.thermoking.com/es/slxi/slxi-range-and-specifications/slxi-400',
   },
   {
     id: '10',
@@ -117,12 +128,12 @@ export const equipos = [
     productType: 'equipos',
     brand: 'Thermo King',
     line: 'Trailer',
-    model: 'Precedent C-600',
+    model: 'precedent',
     shortDescription:
       'Líder en eficiencia y performance, ofrece máximo control de temperatura gracias al controlador Smart Reefer SR3 y sistema OptiSet Plus.',
     price: 500,
     thumbnail: '/images/equipos/precedent.png',
     stock: 3,
-    url: '/equipos/trailer',
+    url: '/equipos/trailer/precedent',
   },
 ];

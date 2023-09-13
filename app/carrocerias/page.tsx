@@ -30,6 +30,7 @@ export default function carroceriasPage() {
           title="Carga general"
           description="Línea Liderkit"
           products={seca}
+          newTab
         />
       </Box>
       <Box className="lg:p-6">
@@ -37,6 +38,7 @@ export default function carroceriasPage() {
           title="Carga refrigerada"
           description="Líneas Liderkit y Fibrasil"
           products={refrigerados}
+          newTab
         />
       </Box>
       <Spacer />

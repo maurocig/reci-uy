@@ -38,6 +38,7 @@ export default function EquiposPage() {
           title="Línea Truck"
           description="Unidades autónomas para camiones medianos y grandes"
           products={truck}
+          buttonText="Ver productos"
         />
       </Box>
       <Box className="lg:p-6">

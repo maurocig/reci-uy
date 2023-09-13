@@ -9,7 +9,7 @@ export const carrocerias = [
     shortDescription: 'Ultra ligero y Gran tonelaje.',
     price: 5000,
     stock: 4,
-    url: '',
+    url: 'https://liderkit.com/productos/carrocerias-en-kits/isotermos/',
   },
   {
     title: 'Aluminio',
@@ -22,7 +22,7 @@ export const carrocerias = [
       'Construídas con paneles de alumino y perfilería de acero, son una alternativa ligera y robusta para carga seca.',
     price: 5000,
     stock: 4,
-    url: '',
+    url: 'https://liderkit.com/productos/carrocerias-en-kits/aluminio/',
   },
   {
     title: 'Sandwich',
@@ -35,7 +35,7 @@ export const carrocerias = [
       'Construída con paneles LIDERfoam de 30 o 18 mm. La más liviana del mercado. Resistencia excepcional.',
     price: 7000,
     stock: 2,
-    url: '',
+    url: 'https://liderkit.com/productos/carrocerias-en-kits/sandwich/',
   },
   {
     title: 'Plywood',
@@ -48,7 +48,7 @@ export const carrocerias = [
       'Compuesta por paneles de contrachapado reforzados que garantizan rigidez, estanqueidad e impermeabilidad del conjunto.',
     price: 7000,
     stock: 2,
-    url: '',
+    url: 'https://liderkit.com/productos/carrocerias-en-kits/plywood/',
   },
   {
     title: 'Poliéster',
@@ -61,7 +61,7 @@ export const carrocerias = [
       'Planchas de poliester reforzado con fibra de vidrio de 2mm fortalecida con omegas verticales de acero. Alternativa liviana y fácilmente reparable.',
     price: 7000,
     stock: 2,
-    url: '',
+    url: 'https://liderkit.com/productos/carrocerias-en-kits/poliester/',
   },
   {
     title: 'Botellero',
@@ -74,6 +74,18 @@ export const carrocerias = [
       'Sistema de doble apertura lateral, ideal para el reparto de mercaderías que requieren una rápida y fácil descarga como bebidas.',
     price: 7000,
     stock: 2,
-    url: '',
+    url: 'https://liderkit.com/productos/carrocerias-en-kits/botellero/',
+  },
+  {
+    title: 'Ice Truck',
+    thumbnail: '/images/carrocerias/edit/ice-truck-fb.png',
+    productType: 'carrocerias',
+    brand: 'Fibrasil',
+    line: 'Carga refrigerada',
+    model: 'ice-truck',
+    shortDescription: 'Ultra ligero y Gran tonelaje.',
+    price: 5000,
+    stock: 4,
+    url: 'https://www.fibrasilcarrocerias.com.br/es/productos/bau-ice-truck-1/',
   },
 ];

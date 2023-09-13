@@ -8,6 +8,7 @@ import Spacer from '@/components/ui/Spacer';
 import { ArrowLeft, ArrowLeftCircle, ListChecks, Sheet } from 'lucide-react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
+import { HiExternalLink } from 'react-icons/hi';
 
 type SerieRvPageProps = {};
 
@@ -107,6 +108,8 @@ export default function SerieRvPage({}: SerieRvPageProps) {
           title="Modelos Serie RV"
           description="Todos los modelos en esta serie"
           newTab
+          buttonText="Ver producto"
+          buttonIcon={HiExternalLink}
           products={[
             {
               title: 'RV-380',
