@@ -91,8 +91,10 @@ export const equipos = [
     line: 'Trailer',
     series: 'Serie SLX',
     model: 'slxi-400',
-    shortDescription:
+    seriesDescription:
       'La próxima generación de equipos de refrigeración para el transporte',
+    modelDescription: 'Alto rendimiento, bajas emisiones',
+    shortDescription: '',
     price: 500,
     thumbnail: '/images/equipos/slxi-400.png',
     billboardImage: '/images/slxi-400-billboard.jpg',
