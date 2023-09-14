@@ -48,7 +48,7 @@ export default async function ModelPage({ params }: ModelPageProps) {
               {equipo.series}
             </h2>
             <p className="text-xl text-gray-300 drop-shadow-darker">
-              {equipo.shortDescription}
+              {equipo.seriesDescription}
             </p>
           </div>
         </div>
@@ -64,13 +64,17 @@ export default async function ModelPage({ params }: ModelPageProps) {
         <Box className="flex flex-col col-span-1 gap-3 lg:order-2 xl:col-span-2 ">
           <span>
             <h2 className="flex items-center w-full gap-2 mt-0 text-2xl font-semibold text-center sm:text-start">
-              {equipo.title}
+              Modelo {equipo.title}
             </h2>
-            <h3 className="text-lg text-gray-400">Eficiencia de avanzada</h3>
+            <h3 className="text-lg text-gray-400">
+              {equipo.modelDescription ? equipo.modelDescription : ''}
+            </h3>
           </span>
           <p>{equipo.description}</p>
+          {/*
           <p></p>
           <p></p>
+					*/}
         </Box>
       </div>
 

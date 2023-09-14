@@ -122,7 +122,9 @@ export const equipos = [
     line: 'Trailer',
     series: 'Serie Advancer',
     model: 'a-500',
-    shortDescription: 'El futuro de la refrigeración para remolque',
+    modelDescription: 'Eficiencia de avanzada',
+    seriesDescription: 'El futuro de la refrigeración para remolque',
+    shortDescription: '',
     price: 500,
     thumbnail: '/images/equipos/a-500.png',
     billboardImage: '/images/advancer-billboard.jpg',
@@ -143,34 +145,35 @@ export const equipos = [
       'La unidad de alta capacidad más silenciosa del mercado',
     ],
   },
-  /* { */
-  /*   id: '9', */
-  /*   title: 'A 500', */
-  /*   productType: 'equipos', */
-  /*   brand: 'Thermo King', */
-  /*   line: 'Trailer', */
-  /*   model: 'a-500', */
-  /*   shortDescription: */
-  /*     'Líder en eficiencia y performance, ofrece máximo control de temperatura gracias al controlador Smart Reefer SR3 y sistema OptiSet Plus.', */
-  /*   price: 500, */
-  /*   thumbnail: '/images/equipos/a-500.png', */
-  /*   stock: 3, */
-  /*   url: '/equipos/trailer/a-500', */
-  /*   urlTk: */
-  /*     'https://europe.thermoking.com/es/slxi/slxi-range-and-specifications/slxi-400', */
-  /* }, */
   {
     id: '10',
-    title: 'Precedent',
+    title: 'C-600',
     productType: 'equipos',
     brand: 'Thermo King',
     line: 'Trailer',
-    model: 'precedent',
-    shortDescription:
-      'Líder en eficiencia y performance, ofrece máximo control de temperatura gracias al controlador Smart Reefer SR3 y sistema OptiSet Plus.',
+    series: 'Serie Precedent',
+    model: 'precedent-c-600',
+    modelDescription: 'Eficiencia y control en cualquier entorno',
+    seriesDescription: 'Tradición y tecnología de vanguardia',
     price: 500,
     thumbnail: '/images/equipos/precedent.png',
+    billboardImage: '/images/precedent-billboard.jpg',
+    image: '/images/precedent-c-600.jpg',
     stock: 3,
-    url: '/equipos/trailer/precedent',
+    url: '/equipos/trailer/precedent-c-600',
+    urlSpecs:
+      'http://www.thermokingcapello.com.ar/descargas/20150522140521.pdf',
+    urlTk:
+      'https://www.thermoking.com/la/es/products.road.trailers.single_temperature_trailers.precedent_c_600_trailer_refrigeration.html',
+    description:
+      'El refrigerado C-600 es una forma rentable de aprovechar los beneficios de la línea Precedent, que establece el estándar en refrigeración para transporte. El C-600 ofrece una eficiencia y confiabilidad sobresalientes junto con un control de temperatura superior. La plataforma Precedent representa lo último en tecnología de refrigeración para el transporte, pero está respaldada por algo que solo se puede construir lentamente con el tiempo: la tranquilidad de Thermo King. Precedent toma todo lo que hemos aprendido desde que inventamos la refrigeración para transporte en 1938 y le brinda un rendimiento líder en la industria y la calidad y confiabilidad por las que Thermo King es conocido.',
+    features: [
+      'Ahorro de combustible de doble dígito',
+      'Opciones de gestión de flota avanzadas',
+      'Componentes de alta calidad',
+      'Arquitectura diesel-electrica innovadora',
+      'Total conformidad con regulaciones ambientales',
+      'Motor eficiente y de bajas emisiones',
+    ],
   },
 ];
