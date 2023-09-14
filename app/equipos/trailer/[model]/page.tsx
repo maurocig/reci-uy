@@ -64,7 +64,7 @@ export default async function ModelPage({ params }: ModelPageProps) {
         <Box className="flex flex-col col-span-1 gap-3 lg:order-2 xl:col-span-2 ">
           <span>
             <h2 className="flex items-center w-full gap-2 mt-0 text-2xl font-semibold text-center sm:text-start">
-              Modelo {equipo.title}
+              {equipo.title}
             </h2>
             <h3 className="text-lg text-gray-400">
               {equipo.modelDescription ? equipo.modelDescription : ''}

@@ -118,7 +118,7 @@ export const equipos = [
   },
   {
     id: '9',
-    title: 'A 500',
+    title: 'Advancer A 500',
     productType: 'equipos',
     brand: 'Thermo King',
     line: 'Trailer',
@@ -149,7 +149,7 @@ export const equipos = [
   },
   {
     id: '10',
-    title: 'C-600',
+    title: 'Precedent C 600',
     productType: 'equipos',
     brand: 'Thermo King',
     line: 'Trailer',
