@@ -56,7 +56,8 @@ export default async function ModelPage({ params }: ModelPageProps) {
 
       <div className="grid w-full grid-cols-1 gap-4 lg:gap-6 lg:grid-cols-2 xl:grid-cols-3 ">
         <div
-          className="block order-2 lg:order-1 min-h-[300px] col-span-1 bg-cover bg-center rounded-lg drop-shadow-darker lg:bg-[right_-5rem_top] lg:col-span-1"
+          // className="block order-2 lg:order-1 min-h-[300px] col-span-1 bg-cover bg-center rounded-lg drop-shadow-darker lg:bg-[right_-5rem_top] lg:col-span-1"
+          className="block order-2 lg:order-1 min-h-[300px] col-span-1 bg-cover bg-center rounded-lg drop-shadow-darker lg:col-span-1"
           style={{ backgroundImage: `url(${equipo.image})` }}
         ></div>
 
@@ -85,29 +86,31 @@ export default async function ModelPage({ params }: ModelPageProps) {
           </p>
 					*/}
           <div className="grid grid-cols-1 gap-2 text-lg lg:gap-4 lg:grid-cols-2">
-            <FeatureList
-              features={[
-                'Funcionamiento fiable',
-                'Las emisiones más bajas',
-                'Nivel sonoro reducido',
-                // 'Transmisión directa',
-              ]}
-            />
-            <FeatureList
-              features={[
-                // 'Eficiencia y sostenibilidad mejoradas',
-                'Componentes de calidad demostrada',
-                'Óptima gestión y supervisión de los datos',
-                'Rendimiento inmejorable',
-              ]}
-            />
+            {equipo.features ? (
+              <>
+                <FeatureList
+                  features={[
+                    equipo.features[0],
+                    equipo.features[1],
+                    equipo.features[2],
+                  ]}
+                />
+                <FeatureList
+                  features={[
+                    equipo.features[3],
+                    equipo.features[4],
+                    equipo.features[5],
+                  ]}
+                />
+              </>
+            ) : null}
           </div>
         </div>
       </Box>
 
       <Box>
         {/* grid */}
-        <div className="grid w-full h-full grid-cols-2 gap-4 lg:gap-6 lg:grid-cols-3 ">
+        <div className="grid w-full h-full grid-cols-1 gap-4 md:grid-cols-2 lg:gap-6 lg:grid-cols-3 ">
           <LinkIcon
             text="Ver especificaciones"
             subText="Descargar PDF"
