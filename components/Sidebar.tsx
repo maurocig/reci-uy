@@ -33,29 +33,30 @@ export default function Sidebar({ className }: SidebarProps) {
       name: 'Equipos de frío',
       url: '/equipos',
       icon: TbSnowflake,
-      active: pathname === '/equipos',
+      // active: pathname === '/equipos',
+      active: pathname.includes('/equipos'),
     },
     {
       name: 'Carrocerías',
       url: '/carrocerias',
       icon: RiTruckFill,
-      active: pathname === '/carrocerias',
+      active: pathname.includes('/carrocerias'),
     },
     {
       name: 'Accesorios',
       url: '/accesorios',
       icon: FaTruckLoading,
-      active: pathname === '/accesorios',
+      active: pathname.includes('/accesorios'),
     },
   ];
 
   const otherItems = [
-    {
-      name: 'Servicios',
-      url: '/servicios',
-      icon: FaWrench,
-      active: pathname === '/servicios',
-    },
+    // {
+    //   name: 'Servicios',
+    //   url: '/servicios',
+    //   icon: FaWrench,
+    //   active: pathname === '/servicios',
+    // },
     {
       name: 'Nosotros',
       url: '/nosotros',

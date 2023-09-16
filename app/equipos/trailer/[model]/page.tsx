@@ -56,10 +56,9 @@ export default async function ModelPage({ params }: ModelPageProps) {
 
       <div className="grid w-full grid-cols-1 gap-4 lg:gap-6 lg:grid-cols-2 xl:grid-cols-3 ">
         <div
-          // className="block order-2 lg:order-1 min-h-[300px] col-span-1 bg-cover bg-center rounded-lg drop-shadow-darker lg:bg-[right_-5rem_top] lg:col-span-1"
           className="block order-2 lg:order-1 min-h-[300px] col-span-1 bg-cover bg-center rounded-lg drop-shadow-darker lg:col-span-1"
           style={{ backgroundImage: `url(${equipo.image})` }}
-        ></div>
+        />
 
         <Box className="flex flex-col col-span-1 gap-3 lg:order-2 xl:col-span-2 ">
           <span>

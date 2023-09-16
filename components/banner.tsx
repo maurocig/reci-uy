@@ -36,15 +36,15 @@ export default function Banner({
         <div className="flex flex-col items-center justify-end w-full h-full space-y-2 text-center rounded-b-lg text-slate-800 md:space-y-3">
           <div
             className={twMerge(
-              'flex w-full flex-col items-center space-y-2 rounded-b-lg p-4 lg:backdrop-blur-sm bg-gradient-to-b lg:to-blue-300/60  lg:from-slate-200/60 ',
+              'flex w-full flex-col items-center space-y-2 rounded-b-lg p-4 lg:backdrop-blur bg-gradient-to-b lg:to-blue-300/60  lg:from-white/60 ',
               robotoFlex.className
             )}
           >
-            <h2 className="text-3xl font-semibold leading-8 text-slate-800 lg:text-4xl drop-shadow-darker">
+            <h2 className="text-3xl font-semibold leading-8 text-sky-900 lg:text-transparent bg-clip-text bg-gradient-to-r from-sky-700 to-cyan-700 lg:text-4xl drop-shadow-darker">
               {title}
             </h2>
             <p
-              className="hidden m-0 text-lg sm:block drop-shadow-md"
+              className="hidden m-0 text-lg text-cyan-900 sm:block drop-shadow-md"
               style={{ margin: 0 }}
             >
               {description}

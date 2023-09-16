@@ -4,6 +4,7 @@ import BannerLogos from '@/components/banner-logos';
 import FeatureList from '@/components/feature-list';
 import HomeIconsSection from '@/components/home-icons-section';
 import {
+  ArrowRightCircle,
   CalendarCheck,
   CalendarCheck2,
   CheckSquare,
@@ -128,6 +129,13 @@ export default function Home() {
                 asegurándose de que obtenga la solución perfecta que se adapte a
                 sus necesidades específicas.
               </p>
+              <a
+                href="/contacto"
+                className="flex items-center justify-start w-full gap-2 opacity-80 hover:opacity-100 group text-cyan-400"
+              >
+                <span className="group-hover:underline">Quiero asesorarme</span>{' '}
+                <ArrowRightCircle size={15} />
+              </a>
             </div>
           </Box>
         </div>
@@ -135,7 +143,7 @@ export default function Home() {
           // style={{ backgroundImage: 'url(/images/asesoramiento-stock.jpeg' }}
           className="bg-center bg-cover rounded-lg bg-opacity-5 "
         >
-          <Box className="lg:p-6 backdrop-blur">
+          <Box className="h-full lg:p-6 backdrop-blur">
             <h2 className="flex items-center w-full gap-2 mb-2 text-2xl font-semibold text-center sm:text-start">
               <CalendarCheck2 className="inline" size={18} /> Servicio post
               venta
@@ -151,6 +159,8 @@ export default function Home() {
               <p>
                 Nuestro soporte integral abarca desde la resolución de problemas
                 técnicos hasta la disponibilidad de repuestos originales.
+                Además, todos los productos cuentan con garantía original del
+                fabricante.
               </p>
             </div>
           </Box>
@@ -162,13 +172,13 @@ export default function Home() {
         <BannerLogos
           logosUrl={[
             '/images/logos/logo-lk.png',
-            '/images/logos/logo-tk-full.png',
             '/images/logos/logo-fb.png',
+            '/images/logos/logo-tk-full.png',
           ]}
           logosHorUrl={[
-            '/images/logos/logo-lk-hor-2.png',
             '/images/logos/logo-tk-hor.png',
             '/images/logos/logo-fb.png',
+            '/images/logos/logo-lk-hor-2.png',
           ]}
         />
       </div>
