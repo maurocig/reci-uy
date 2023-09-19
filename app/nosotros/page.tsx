@@ -37,18 +37,6 @@ export default function NosotrosPage() {
             subText="Contáctese con nosotros para recibir asesoramiento personalizado."
             className="bg-teal-500/90 w-[300px] p-3 hover:bg-teal-500"
           />
-
-          {/*
-          <a
-            href="/contacto"
-            className="flex items-center justify-start w-full gap-2 opacity-80 hover:opacity-100 group text-cyan-400"
-          >
-            <span className="group-hover:underline">
-              Contactate con nosotros
-            </span>{' '}
-            <ArrowRightCircle size={15} />
-          </a>
-					*/}
         </div>
       </TextImageSection>
 
