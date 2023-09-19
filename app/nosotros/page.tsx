@@ -72,8 +72,8 @@ export default function NosotrosPage() {
               funcionamiento.
             </p>
           </Box>
-          <Box className="grid grid-cols-1 gap-4 md:col-span-2 lg:gap-6 lg:grid-cols-3 bg-slate-200/70 text-slate-800">
-            <div className="col-span-1 lg:col-span-2">
+          <Box className="grid gap-4 md:grid-cols-2 md:col-span-2 lg:gap-6 bg-slate-200/70 text-slate-800">
+            <div className="col-span-1">
               <h3 className="flex items-center gap-2 text-lg font-bold lg:text-xl">
                 <Truck size={18} strokeWidth={2.5} /> Carrocerías importadas
               </h3>
