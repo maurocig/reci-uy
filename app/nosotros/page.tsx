@@ -22,7 +22,7 @@ export default function NosotrosPage() {
         title="RECI Importaciones"
         subtitle="Sobre nosotros"
       >
-        <p className="mb-3">
+        <p className="mb-3 text">
           En RECI Importaciones, somos una empresa dedicada a la venta de
           equipamiento para el transporte carretero y servicio técnico
           especializado. Con un enfoque inquebrantable en la satisfacción del
@@ -47,7 +47,7 @@ export default function NosotrosPage() {
         </p>
 
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-6">
-          <Box className="md:col-span-1 bg-slate-200/70 text-slate-800">
+          <Box className="text-black md:col-span-1 bg-slate-100/60 ring-slate-900/20">
             <h3 className="flex items-center gap-2 text-lg font-bold bg-clip-text lg:text-xl">
               <Snowflake size={18} strokeWidth={2.5} /> Equipos de Frío Thermo
               King
@@ -60,7 +60,7 @@ export default function NosotrosPage() {
               calidad.
             </p>
           </Box>
-          <Box className="md:col-span-1 bg-slate-200/70 text-slate-800">
+          <Box className="text-black md:col-span-1 bg-slate-100/60 ring-slate-900/20">
             <h3 className="flex items-center gap-2 text-lg font-bold lg:text-xl">
               <Wrench size={18} strokeWidth={2.5} /> Servicio Técnico
               Especializado
@@ -72,7 +72,7 @@ export default function NosotrosPage() {
               funcionamiento.
             </p>
           </Box>
-          <Box className="grid gap-4 md:grid-cols-2 md:col-span-2 lg:gap-6 bg-slate-200/70 text-slate-800">
+          <Box className="grid gap-4 text-black md:grid-cols-2 md:col-span-2 lg:gap-6 bg-slate-100/60 ring-slate-900/20">
             <div className="col-span-1">
               <h3 className="flex items-center gap-2 text-lg font-bold lg:text-xl">
                 <Truck size={18} strokeWidth={2.5} /> Carrocerías importadas
