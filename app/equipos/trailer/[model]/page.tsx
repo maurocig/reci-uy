@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import { FaArrowCircleRight } from 'react-icons/fa';
 import { HiDocument, HiExternalLink } from 'react-icons/hi';
 
 type ModelPageProps = {
