@@ -70,7 +70,7 @@ export default function Home() {
         title="Especialistas en transporte carretero"
         description="Contamos con más de 20 años de experiencia en el rubro."
         buttonText="Conocer más"
-        image="/images/portada-b.jpeg"
+        image="/images/edit/portada-a-2.png"
       />
 
       {/* Productos */}

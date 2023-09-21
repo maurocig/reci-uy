@@ -23,7 +23,7 @@ export default function Banner({
 }: BannerProps) {
   return (
     <div
-      className="h-[350px] w-full rounded-lg bg-cover bg-center"
+      className="h-[350px] lg:h-[450px] w-full rounded-lg bg-cover bg-center"
       style={{ backgroundImage: `url(${image})` }}
     >
       {/* overlay */}
@@ -36,13 +36,15 @@ export default function Banner({
         <div className="flex flex-col items-center justify-end w-full h-full space-y-2 text-center rounded-b-lg text-slate-800 md:space-y-3">
           <div
             className={twMerge(
-              'flex w-full flex-col items-center space-y-2 rounded-b-lg p-4 lg:backdrop-blur bg-gradient-to-b lg:to-blue-300/60  lg:from-white/60 ',
+              'flex w-full flex-col items-center space-y-2 rounded-b-lg p-4 lg:backdrop-blur-sm bg-gradient-to-b lg:to-blue-300/60  lg:from-white/40 ',
               robotoFlex.className
             )}
           >
-            <h2 className="text-3xl font-semibold leading-8 text-sky-900 lg:text-transparent bg-clip-text bg-gradient-to-r from-sky-700 to-cyan-700 lg:text-4xl drop-shadow-darker">
-              {title}
-            </h2>
+            <Balancer>
+              <h2 className="text-3xl font-semibold leading-8 from-sky-700 lg:text-transparent bg-clip-text bg-gradient-to-r via-sky-700 to-cyan-700 lg:text-4xl drop-shadow-darker">
+                {title}
+              </h2>
+            </Balancer>
             <p
               className="hidden m-0 text-lg text-cyan-900 sm:block drop-shadow-md"
               style={{ margin: 0 }}
