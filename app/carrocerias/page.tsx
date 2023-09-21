@@ -1,8 +1,10 @@
+'use client';
 import Box from '@/components/Box';
 import ItemList from '@/components/ItemList';
 import BannerCategory from '@/components/banner-category';
 import Spacer from '@/components/ui/Spacer';
 import { Product } from '@/types.js';
+import { HiExternalLink, HiOutlineExternalLink } from 'react-icons/hi';
 import { carrocerias } from '../../public/assets/carrocerias.js';
 
 export default function carroceriasPage() {
@@ -31,6 +33,7 @@ export default function carroceriasPage() {
           description="Línea Liderkit"
           products={seca}
           newTab
+          buttonIcon={HiExternalLink}
         />
       </Box>
       <Box className="lg:p-6">
@@ -39,6 +42,7 @@ export default function carroceriasPage() {
           description="Líneas Liderkit y Fibrasil"
           products={refrigerados}
           newTab
+          buttonIcon={HiExternalLink}
         />
       </Box>
       <Spacer />

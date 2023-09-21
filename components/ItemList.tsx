@@ -59,6 +59,7 @@ export default function ItemList({
         )}
       >
         {products.map((product, i) => {
+          // 'use server';
           return (
             <div key={`${product.model}${i}`}>
               <div>
