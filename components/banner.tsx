@@ -29,7 +29,7 @@ export default function Banner({
       {/* overlay */}
       <div
         className={twMerge(
-          'h-full w-full rounded-lg via-70% bg-gradient-to-b from-transparent via-sky-200/60 to-cyan-200/60 lg:via-white/20 lg:to-white/50',
+          'h-full w-full rounded-lg via-60% from-40% bg-gradient-to-b from-transparent via-sky-200/80 to-cyan-200/60 lg:via-white/20 lg:to-white/50',
           className
         )}
       >
@@ -40,7 +40,7 @@ export default function Banner({
               robotoFlex.className
             )}
           >
-            <h2 className="text-3xl font-semibold leading-8 text-transparent lg:from-sky-700 bg-clip-text bg-gradient-to-b from-blue-700 to-blue-800 lg:bg-gradient-to-b lg:to-blue-800 lg:text-4xl drop-shadow-lg">
+            <h2 className="text-3xl font-semibold leading-8 text-transparent lg:from-sky-700 bg-clip-text bg-gradient-to-b from-cyan-700 to-blue-900 lg:bg-gradient-to-b lg:to-blue-800 lg:text-4xl drop-shadow-lg">
               <Balancer>{title}</Balancer>
             </h2>
             <p
