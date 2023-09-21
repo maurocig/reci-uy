@@ -29,7 +29,7 @@ export default function Banner({
       {/* overlay */}
       <div
         className={twMerge(
-          'h-full w-full rounded-lg bg-gradient-to-b from-transparent via-slate-100/50 to-blue-300/50 lg:via-white/20 lg:to-white/50',
+          'h-full w-full rounded-lg bg-gradient-to-b from-transparent via-slate-100/60 to-blue-300/70 lg:via-white/20 lg:to-white/50',
           className
         )}
       >
@@ -41,12 +41,12 @@ export default function Banner({
             )}
           >
             <Balancer>
-              <h2 className="text-3xl font-semibold leading-8 from-sky-700 lg:text-transparent bg-clip-text bg-gradient-to-r via-sky-700 to-cyan-700 lg:text-4xl drop-shadow-darker">
+              <h2 className="text-3xl font-semibold leading-8 text-transparent lg:from-sky-700 bg-clip-text bg-gradient-to-b from-sky-700 to-blue-800 lg:bg-gradient-to-b lg:to-blue-800 lg:text-4xl drop-shadow-darker">
                 {title}
               </h2>
             </Balancer>
             <p
-              className="hidden m-0 text-lg text-cyan-900 sm:block drop-shadow-md"
+              className="hidden m-0 text-xl text-blue-900/90 sm:block drop-shadow-md"
               style={{ margin: 0 }}
             >
               {description}
