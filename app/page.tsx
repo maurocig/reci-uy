@@ -125,9 +125,9 @@ export default function Home() {
               </p>
               <p>
                 Nuestro equipo de profesionales con experiencia en la industria
-                lo guiará a lo largo de todo el proceso de selección,
-                asegurándose de que obtenga la solución perfecta que se adapte a
-                sus necesidades específicas.
+                lo guiará a lo largo del proceso de selección, asegurándose de
+                que obtenga la solución que mejor se adapte a las necesidades de
+                su flota.
               </p>
               <a
                 href="/contacto"
@@ -159,8 +159,8 @@ export default function Home() {
               <p>
                 Nuestro soporte integral abarca desde la resolución de problemas
                 técnicos hasta la disponibilidad de repuestos originales.
-                Además, todos los productos cuentan con garantía original del
-                fabricante.
+                Además, todos nuestros productos cuentan con garantía original
+                del fabricante.
               </p>
             </div>
           </Box>

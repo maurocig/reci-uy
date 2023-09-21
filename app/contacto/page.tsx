@@ -32,42 +32,42 @@ export default function ContactoPage() {
             Información de contacto
           </h2>
           <div className="space-y-3">
-            <div className="flex items-center gap-2">
-              <Mail />
+            <div className="flex items-center gap-4">
+              <Mail size={20} />
               <span className="font-bold text-white">ventasreci@gmail.com</span>
             </div>
-            <div className="flex items-center gap-2">
-              <Phone size={25} />{' '}
+            <div className="flex items-center gap-4">
+              <Phone size={20} />{' '}
               <span className="font-bold text-white">22970648</span>
             </div>
-            <div className="flex items-center gap-2">
-              <MdWhatsapp size={25} />
+            <div className="flex items-center gap-4">
+              <MdWhatsapp size={18} />
               <Link
                 href="https://wa.me/59894444648"
                 target="_blank"
                 className="text-cyan-500 hover:underline"
               >
-                +598 94 444 648
+                <b>+598 94 444 648</b>
               </Link>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-4">
               <Instagram />
               <Link
                 href="https://www.instagram.com/reci_importaciones/"
                 target="_blank"
                 className="text-cyan-500 hover:underline"
               >
-                @reci_importaciones
+                <b>@reci_importaciones</b>
               </Link>
             </div>
-            <div className="flex items-center gap-2">
-              <MapPin size={25} />
+            <div className="flex items-center gap-4">
+              <MapPin size={20} />
               <Link
                 href="https://maps.app.goo.gl/j9a6tF17ypV96XKu7"
                 target="_blank"
                 className="text-cyan-500 hover:underline"
               >
-                Ruta 8 Km. 28.300, Barros Blancos
+                <b>Ruta 8 Km. 28.300, Barros Blancos</b>
               </Link>
             </div>
           </div>

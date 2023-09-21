@@ -1,9 +1,11 @@
+'use client';
 import { robotoFlex } from '@/app/fonts';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
-import { ChevronRight } from 'lucide-react';
+import { ArrowLeftCircle, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { twMerge } from 'tailwind-merge';
 
 type BannerCategoryProps = {
@@ -23,14 +25,25 @@ export default function BannerCategory({
   className,
   bgPosition,
 }: BannerCategoryProps) {
+  const router = useRouter();
   return (
     <div
       className={cn(
-        'aspect-[5/3] h-[350px] w-full rounded-lg bg-cover bg-no-repeat sm:aspect-video shadow-md ',
+        'aspect-[5/3] h-[350px] w-full rounded-lg relative bg-cover bg-no-repeat sm:aspect-video shadow-md ',
         bgPosition
       )}
       style={{ backgroundImage: `url(${image})` }}
     >
+      <button
+        onClick={() => router.back()}
+        className="absolute z-10 mb-3 top-3 left-3 md:top-4 lg:left-4"
+      >
+        <ArrowLeftCircle
+          size={30}
+          strokeWidth={1.3}
+          className="transition text-gray-700/50 font-extralight hover:text-gray-700"
+        />
+      </button>
       {/* overlay */}
       <div className={twMerge('h-full w-full rounded-lg ', className)}>
         <div className="flex items-center justify-start w-full h-full space-y-2 rounded-b-lg text-start text-slate-800 sm:w-2/3 md:space-y-3 lg:w-1/2">
