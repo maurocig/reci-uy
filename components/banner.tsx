@@ -29,7 +29,7 @@ export default function Banner({
       {/* overlay */}
       <div
         className={twMerge(
-          'h-full w-full rounded-lg bg-gradient-to-b from-transparent via-sky-200/60 to-cyan-300/60 lg:via-white/20 lg:to-white/50',
+          'h-full w-full rounded-lg bg-gradient-to-b from-transparent via-sky-200/60 to-cyan-200/60 lg:via-white/20 lg:to-white/50',
           className
         )}
       >
