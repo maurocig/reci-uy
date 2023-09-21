@@ -63,7 +63,7 @@ export default function Item({
         )}
 
         <div className="mb-4 transition-all ">
-          <Button className="px-6 overflow-hidden transition rounded-full shadow-lg opacity-100 bg-teal-500/80 text-md text-slate-800 filter group-hover:opacity-100 sm:opacity-0">
+          <Button className="px-6 overflow-hidden transition rounded-full shadow-lg opacity-100 bg-teal-500/80 backdrop-blur text-md text-slate-800 filter group-hover:opacity-100 sm:opacity-0">
             {buttonText}{' '}
             {ButtonIcon ? (
               <ButtonIcon className="inline p-0 ml-2" />
