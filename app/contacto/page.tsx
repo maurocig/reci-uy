@@ -27,13 +27,14 @@ export default function ContactoPage() {
           </h2>
           <div className="space-y-3">
             <div className="flex items-center gap-4">
-              <Mail size={20} />
+              <Mail size={21} />
               <span className="font-bold text-white">ventasreci@gmail.com</span>
             </div>
             <div className="flex items-center gap-4">
-              <Phone size={20} />{' '}
+              <Phone size={22} />{' '}
               <span className="font-bold text-white">22970648</span>
             </div>
+            {/*
             <div className="flex items-center gap-4">
               <MdWhatsapp size={18} />
               <Link
@@ -44,8 +45,9 @@ export default function ContactoPage() {
                 <b>+598 94 444 648</b>
               </Link>
             </div>
+						*/}
             <div className="flex items-center gap-4">
-              <Instagram />
+              <Instagram size={22} />
               <Link
                 href="https://www.instagram.com/reci_importaciones/"
                 target="_blank"
@@ -55,7 +57,7 @@ export default function ContactoPage() {
               </Link>
             </div>
             <div className="flex items-center gap-4">
-              <MapPin size={20} />
+              <MapPin size={24} />
               <Link
                 href="https://maps.app.goo.gl/j9a6tF17ypV96XKu7"
                 target="_blank"
