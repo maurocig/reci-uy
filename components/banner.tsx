@@ -23,13 +23,13 @@ export default function Banner({
 }: BannerProps) {
   return (
     <div
-      className="h-[350px] lg:h-[450px] w-full rounded-lg bg-cover bg-center"
+      className="h-[290px] sm:h-[350px] lg:h-[450px] w-full rounded-lg bg-cover bg-center"
       style={{ backgroundImage: `url(${image})` }}
     >
       {/* overlay */}
       <div
         className={twMerge(
-          'h-full w-full rounded-lg bg-gradient-to-b from-transparent via-slate-100/60 to-blue-300/70 lg:via-white/20 lg:to-white/50',
+          'h-full w-full rounded-lg bg-gradient-to-b from-transparent via-sky-200/60 to-cyan-300/60 lg:via-white/20 lg:to-white/50',
           className
         )}
       >
@@ -40,11 +40,9 @@ export default function Banner({
               robotoFlex.className
             )}
           >
-            <Balancer>
-              <h2 className="text-3xl font-semibold leading-8 text-transparent lg:from-sky-700 bg-clip-text bg-gradient-to-b from-sky-700 to-blue-800 lg:bg-gradient-to-b lg:to-blue-800 lg:text-4xl drop-shadow-darker">
-                {title}
-              </h2>
-            </Balancer>
+            <h2 className="text-3xl font-semibold leading-8 text-transparent lg:from-sky-700 bg-clip-text bg-gradient-to-b from-blue-700 to-blue-800 lg:bg-gradient-to-b lg:to-blue-800 lg:text-4xl drop-shadow-lg">
+              <Balancer>{title}</Balancer>
+            </h2>
             <p
               className="hidden m-0 text-xl text-blue-900/90 sm:block drop-shadow-md"
               style={{ margin: 0 }}
@@ -52,7 +50,7 @@ export default function Banner({
               {description}
             </p>
             <Link href={'/nosotros'}>
-              <Button className="px-6 py-3 text-sm transition duration-300 ease-in-out rounded-full shadow-md hover:shadow-lg sm:text-md bg-emerald-500 hover:bg-opacity-90 sm:bg-opacity-50">
+              <Button className="px-6 py-3 text-sm transition duration-300 ease-in-out rounded-full shadow-sm opacity-90 hover:opacity-100 ring-1 ring-slate-900/10 bg-gradient-to-b to-emerald-500/90 from-emerald-400/80 hover:shadow-xl sm:text-md hover:bg-opacity-90 sm:bg-opacity-50">
                 {buttonText} <ChevronRight className="ml-1" />
               </Button>
             </Link>
