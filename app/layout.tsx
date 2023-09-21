@@ -7,7 +7,8 @@ import Navbar from './navbar';
 
 export const metadata = {
   title: 'Reci Importaciones',
-  description: 'Sitio en construcción.',
+  description:
+    'Ofrecemos soluciones integrales para el transporte carretero. Trabajamos con las marcas líderes del sector como Thermo King, Liderkit, y Fibrasil',
 };
 
 export default function RootLayout({

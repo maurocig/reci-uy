@@ -1,6 +1,7 @@
 import Box from '@/components/Box';
 import ContactForm from '@/components/contact-form';
 import {
+  Clock,
   Instagram,
   LocateIcon,
   Mail,
@@ -20,6 +21,12 @@ export default function ContactoPage() {
     <>
       <div className="grid gap-4 mb-4 lg:gap-6 sm:grid-cols-2 lg:mb-6">
         {/* form */}
+        <Box>
+          <h2 className="w-full mb-4 text-2xl font-semibold">
+            Dejanos tu consulta
+          </h2>
+          <ContactForm />
+        </Box>
 
         <Box>
           <h2 className="w-full mb-4 text-2xl font-semibold">
@@ -66,24 +73,23 @@ export default function ContactoPage() {
                 <b>Ruta 8 Km. 28.300, Barros Blancos</b>
               </Link>
             </div>
+            <div className="flex items-center gap-4">
+              <Clock size={24} />
+              Lunes a Viernes de 09:00 a 16:00 hs.
+            </div>
           </div>
-        </Box>
-
-        <Box>
-          <h2 className="w-full mb-4 text-2xl font-semibold">
-            Dejanos tu consulta
-          </h2>
-          <ContactForm />
         </Box>
       </div>
 
       {/* mapa */}
+      {/*
       <Box>
         <h2 className="w-full mb-4 text-2xl font-semibold">Mapa</h2>
         <div className="bg-red-500 rounded-lg flex justify-center items-center w-full md:h-[300px]">
           <b>Acá va la ubicación en google maps</b>
         </div>
       </Box>
+			*/}
     </>
   );
 }
