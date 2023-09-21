@@ -25,7 +25,7 @@ export default function carroceriasPage() {
         title="Carrocerías"
         description="Líneas Liderkit y Fibrasil."
         className="bg-gradient-to-r from-slate-200 via-slate-200/80 to-slate-200/30 backdrop-blur-[1px] md:via-slate-300/20 md:to-transparent md:backdrop-blur-0 "
-        bgPosition="bg-[right_top_-3rem] md:bg-[right_top_-3rem] lg:bg-[right_top_-7rem] xl:bg-[right_top_-13rem]"
+        bgPosition="bg-center md:bg-[right_top_-3rem] lg:bg-[right_top_-7rem] xl:bg-[right_top_-13rem]"
       />
       <Box className="lg:p-6">
         <ItemList
