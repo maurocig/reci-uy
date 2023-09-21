@@ -36,7 +36,7 @@ export default function Banner({
         <div className="flex flex-col items-center justify-end w-full h-full space-y-2 text-center rounded-b-lg text-slate-800 md:space-y-3">
           <div
             className={twMerge(
-              'flex w-full flex-col items-center space-y-2 rounded-b-lg p-4 lg:backdrop-blur-sm bg-gradient-to-b lg:to-blue-300/60  lg:from-white/40 ',
+              'flex w-full flex-col items-center space-y-2 rounded-b-lg p-4 lg:backdrop-blur-sm bg-gradient-to-b lg:to-cyan-300/50  lg:from-white/40 ',
               robotoFlex.className
             )}
           >
