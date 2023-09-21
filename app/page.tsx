@@ -114,7 +114,7 @@ export default function Home() {
           // style={{ backgroundImage: 'url(/images/asesoramiento-2.jpg' }}
           className="bg-center bg-cover rounded-lg bg-opacity-5 "
         >
-          <Box className="lg:p-6 backdrop-blur">
+          <Box className="h-full lg:p-6 backdrop-blur">
             <h2 className="flex items-center w-full gap-2 mb-2 text-2xl font-semibold text-center sm:text-start">
               <FileText className="inline" size={17} /> Asesoramiento
             </h2>
