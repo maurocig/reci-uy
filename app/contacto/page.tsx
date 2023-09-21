@@ -23,12 +23,6 @@ export default function ContactoPage() {
 
         <Box>
           <h2 className="w-full mb-4 text-2xl font-semibold">
-            Dejanos tu consulta
-          </h2>
-          <ContactForm />
-        </Box>
-        <Box>
-          <h2 className="w-full mb-4 text-2xl font-semibold">
             Información de contacto
           </h2>
           <div className="space-y-3">
@@ -71,6 +65,13 @@ export default function ContactoPage() {
               </Link>
             </div>
           </div>
+        </Box>
+
+        <Box>
+          <h2 className="w-full mb-4 text-2xl font-semibold">
+            Dejanos tu consulta
+          </h2>
+          <ContactForm />
         </Box>
       </div>
 

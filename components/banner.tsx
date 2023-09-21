@@ -50,7 +50,7 @@ export default function Banner({
               {description}
             </p>
             <Link href={'/nosotros'}>
-              <Button className="px-6 py-3 text-sm transition duration-300 ease-in-out rounded-full shadow-sm opacity-90 hover:opacity-100 ring-1 ring-slate-900/10 bg-gradient-to-b to-emerald-500/90 from-emerald-400/80 hover:shadow-xl sm:text-md hover:bg-opacity-90 sm:bg-opacity-50">
+              <Button className="px-6 py-3 text-sm transition duration-300 ease-in-out rounded-full shadow-md opacity-90 hover:opacity-100 ring-1 ring-slate-900/10 bg-gradient-to-b to-teal-500/90 from-teal-400/80 hover:shadow-xl sm:text-md hover:bg-opacity-90 sm:bg-opacity-50">
                 {buttonText} <ChevronRight className="ml-1" />
               </Button>
             </Link>
