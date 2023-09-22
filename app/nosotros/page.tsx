@@ -23,11 +23,11 @@ export default function NosotrosPage() {
         subtitle="Sobre nosotros"
       >
         <p className="mb-3 text">
-          En RECI Importaciones, somos una empresa dedicada a la venta de
-          equipamiento para el transporte carretero y servicio técnico
-          especializado. Con un enfoque inquebrantable en la satisfacción del
-          cliente y años de experiencia en la industria, nos hemos consolidado
-          como un referente líder del rubro en Uruguay.
+          RECI es una empresa dedicada a la venta de equipamiento para el
+          transporte carretero y servicio técnico especializado. Con un enfoque
+          inquebrantable en la satisfacción del cliente y años de experiencia en
+          la industria, nos hemos consolidado como un referente líder del rubro
+          en Uruguay.
         </p>
         <div className="flex justify-start w-full">
           <LinkIcon
