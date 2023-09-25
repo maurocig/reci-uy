@@ -1,5 +1,6 @@
 import Sidebar from '@/components/Sidebar';
 import { MobileMenuProvider } from '@/providers/mobile-menu-provider';
+import { Toaster } from 'react-hot-toast';
 import { Balancer } from 'react-wrap-balancer';
 import { robotoFlex } from './fonts';
 import './globals.css';
@@ -18,6 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Toaster />
       <body className={robotoFlex.className}>
         <Navbar />
         <MobileMenuProvider />
