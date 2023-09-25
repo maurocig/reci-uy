@@ -30,7 +30,7 @@ export async function POST(req: NextRequest, res: NextResponse) {
 
     const data = await resend.emails.send({
       // from: 'Acme <onboarding@resend.dev>',
-      from: 'Reci.uy <contacto@reci.uy>',
+      from: 'Reci Importaciones <contacto@reci.uy>',
       to: 'mcigliuti.dev@gmail.com',
       subject: 'Nuevo mensaje de formulario (reci.uy)',
       html: emailHtml,
