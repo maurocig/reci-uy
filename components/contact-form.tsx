@@ -47,7 +47,7 @@ export default function ContactForm({}: ContactFormProps) {
           'Su mensaje fue enviado. Nos pondremos en contacto a la brevedad.',
           {
             duration: 7000,
-            style: { fontSize: '22px', maxWidth: '650', width: 'fit-content' },
+            style: { fontSize: '17px', maxWidth: '650', width: 'fit-content' },
           }
         );
         setIsLoading(false);
