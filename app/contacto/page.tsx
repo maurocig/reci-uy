@@ -75,7 +75,7 @@ export default function ContactoPage() {
             </div>
             <div className="flex items-center gap-4">
               <Clock size={24} />
-              Lunes a Viernes de 09:00 a 16:00 hs.
+              Lunes a Viernes de 09:00 a 17:00 hs.
             </div>
           </div>
         </Box>
