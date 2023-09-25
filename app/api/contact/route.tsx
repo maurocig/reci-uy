@@ -29,8 +29,9 @@ export async function POST(req: NextRequest, res: NextResponse) {
     const resend = new Resend(process.env.RESEND_API_KEY);
 
     const data = await resend.emails.send({
-      from: 'Acme <onboarding@resend.dev>',
-      to: 'ventasreci@gmail.com',
+      // from: 'Acme <onboarding@resend.dev>',
+      from: 'Reci.uy <mcigliuti01@gmail.com>',
+      to: 'mcigliuti.dev@gmail.com',
       subject: 'Nuevo mensaje de formulario (reci.uy)',
       html: emailHtml,
     });
