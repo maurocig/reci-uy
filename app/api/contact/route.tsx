@@ -1,5 +1,5 @@
 import { Email } from '@/components/email';
-import { smtpEmail, transporter } from '@/lib/nodemailer';
+import { smtpEmail, targetEmail, transporter } from '@/lib/nodemailer';
 import { render } from '@react-email/components';
 import { NextRequest, NextResponse } from 'next/server';
 
@@ -13,7 +13,7 @@ export async function POST(req: NextRequest, res: NextResponse) {
 
   const options = {
     from: smtpEmail,
-    to: 'ventasreci@gmail.com',
+    to: targetEmail,
     subject: 'Nuevo mensaje de formulario (reci.uy)',
     html: emailHtml,
   };
