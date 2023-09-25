@@ -1,6 +1,5 @@
 import { Email } from '@/components/email';
-import EmailTemplate from '@/components/email-template';
-import { smtpEmail, targetEmail, transporter } from '@/lib/nodemailer';
+// import { smtpEmail, targetEmail, transporter } from '@/lib/nodemailer';
 import { render } from '@react-email/components';
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
