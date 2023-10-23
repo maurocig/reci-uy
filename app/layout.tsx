@@ -5,11 +5,13 @@ import { Balancer } from 'react-wrap-balancer';
 import { robotoFlex } from './fonts';
 import './globals.css';
 import Navbar from './navbar';
+import { keywords } from '@/public/assets/keywords';
 
 export const metadata = {
   title: 'Reci Importaciones',
   description:
     'Ofrecemos soluciones integrales para el transporte carretero. Trabajamos con las marcas líderes del sector como Thermo King, Liderkit, y Fibrasil',
+  keywords: keywords,
 };
 
 export default function RootLayout({
