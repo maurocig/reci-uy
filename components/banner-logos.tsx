@@ -10,17 +10,17 @@ export default function BannerLogos({
   logosHorUrl,
 }: BannerLogosProps) {
   return (
-    <div className="flex justify-around w-full h-[70px]">
+    <div className="flex px-4 justify-around w-full h-[70px]">
       {logosUrl.map((url) => (
         <div
-          className="w-[120px] aspect-video relative h-full sm:hidden"
+          className="w-[105px] aspect-video relative h-full sm:hidden"
           key={url}
         >
           <Image
             src={url}
             alt="logotipo"
             fill
-            className="relative object-contain h-[50px] drop-shadow-darker"
+            className="relative object-contain drop-shadow-darker"
           />
         </div>
       ))}
