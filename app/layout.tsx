@@ -21,6 +21,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <meta
+        name="google-site-verification"
+        content="FkSUfDquF8TEhX0zvl2BxiOmb452WHOXmJWiNExouxw"
+      />
       <Toaster />
       <body className={robotoFlex.className}>
         <Navbar />
