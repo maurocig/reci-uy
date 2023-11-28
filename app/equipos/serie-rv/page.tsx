@@ -1,6 +1,6 @@
 'use client';
 
-import Box from '@/components/Box';
+import Box from '@/components/box';
 import Item from '@/components/Item';
 import ItemList from '@/components/ItemList';
 import FeatureList from '@/components/feature-list';

@@ -1,4 +1,4 @@
-import Box from '@/components/Box';
+import Box from '@/components/box';
 import { cn } from '@/lib/utils';
 import { LucideIcon } from 'lucide-react';
 import { IconType } from 'react-icons';

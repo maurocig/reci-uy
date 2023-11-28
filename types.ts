@@ -9,19 +9,6 @@ export type SidebarItem = {
     | 'contacto';
 };
 
-// export type Product = {
-//    title: string;
-//    productType: 'equipos' | 'carrocerias' | 'accesorios';
-//    brand: 'Thermo King' | 'Liderkit' | 'Fibrasil' | 'CargoTrack' | 'otros';
-//    line?: 'VP Truck' | 'Truck' | 'Trailer';
-//    model: string;
-//    description?: string;
-//    shortDescription: string;
-//    price: number;
-//    pictureUrl: string;
-//    stock: number;
-// };
-
 export type Product = {
   title: string;
   thumbnail: string;
@@ -40,4 +27,5 @@ export type Product = {
   urlSpecs?: string;
   urlTk?: string;
   features?: string[];
+  isNew?: boolean;
 };

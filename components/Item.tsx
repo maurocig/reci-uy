@@ -37,24 +37,36 @@ export default function Item({
       </div>
 
       {/* overlay */}
-      <div className="absolute flex flex-col items-center justify-between w-full h-full transition-all">
-        <p
-          className={twMerge(
-            `ml-3 mt-3 flex items-center self-start rounded-full shadow-sm px-6 py-1 text-start
+      <div className="absolute flex flex-col items-center justify-between w-full h-full overflow-hidden transition-all">
+        <div className="flex justify-between w-full">
+          <p
+            className={twMerge(
+              `ml-3 whitespace-nowrap mt-3 flex items-center self-start rounded-full shadow-sm px-6 py-1 text-start
 						 font-semibold text-gray-900 ring-black transition `,
-            tagColor
-          )}
-        >
-          {product.title}
-          {tagColor === 'bg-sky-300' &&
-            product.line !== 'Trailer' &&
-            product.line !== 'Truck' && (
+              tagColor
+            )}
+          >
+            {product.title}
+            {tagColor === 'bg-sky-300' && product.line === 'VP Truck' && (
               <span className="flex items-center justify-start ml-2 text-xs text-blue-800">
                 MAX
                 <SnowflakeIcon className="inline ml-1" size={11} />
               </span>
             )}
-        </p>
+          </p>
+
+          {/* New tag */}
+          {product.isNew && (
+            <p
+              className={`mr-[-37px] rounded-none flex items-center self-end rotate-45 shadow-sm px-10 py-1 bg-red-500 text-start
+						 font-semibold text-gray-900 ring-black transition `}
+            >
+              <span className="flex items-center justify-end ml-2 text-white">
+                Nuevos!
+              </span>
+            </p>
+          )}
+        </div>
 
         {showDescription && (
           <p className="hidden p-3 transition-all opacity-0 bg-gradient-to-b from-transparent to-slate-900/40 group-hover:opacity-100 sm:block ">

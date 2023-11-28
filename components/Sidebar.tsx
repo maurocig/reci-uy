@@ -8,7 +8,7 @@ import { MdInfo } from 'react-icons/md';
 import { RiTruckFill } from 'react-icons/ri';
 import { TbSnowflake } from 'react-icons/tb';
 import { twMerge } from 'tailwind-merge';
-import Box from './Box';
+import Box from './box';
 import SidebarItem from './SidebarItem';
 import Spacer from './ui/Spacer';
 

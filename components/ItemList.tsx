@@ -5,6 +5,7 @@ import { Product } from '@/types';
 import Link from 'next/link';
 import { IconType } from 'react-icons';
 import Item from './Item';
+import Box from '@/components/box';
 
 export interface ProductItem extends Product {
   twClass?: string;
@@ -19,6 +20,7 @@ type ItemListProps = {
   buttonText?: string;
   buttonIcon?: IconType;
   newTab?: boolean;
+  children?: React.ReactNode;
 };
 
 export default function ItemList({
@@ -30,6 +32,7 @@ export default function ItemList({
   buttonText,
   newTab,
   buttonIcon,
+  children,
 }: ItemListProps) {
   products.forEach((product) => {
     switch (product.brand) {
@@ -76,6 +79,7 @@ export default function ItemList({
             </div>
           );
         })}
+        {children && children}
       </div>
     </div>
   );
