@@ -11,6 +11,7 @@ import {
   Diamond,
   FileText,
   LucideWrench,
+  Newspaper,
   Square,
   Wrench,
 } from 'lucide-react';
@@ -81,8 +82,9 @@ export default function Home() {
       {/* EV SERIES */}
       <Box className="lg:p-6">
         <ItemList
-          title="Thermo King Línea EV"
-          description="Unidades 100% eléctricas para camiones medianos y grandes"
+          title="Novedades"
+          icon
+          // description="Unidades 100% eléctricas para camiones medianos y grandes"
           products={ev}
           buttonText="Ver producto"
         >
@@ -120,7 +122,7 @@ export default function Home() {
         <div className="grid w-full gap-6 lg:gap-6 h-fit sm:grid-cols-2 ">
           <div className="bg-opacity-0 rounded-lg border-cyan-100/80 ">
             <h2 className="flex items-center w-full gap-2 mt-0 text-2xl font-semibold text-center sm:text-start">
-              <Wrench className="inline" size={17} /> Servicio técnico
+              <Wrench className="inline" size={19} /> Servicio técnico
             </h2>
             <p className="mb-2 xl:text-lg text-gray-400 ms-[25px]">
               Realizado por técnicos especializados Thermo King.
@@ -153,7 +155,7 @@ export default function Home() {
         >
           <Box className="h-full lg:p-6 backdrop-blur">
             <h2 className="flex items-center w-full gap-2 mb-2 text-2xl font-semibold text-center sm:text-start">
-              <FileText className="inline" size={17} /> Asesoramiento
+              <FileText className="inline" size={19} /> Asesoramiento
             </h2>
             <div className="space-y-2">
               <p>

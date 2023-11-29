@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { IconType } from 'react-icons';
 import Item from './Item';
 import Box from '@/components/box';
+import { LucideIcon, Newspaper } from 'lucide-react';
 
 export interface ProductItem extends Product {
   twClass?: string;
@@ -14,8 +15,9 @@ export interface ProductItem extends Product {
 type ItemListProps = {
   products: ProductItem[];
   showDescription?: boolean;
-  title: string;
-  description: string;
+  title?: string;
+  icon?: boolean;
+  description?: string;
   gridCols?: string;
   buttonText?: string;
   buttonIcon?: IconType;
@@ -33,6 +35,7 @@ export default function ItemList({
   newTab,
   buttonIcon,
   children,
+  icon: Icon,
 }: ItemListProps) {
   products.forEach((product) => {
     switch (product.brand) {
@@ -53,7 +56,9 @@ export default function ItemList({
 
   return (
     <div>
-      <h2 className="mb-0 text-2xl font-semibold">{title}</h2>
+      <h2 className="flex items-center gap-2 mb-0 text-2xl font-semibold">
+        {Icon && <Newspaper size={19} />} {title}
+      </h2>
       <p className="mb-4 text-lg text-slate-400">{description}</p>
       <div
         className={cn(
