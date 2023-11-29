@@ -1,4 +1,4 @@
-import Box from '@/components/box';
+import Box from '@/components/ui/box';
 import LinkIcon from '@/components/link-icon';
 import TextImageSection from '@/components/text-image-section';
 import TextSection from '@/components/text-section';

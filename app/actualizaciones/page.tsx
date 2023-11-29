@@ -1,5 +1,5 @@
 import DevlogItem from '@/app/actualizaciones/devlog-item';
-import Box from '@/components/box';
+import Box from '@/components/ui/box';
 import { Check, ExternalLink } from 'lucide-react';
 
 type DevlogPageProps = {};

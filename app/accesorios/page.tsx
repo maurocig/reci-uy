@@ -1,4 +1,4 @@
-import Box from '@/components/box';
+import Box from '@/components/ui/box';
 import BannerCategory from '@/components/banner-category';
 import Spacer from '@/components/ui/Spacer';
 

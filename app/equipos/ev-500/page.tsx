@@ -1,6 +1,6 @@
 'use client';
 
-import Box from '@/components/box';
+import Box from '@/components/ui/box';
 import Item from '@/components/Item';
 import ItemList from '@/components/ItemList';
 import FeatureList from '@/components/feature-list';
@@ -87,10 +87,8 @@ export default function SerieEvPage({}: SerieEvPageProps) {
             </h3>
           </span>
           <p className="">
-            Thermo King, reconocido líder en soluciones de control de
-            temperatura para el transporte, presenta el EV 500, un nuevo equipo
-            de refrigeración diseñado exclusivamente para camiones 100%
-            eléctricos.
+            Presentando el EV 500, un nuevo equipo de refrigeración diseñado
+            exclusivamente para camiones eléctricos.
           </p>
           <p>
             Los equipos EV 500 ofrecen una alta capacidad de enfriamiento de

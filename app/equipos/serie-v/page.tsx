@@ -1,6 +1,6 @@
 'use client';
 
-import Box from '@/components/box';
+import Box from '@/components/ui/box';
 import Item from '@/components/Item';
 import ItemList from '@/components/ItemList';
 import FeatureList from '@/components/feature-list';

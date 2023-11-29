@@ -1,5 +1,5 @@
 'use client';
-import Box from '@/components/box';
+import Box from '@/components/ui/box.jsx';
 import ItemList from '@/components/ItemList';
 import BannerCategory from '@/components/banner-category';
 import Spacer from '@/components/ui/Spacer';

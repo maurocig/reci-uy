@@ -1,5 +1,5 @@
 'use client';
-import Box from '@/components/box';
+import Box from '@/components/ui/box';
 import ItemList from '@/components/ItemList';
 import FeatureList from '@/components/feature-list';
 import LinkIcon from '@/components/link-icon';

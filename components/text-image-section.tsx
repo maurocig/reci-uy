@@ -1,4 +1,4 @@
-import Box from '@/components/box';
+import Box from '@/components/ui/box';
 
 type TextImageSectionProps = {
   children: React.ReactNode;

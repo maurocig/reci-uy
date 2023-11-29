@@ -1,4 +1,4 @@
-import Box from '@/components/box';
+import Box from '@/components/ui/box';
 import Banner from '@/components/banner';
 import BannerLogos from '@/components/banner-logos';
 import FeatureList from '@/components/feature-list';
@@ -77,6 +77,38 @@ export default function Home() {
         buttonText="Conocer más"
         image="/images/edit/portada-a-2.png"
       />
+
+      {/* EV SERIES */}
+      <Box className="lg:p-6">
+        <ItemList
+          title="Thermo King Línea EV"
+          description="Unidades 100% eléctricas para camiones medianos y grandes"
+          products={ev}
+          buttonText="Ver producto"
+        >
+          <Box className="hidden w-full col-span-2 border border-slate-200/10 lg:block bg-sky-400/10 ">
+            <h2 className="flex items-center w-full gap-2 mb-2 text-2xl font-semibold text-center sm:text-start">
+              Thermo King Serie EV para vehículos eléctricos
+            </h2>
+            <p className="mb-2 text-lg text-slate-300">
+              Instalamos el primer equipo Thermo King 100% eléctrico de
+              latinoamérica.
+            </p>
+            <p className="hidden xl:block">
+              La alta fiabilidad, eficiencia energética y rendimiento de Thermo
+              King llegan al transporte eléctrico. Ideal para transporte de
+              alimentos y productos farmacéuticos en la cadena de frío.
+            </p>
+            <a
+              href="/equipos/ev-500"
+              className="flex items-center justify-start w-full gap-2 mt-4 opacity-80 hover:opacity-100 group text-cyan-400"
+            >
+              <span className="group-hover:underline">Ver producto</span>{' '}
+              <ArrowRightCircle size={15} />
+            </a>
+          </Box>
+        </ItemList>
+      </Box>
 
       {/* Productos */}
       <Box className="lg:p-6">
@@ -172,37 +204,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* LINE */}
-      <Box className="lg:p-6">
-        <ItemList
-          title="Thermo King Línea EV"
-          description="Unidades 100% eléctricas para camiones medianos y grandes"
-          products={ev}
-          buttonText="Ver producto"
-        >
-          <Box className="hidden w-full col-span-2 border border-slate-200/10 lg:block bg-sky-400/10 ">
-            <h2 className="flex items-center w-full gap-2 mb-2 text-2xl font-semibold text-center sm:text-start">
-              Thermo King Serie EV para vehículos eléctricos
-            </h2>
-            <p className="mb-2 text-lg text-slate-300">
-              Instalamos el primer equipo Thermo King 100% eléctrico de
-              latinoamérica.
-            </p>
-            <p className="hidden xl:block">
-              La alta fiabilidad, eficiencia energética y rendimiento de Thermo
-              King llegan al transporte eléctrico. Ideal para transporte de
-              alimentos y productos farmacéuticos en la cadena de frío.
-            </p>
-            <a
-              href="/equipos/ev-500"
-              className="flex items-center justify-start w-full gap-2 mt-4 opacity-80 hover:opacity-100 group text-cyan-400"
-            >
-              <span className="group-hover:underline">Ver producto</span>{' '}
-              <ArrowRightCircle size={15} />
-            </a>
-          </Box>
-        </ItemList>
-      </Box>
       {/* <Box className="bg-red-500 bg-opacity-100"> */}
       <div className="p-4 rounded-lg shadow-lg bg-white/20 lg:p-6">
         <BannerLogos
