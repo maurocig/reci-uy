@@ -88,7 +88,7 @@ export default function SerieEvPage({}: SerieEvPageProps) {
           </span>
           <p className="">
             Presentando el EV 500, un nuevo equipo de refrigeración diseñado
-            exclusivamente para camiones eléctricos.
+            para la próxima generación del transporte carretero.
           </p>
           <p>
             Los equipos EV 500 ofrecen una alta capacidad de enfriamiento de
