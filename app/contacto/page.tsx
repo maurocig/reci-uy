@@ -1,4 +1,4 @@
-import Box from '@/components/ui/box';
+import Box from '@/components/box';
 import ContactForm from '@/components/contact-form';
 import {
   Clock,

@@ -1,4 +1,4 @@
-import Box from '@/components/ui/box';
+import Box from '@/components/box';
 import Banner from '@/components/banner';
 import BannerLogos from '@/components/banner-logos';
 import FeatureList from '@/components/feature-list';

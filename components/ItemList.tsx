@@ -5,7 +5,7 @@ import { Product } from '@/types';
 import Link from 'next/link';
 import { IconType } from 'react-icons';
 import Item from './Item';
-import Box from '@/components/ui/box';
+import Box from '@/components/box';
 
 export interface ProductItem extends Product {
   twClass?: string;
