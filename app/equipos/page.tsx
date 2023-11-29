@@ -36,7 +36,7 @@ export default function EquiposPage() {
           products={ev}
           buttonText="Ver producto"
         >
-          <Box className="hidden w-full col-span-2 lg:block bg-sky-300/20 ">
+          <Box className="hidden w-full col-span-2 border border-slate-200/10 lg:block bg-sky-400/10 ">
             <h2 className="flex items-center w-full gap-2 mb-2 text-2xl font-semibold text-center sm:text-start">
               Thermo King Serie EV para vehículos eléctricos
             </h2>
@@ -49,9 +49,10 @@ export default function EquiposPage() {
               King llegan al transporte eléctrico. Ideal para transporte de
               alimentos y productos farmacéuticos en la cadena de frío.
             </p>
+
             <a
               href="/equipos/ev-500"
-              className="flex items-center justify-start w-full gap-2 mt-2 opacity-80 hover:opacity-100 group text-cyan-400"
+              className="flex items-center justify-start w-full gap-2 mt-4 opacity-80 hover:opacity-100 group text-cyan-400"
             >
               <span className="group-hover:underline">Ver producto</span>{' '}
               <ArrowRightCircle size={15} />

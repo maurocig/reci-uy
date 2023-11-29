@@ -20,6 +20,9 @@ import { IoIosPeople, IoMdPeople } from 'react-icons/io';
 import { RiTruckFill } from 'react-icons/ri';
 import { TbSnowflake } from 'react-icons/tb';
 import { Balancer } from 'react-wrap-balancer';
+import ItemList from '@/components/ItemList';
+import { equipos } from '@/public/assets/equipos';
+import { Product } from '@/types';
 
 export default function Home() {
   const productItems = [
@@ -63,6 +66,8 @@ export default function Home() {
       imageUrl: '',
     },
   ];
+
+  const ev: Product[] = [equipos[equipos.length - 1]];
 
   return (
     <div className="flex flex-col space-y-4 lg:space-y-6">
@@ -167,6 +172,37 @@ export default function Home() {
         </div>
       </div>
 
+      {/* LINE */}
+      <Box className="lg:p-6">
+        <ItemList
+          title="Thermo King Línea EV"
+          description="Unidades 100% eléctricas para camiones medianos y grandes"
+          products={ev}
+          buttonText="Ver producto"
+        >
+          <Box className="hidden w-full col-span-2 border border-slate-200/10 lg:block bg-sky-400/10 ">
+            <h2 className="flex items-center w-full gap-2 mb-2 text-2xl font-semibold text-center sm:text-start">
+              Thermo King Serie EV para vehículos eléctricos
+            </h2>
+            <p className="mb-2 text-lg text-slate-300">
+              Instalamos el primer equipo Thermo King 100% eléctrico de
+              latinoamérica.
+            </p>
+            <p className="hidden xl:block">
+              La alta fiabilidad, eficiencia energética y rendimiento de Thermo
+              King llegan al transporte eléctrico. Ideal para transporte de
+              alimentos y productos farmacéuticos en la cadena de frío.
+            </p>
+            <a
+              href="/equipos/ev-500"
+              className="flex items-center justify-start w-full gap-2 mt-4 opacity-80 hover:opacity-100 group text-cyan-400"
+            >
+              <span className="group-hover:underline">Ver producto</span>{' '}
+              <ArrowRightCircle size={15} />
+            </a>
+          </Box>
+        </ItemList>
+      </Box>
       {/* <Box className="bg-red-500 bg-opacity-100"> */}
       <div className="p-4 rounded-lg shadow-lg bg-white/20 lg:p-6">
         <BannerLogos
@@ -182,7 +218,6 @@ export default function Home() {
           ]}
         />
       </div>
-      {/* </Box> */}
     </div>
   );
 }
