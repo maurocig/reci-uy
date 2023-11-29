@@ -1,5 +1,5 @@
 // local import
-import Box from '@/components/box.jsx';
+import Box from '@/components/box';
 import ItemList, { ProductItem } from '@/components/ItemList';
 import BannerCategory from '@/components/banner-category';
 import { Product } from '@/types.js';
