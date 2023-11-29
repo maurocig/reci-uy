@@ -22,7 +22,7 @@ export default function SerieEvPage({}: SerieEvPageProps) {
         }}
         className="w-full bg-center lg:bg-[center_top_-60px] bg-cover rounded-lg "
       >
-        <div className="rounded-lg relative flex flex-col bg-gradient-to-r from-cyan-700/90 to-teal-400/20 shadow-lg justify-center top-0 left-0 h-[300px] lg:p-4 backdrop-blur-0">
+        <div className="rounded-lg relative flex flex-col bg-gradient-to-r from-cyan-700/95 to-teal-700/30 shadow-lg justify-center top-0 left-0 h-[300px] lg:p-4 backdrop-blur-0">
           <button
             onClick={() => router.back()}
             className="absolute mb-3 top-3 left-3 md:top-4 lg:left-4"
@@ -37,7 +37,7 @@ export default function SerieEvPage({}: SerieEvPageProps) {
             <h2 className="text-3xl font-semibold text-white drop-shadow-darker">
               Serie EV
             </h2>
-            <p className="text-xl text-gray-300 drop-shadow-darker">
+            <p className="text-xl text-gray-200 drop-shadow-darker">
               Refrigeración de avanzada para vehículos eléctricos
             </p>
           </div>
