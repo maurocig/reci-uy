@@ -15,23 +15,23 @@ type SerieCPageProps = {};
 export default function SerieCPage({}: SerieCPageProps) {
   const router = useRouter();
   return (
-    <div className="grid gap-4 grid-cols lg:gap-6">
+    <div className="grid-cols grid gap-4 lg:gap-6">
       <div
         style={{ backgroundImage: `url(/images/serie-c-billboard.jpg)` }}
-        className="w-full bg-center lg:bg-[center_top_-5rem] bg-cover rounded-lg "
+        className="w-full rounded-lg bg-cover bg-center lg:bg-[center_top_-5rem]"
       >
-        <div className="rounded-lg relative flex flex-col bg-gradient-to-r from-slate-800/95 to-teal-100/20 shadow-lg justify-center top-0 left-0 h-[300px] lg:p-4 backdrop-blur-0">
+        <div className="relative left-0 top-0 flex h-[300px] flex-col justify-center rounded-lg bg-gradient-to-r from-slate-800/95 to-teal-100/20 shadow-lg backdrop-blur-0 lg:p-4">
           <button
             onClick={() => router.back()}
-            className="absolute mb-3 top-3 left-3 md:top-4 lg:left-4"
+            className="absolute left-3 top-3 mb-3 md:top-4 lg:left-4"
           >
             <ArrowLeftCircle
               size={30}
               strokeWidth={1.3}
-              className="text-gray-300 font-extralight hover:text-white"
+              className="font-extralight text-gray-300 hover:text-white"
             />
           </button>
-          <div className="ml-9 ">
+          <div className="ml-9">
             <h2 className="text-3xl font-semibold text-white drop-shadow-darker">
               Serie C
             </h2>
@@ -42,15 +42,15 @@ export default function SerieCPage({}: SerieCPageProps) {
         </div>
       </div>
 
-      <div className="grid w-full grid-cols-1 gap-4 lg:gap-6 lg:grid-cols-2 xl:grid-cols-3 ">
+      <div className="grid w-full grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-6 xl:grid-cols-3">
         <div
-          className="block order-2 lg:order-1 min-h-[300px] col-span-1 bg-cover rounded-lg drop-shadow-darker bg-top-center lg:col-span-1"
+          className="bg-top-center order-2 col-span-1 block min-h-[300px] rounded-lg bg-cover drop-shadow-darker lg:order-1 lg:col-span-1"
           style={{ backgroundImage: 'url(/images/c450-vw.jpg)' }}
         ></div>
 
-        <Box className="flex flex-col col-span-1 gap-3 lg:order-2 xl:col-span-2 ">
+        <Box className="col-span-1 flex flex-col gap-3 lg:order-2 xl:col-span-2">
           <span>
-            <h2 className="flex items-center w-full gap-2 mt-0 text-2xl font-semibold text-center sm:text-start">
+            <h2 className="mt-0 flex w-full items-center gap-2 text-center text-2xl font-semibold sm:text-start">
               Descripción
             </h2>
             <h3 className="text-lg text-gray-400">
@@ -80,17 +80,17 @@ export default function SerieCPage({}: SerieCPageProps) {
         </Box>
       </div>
 
-      <Box className="grid grid-cols-1 gap-4 lg:gap-6 sm:grid-cols-2 ">
-        <div className="relative w-full ">
+      <Box className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:gap-6">
+        <div className="relative w-full">
           <Image
             src={'/images/equipos/raw/c-series-cover-1.jpg'}
             alt="Servicio técnico"
             fill
-            className="object-cover object-center rounded-lg shadow-lg"
+            className="rounded-lg object-cover object-center shadow-lg"
           />
         </div>
-        <div className="mb-2 bg-opacity-0 rounded-lg border-cyan-100/80 ">
-          <h2 className="flex items-center w-full gap-2 mt-0 text-2xl font-semibold text-center sm:text-start">
+        <div className="mb-2 rounded-lg border-cyan-100/80 bg-opacity-0">
+          <h2 className="mt-0 flex w-full items-center gap-2 text-center text-2xl font-semibold sm:text-start">
             Modelos de gran capacidad
           </h2>
           <p className="mb-3 text-lg text-gray-400">
@@ -110,8 +110,8 @@ export default function SerieCPage({}: SerieCPageProps) {
       </Box>
 
       <Box>
-        <div className="mb-2 bg-opacity-0 rounded-lg border-cyan-100/80 ">
-          <h2 className="flex items-center w-full gap-2 mt-0 text-2xl font-semibold text-center sm:text-start">
+        <div className="mb-2 rounded-lg border-cyan-100/80 bg-opacity-0">
+          <h2 className="mt-0 flex w-full items-center gap-2 text-center text-2xl font-semibold sm:text-start">
             <ListChecks className="inline" size={17} /> Características
           </h2>
           <Spacer className="h-4" />
@@ -120,7 +120,7 @@ export default function SerieCPage({}: SerieCPageProps) {
             Realizado por técnicos especializados Thermo King.
           </p>
 						*/}
-          <div className="grid grid-cols-1 gap-2 text-lg lg:gap-4 lg:grid-cols-5">
+          <div className="grid grid-cols-1 gap-2 text-lg lg:grid-cols-5 lg:gap-4">
             <FeatureList
               className="lg:col-span-2"
               features={[
@@ -154,6 +154,7 @@ export default function SerieCPage({}: SerieCPageProps) {
           products={[
             {
               title: 'C-150e',
+              line: 'VP Truck',
               brand: 'Thermo King',
               model: 'C-150',
               productType: 'equipos',
@@ -165,6 +166,7 @@ export default function SerieCPage({}: SerieCPageProps) {
             },
             {
               title: 'C-250e',
+              line: 'VP Truck',
               brand: 'Thermo King',
               model: 'C-250',
               productType: 'equipos',
@@ -176,6 +178,7 @@ export default function SerieCPage({}: SerieCPageProps) {
             },
             {
               title: 'C-350e',
+              line: 'VP Truck',
               brand: 'Thermo King',
               model: 'C-350',
               productType: 'equipos',
@@ -187,6 +190,7 @@ export default function SerieCPage({}: SerieCPageProps) {
             },
             {
               title: 'C-450e',
+              line: 'VP Truck',
               brand: 'Thermo King',
               model: 'C-450',
               productType: 'equipos',
@@ -198,6 +202,7 @@ export default function SerieCPage({}: SerieCPageProps) {
             },
             {
               title: 'C-550',
+              line: 'VP Truck',
               brand: 'Thermo King',
               model: 'C-550',
               productType: 'equipos',
@@ -209,6 +214,7 @@ export default function SerieCPage({}: SerieCPageProps) {
             },
             {
               title: 'C-650',
+              line: 'VP Truck',
               brand: 'Thermo King',
               model: 'C-650',
               productType: 'equipos',
@@ -220,6 +226,7 @@ export default function SerieCPage({}: SerieCPageProps) {
             },
             {
               title: 'C-750',
+              line: 'VP Truck',
               brand: 'Thermo King',
               model: 'C-750',
               productType: 'equipos',

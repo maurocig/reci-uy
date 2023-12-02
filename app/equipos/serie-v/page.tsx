@@ -15,23 +15,23 @@ type SerieVPageProps = {};
 export default function SerieVPage({}: SerieVPageProps) {
   const router = useRouter();
   return (
-    <div className="grid gap-4 grid-cols lg:gap-6">
+    <div className="grid-cols grid gap-4 lg:gap-6">
       <div
         style={{ backgroundImage: `url(/images/v500-crop.jpg)` }}
-        className="w-full bg-center md:bg-[center_top_-8rem] lg:bg-[center_top_-10rem]  xl:bg-[center_top_-12rem] bg-cover rounded-lg "
+        className="w-full rounded-lg bg-cover bg-center md:bg-[center_top_-8rem] lg:bg-[center_top_-10rem] xl:bg-[center_top_-12rem]"
       >
-        <div className="rounded-lg relative flex flex-col bg-gradient-to-r from-slate-800/95 to-teal-100/20 shadow-lg justify-center top-0 left-0 h-[300px] lg:p-4 backdrop-blur-0">
+        <div className="relative left-0 top-0 flex h-[300px] flex-col justify-center rounded-lg bg-gradient-to-r from-slate-800/95 to-teal-100/20 shadow-lg backdrop-blur-0 lg:p-4">
           <button
             onClick={() => router.back()}
-            className="absolute mb-3 top-3 left-3 md:top-4 lg:left-4"
+            className="absolute left-3 top-3 mb-3 md:top-4 lg:left-4"
           >
             <ArrowLeftCircle
               size={30}
               strokeWidth={1.3}
-              className="text-gray-300 font-extralight hover:text-white"
+              className="font-extralight text-gray-300 hover:text-white"
             />
           </button>
-          <div className="ml-9 ">
+          <div className="ml-9">
             <h2 className="text-3xl font-semibold text-white drop-shadow-darker">
               Serie V
             </h2>
@@ -42,15 +42,15 @@ export default function SerieVPage({}: SerieVPageProps) {
         </div>
       </div>
 
-      <div className="grid w-full grid-cols-1 gap-4 lg:gap-6 lg:grid-cols-2 xl:grid-cols-3 ">
+      <div className="grid w-full grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-6 xl:grid-cols-3">
         <div
-          className="block order-2 lg:order-1 min-h-[300px] col-span-1 bg-cover bg-center rounded-lg drop-shadow-darker lg:bg-[right_-5rem_top] lg:col-span-1"
+          className="order-2 col-span-1 block min-h-[300px] rounded-lg bg-cover bg-center drop-shadow-darker lg:order-1 lg:col-span-1 lg:bg-[right_-5rem_top]"
           style={{ backgroundImage: 'url(/images/v-500-atego.jpg)' }}
         ></div>
 
-        <Box className="flex flex-col col-span-1 gap-3 lg:order-2 xl:col-span-2 ">
+        <Box className="col-span-1 flex flex-col gap-3 lg:order-2 xl:col-span-2">
           <span>
-            <h2 className="flex items-center w-full gap-2 mt-0 text-2xl font-semibold text-center sm:text-start">
+            <h2 className="mt-0 flex w-full items-center gap-2 text-center text-2xl font-semibold sm:text-start">
               V de versátil
             </h2>
             {/*
@@ -80,8 +80,8 @@ export default function SerieVPage({}: SerieVPageProps) {
       </div>
 
       <Box>
-        <div className="mb-2 bg-opacity-0 rounded-lg border-cyan-100/80 ">
-          <h2 className="flex w-full gap-2 mt-0 text-2xl font-semibold text-center items-cener sm:text-start">
+        <div className="mb-2 rounded-lg border-cyan-100/80 bg-opacity-0">
+          <h2 className="items-cener mt-0 flex w-full gap-2 text-center text-2xl font-semibold sm:text-start">
             Características
           </h2>
           <Spacer className="h-4" />
@@ -90,7 +90,7 @@ export default function SerieVPage({}: SerieVPageProps) {
             Soluciones para Transporte Sustentable
           </p>
 					*/}
-          <div className="grid grid-cols-1 gap-2 text-lg lg:gap-4 lg:grid-cols-2">
+          <div className="grid grid-cols-1 gap-2 text-lg lg:grid-cols-2 lg:gap-4">
             <FeatureList
               features={[
                 'Funcionamiento dual (eléctrico y carretero)',
@@ -121,6 +121,7 @@ export default function SerieVPage({}: SerieVPageProps) {
           products={[
             {
               title: 'V-300',
+              line: 'VP Truck',
               brand: 'Thermo King',
               model: 'V-300',
               productType: 'equipos',
@@ -132,6 +133,7 @@ export default function SerieVPage({}: SerieVPageProps) {
             },
             {
               title: 'V-500',
+              line: 'VP Truck',
               brand: 'Thermo King',
               model: 'V-500',
               productType: 'equipos',

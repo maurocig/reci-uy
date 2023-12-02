@@ -27,18 +27,18 @@ export default function Item({
       role="button"
       className="group relative flex aspect-[3/2] w-full flex-col justify-between overflow-hidden rounded-lg bg-slate-200 shadow-lg sm:aspect-square"
     >
-      <div className="relative w-full h-full overflow-hidden rounded-lg bg-gradient-to-b from-gray-100 to-sky-200 ring-gray-400">
+      <div className="relative h-full w-full overflow-hidden rounded-lg bg-gradient-to-b from-gray-100 to-sky-200 ring-gray-400">
         <Image
           src={product.thumbnail}
           fill
           alt="Product Image"
-          className="relative object-cover transition rounded-xl group-hover:rounded-xl drop-shadow-lg group-hover:scale-105 group-hover:drop-shadow-xl"
+          className="relative rounded-xl object-cover drop-shadow-lg transition group-hover:scale-105 group-hover:rounded-xl group-hover:drop-shadow-xl"
         />
       </div>
 
       {/* overlay */}
-      <div className="absolute flex flex-col items-center justify-between w-full h-full overflow-hidden transition-all">
-        <div className="flex justify-between w-full">
+      <div className="absolute flex h-full w-full flex-col items-center justify-between overflow-hidden transition-all">
+        <div className="flex w-full justify-between">
           <p
             className={twMerge(
               `ml-3 whitespace-nowrap mt-3 flex items-center self-start rounded-full shadow-sm px-6 py-1 text-start
@@ -47,10 +47,10 @@ export default function Item({
             )}
           >
             {product.title}
-            {tagColor === 'bg-sky-300' && product.line === 'VP Truck' && (
-              <span className="flex items-center justify-start ml-2 text-xs text-blue-800">
+            {product.line === 'VP Truck' && (
+              <span className="ml-2 flex items-center justify-start text-xs text-blue-800">
                 MAX
-                <SnowflakeIcon className="inline ml-1" size={11} />
+                <SnowflakeIcon className="ml-1 inline" size={11} />
               </span>
             )}
           </p>
@@ -58,10 +58,9 @@ export default function Item({
           {/* New tag */}
           {product.isNew && (
             <p
-              className={`mr-[-37px] rounded-none flex items-center self-end rotate-45 shadow-sm px-10 py-1 bg-red-500 text-start
-						 font-semibold text-gray-900 ring-black transition `}
+              className={`mr-[-37px] flex rotate-45 items-center self-end rounded-none bg-red-500 px-10 py-1 text-start font-semibold text-gray-900 shadow-sm ring-black transition`}
             >
-              <span className="flex items-center justify-end ml-2 text-white">
+              <span className="ml-2 flex items-center justify-end text-white">
                 Nuevos!
               </span>
             </p>
@@ -69,18 +68,18 @@ export default function Item({
         </div>
 
         {showDescription && (
-          <p className="hidden p-3 transition-all opacity-0 bg-gradient-to-b from-transparent to-slate-900/40 group-hover:opacity-100 sm:block ">
+          <p className="hidden bg-gradient-to-b from-transparent to-slate-900/40 p-3 opacity-0 transition-all group-hover:opacity-100 sm:block">
             {product.shortDescription}
           </p>
         )}
 
-        <div className="mb-4 transition-all ">
-          <Button className="px-6 overflow-hidden transition rounded-full shadow-lg opacity-100 bg-teal-500/80 backdrop-blur text-md text-slate-800 filter group-hover:opacity-100 sm:opacity-0">
+        <div className="mb-4 transition-all">
+          <Button className="text-md overflow-hidden rounded-full bg-teal-500/80 px-6 text-slate-800 opacity-100 shadow-lg filter backdrop-blur transition group-hover:opacity-100 sm:opacity-0">
             {buttonText}{' '}
             {ButtonIcon ? (
-              <ButtonIcon className="inline p-0 ml-2" />
+              <ButtonIcon className="ml-2 inline p-0" />
             ) : (
-              <FaChevronRight className="inline p-0 ml-2" />
+              <FaChevronRight className="ml-2 inline p-0" />
             )}
           </Button>
         </div>
