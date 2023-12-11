@@ -1,6 +1,6 @@
 import { cn } from '@/lib/utils';
 import { Product } from '@/types';
-import { Plug, Power, PowerIcon, Snowflake, SnowflakeIcon } from 'lucide-react';
+import { Plug, SnowflakeIcon } from 'lucide-react';
 import Image from 'next/image';
 import { IconType } from 'react-icons';
 import { FaChevronRight } from 'react-icons/fa';
