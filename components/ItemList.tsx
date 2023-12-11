@@ -46,7 +46,7 @@ export default function ItemList({
         product.twClass = 'bg-sky-300';
         return;
       case 'Thermo King Line':
-        product.twClass = 'bg-sky-300 text-lg ';
+        product.twClass = 'bg-sky-300 text-lg';
         return;
       case 'Fibrasil':
         product.twClass = 'bg-white';
@@ -56,13 +56,13 @@ export default function ItemList({
 
   return (
     <div>
-      <h2 className="flex items-center gap-2 mb-0 text-2xl font-semibold">
+      <h2 className="mb-0 flex items-center gap-2 text-2xl font-semibold">
         {Icon && <Newspaper size={19} />} {title}
       </h2>
       <p className="mb-4 text-lg text-slate-400">{description}</p>
       <div
         className={cn(
-          'grid grid-cols-1 gap-4 sm:gap-4 lg:gap-6 sm:grid-cols-2 lg:grid-cols-3 ',
+          'grid grid-cols-1 gap-4 sm:gap-4 xl:gap-6 sm:grid-cols-2 lg:grid-cols-3 ',
           gridCols
         )}
       >

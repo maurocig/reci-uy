@@ -1,6 +1,6 @@
 import { cn } from '@/lib/utils';
 import { Product } from '@/types';
-import { Snowflake, SnowflakeIcon } from 'lucide-react';
+import { Plug, Power, PowerIcon, Snowflake, SnowflakeIcon } from 'lucide-react';
 import Image from 'next/image';
 import { IconType } from 'react-icons';
 import { FaChevronRight } from 'react-icons/fa';
@@ -37,11 +37,11 @@ export default function Item({
       </div>
 
       {/* overlay */}
-      <div className="absolute flex h-full w-full flex-col items-center justify-between overflow-hidden transition-all">
+      <div className="absolute flex h-full w-full flex-col items-center justify-between overflow-hidden p-4 transition-all">
         <div className="flex w-full justify-between">
           <p
             className={twMerge(
-              `ml-3 whitespace-nowrap mt-3 flex items-center self-start rounded-full shadow-sm px-6 py-1 text-start
+              `whitespace-nowrap flex items-center self-start rounded-full shadow-sm px-4 py-1 text-start
 						 font-semibold text-gray-900 ring-black transition `,
               tagColor
             )}
@@ -54,11 +54,23 @@ export default function Item({
               </span>
             )}
           </p>
+          {product.model === 'V-500' && (
+            <p
+              className={twMerge(
+                `whitespace-nowrap items-center flex self-start rounded-full shadow-sm px-3 py-1 text-start
+						 font-semibold text-gray-900 ring-black transition bg-teal-400`
+                // tagColor
+              )}
+            >
+              <span className="mr-1 lg:hidden xl:inline">Dual</span>
+              <Plug className="inline" size={14} />
+            </p>
+          )}
 
           {/* New tag */}
           {product.isNew && (
             <p
-              className={`mr-[-37px] flex rotate-45 items-center self-end rounded-none bg-red-500 px-10 py-1 text-start font-semibold text-gray-900 shadow-sm ring-black transition`}
+              className={`mr-[-50px] flex rotate-45 items-center self-end rounded-none bg-red-500 px-10 py-1 text-start font-semibold text-gray-900 shadow-sm ring-black transition`}
             >
               <span className="ml-2 flex items-center justify-end text-white">
                 Nuevos!
