@@ -1,6 +1,7 @@
 import DevlogItem from "@/app/actualizaciones/devlog-item";
 import Box from "@/components/box";
-import { Check, ExternalLink } from "lucide-react";
+import { Check, Clock, ExternalLink } from "lucide-react";
+import { MdUpdate } from "react-icons/md";
 
 type DevlogPageProps = {};
 
@@ -53,29 +54,11 @@ export default async function DevlogPage({}: DevlogPageProps) {
   return (
     <div className="flex flex-col gap-4 lg:gap-6">
       <Box>
-        <h2 className="text-3xl font-semibold">
-          Historial de actualizaciones{" "}
+        <h2 className="flex items-center gap-2 text-3xl font-semibold">
+          <MdUpdate /> Historial de actualizaciones{" "}
         </h2>
       </Box>
-      {/* reci.uy */}
-      <Box className="w-full">
-        <h3 className="mb-2 inline text-xl">
-          <b>
-            <span className="mr-2 text-green-400">reci.uy</span> v1.0.1
-          </b>{" "}
-          – <span className="text-sm">Noviembre 2023</span>
-        </h3>{" "}
-        <ul className="space-y-2 text-lg">
-          {devLogItems.map((item) => (
-            <DevlogItem
-              key={item.text}
-              text={item.text}
-              url={item.url}
-              urlCaption={item.urlCaption}
-            />
-          ))}
-        </ul>
-      </Box>
+
       {/* admin.reci.uy */}
       <Box className="w-full">
         <h3 className="mb-2 inline text-xl">
@@ -86,6 +69,26 @@ export default async function DevlogPage({}: DevlogPageProps) {
         </h3>{" "}
         <ul className="space-y-2 text-lg">
           {devLogItemsAdmin.map((item) => (
+            <DevlogItem
+              key={item.text}
+              text={item.text}
+              url={item.url}
+              urlCaption={item.urlCaption}
+            />
+          ))}
+        </ul>
+      </Box>
+
+      {/* reci.uy */}
+      <Box className="w-full">
+        <h3 className="mb-2 inline text-xl">
+          <b>
+            <span className="mr-2 text-green-400">reci.uy</span> v1.0.1
+          </b>{" "}
+          – <span className="text-sm">Noviembre 2023</span>
+        </h3>{" "}
+        <ul className="space-y-2 text-lg">
+          {devLogItems.map((item) => (
             <DevlogItem
               key={item.text}
               text={item.text}
