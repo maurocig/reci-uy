@@ -1,11 +1,11 @@
-'use client';
-import Box from '@/components/box';
-import ItemList from '@/components/ItemList';
-import BannerCategory from '@/components/banner-category';
-import Spacer from '@/components/ui/Spacer';
-import { Product } from '@/types.js';
-import { HiExternalLink, HiOutlineExternalLink } from 'react-icons/hi';
-import { carrocerias } from '../../public/assets/carrocerias.js';
+"use client";
+import ItemList from "@/components/ItemList";
+import BannerCategory from "@/components/banner-category";
+import Box from "@/components/box";
+import Spacer from "@/components/ui/Spacer";
+import { Product } from "@/types.js";
+import { HiExternalLink, HiOutlineExternalLink } from "react-icons/hi";
+import { carrocerias } from "../../public/assets/carrocerias.js";
 
 export default function carroceriasPage() {
   const seca: Product[] = [];
@@ -13,9 +13,9 @@ export default function carroceriasPage() {
   const congelada: Product[] = [];
 
   carrocerias.forEach((carroceria) => {
-    carroceria.line === 'Carga refrigerada' && refrigerados.push(carroceria);
-    carroceria.line === 'Congelados' && congelada.push(carroceria);
-    carroceria.line === 'Carga seca' && seca.push(carroceria);
+    carroceria.line === "Carga refrigerada" && refrigerados.push(carroceria);
+    carroceria.line === "Congelados" && congelada.push(carroceria);
+    carroceria.line === "Carga seca" && seca.push(carroceria);
   });
 
   return (
@@ -29,18 +29,18 @@ export default function carroceriasPage() {
       />
       <Box className="lg:p-6">
         <ItemList
-          title="Carga general"
-          description="Línea Liderkit"
-          products={seca}
+          title="Carga refrigerada"
+          description="Líneas Liderkit y Fibrasil"
+          products={refrigerados}
           newTab
           buttonIcon={HiExternalLink}
         />
       </Box>
       <Box className="lg:p-6">
         <ItemList
-          title="Carga refrigerada"
-          description="Líneas Liderkit y Fibrasil"
-          products={refrigerados}
+          title="Carga general"
+          description="Línea Liderkit"
+          products={seca}
           newTab
           buttonIcon={HiExternalLink}
         />
