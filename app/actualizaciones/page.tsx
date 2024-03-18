@@ -63,6 +63,42 @@ export default async function DevlogPage({}: DevlogPageProps) {
       <Box className="w-full">
         <h3 className="mb-2 inline text-xl">
           <b>
+            <span className="mr-2 text-blue-400">admin.reci.uy</span> v1.2.2
+          </b>{" "}
+          – <span className="text-sm">Marzo 2024</span>
+        </h3>{" "}
+        <ul className="space-y-2 text-lg">
+          {[
+            { text: "Mejoras en sistema de filtrado" },
+            { text: "Mejoras en sistema de paginación" },
+            { text: "Agregar tareas en nuevo servicio" },
+            { text: "Marcar tareas completadas en nuevo servicio" },
+            { text: "Cambios menores en estilos de UI" },
+          ].map((item) => (
+            <DevlogItem key={item.text} text={item.text} />
+          ))}
+        </ul>
+      </Box>
+
+      {/* reci.uy */}
+      <Box className="w-full">
+        <h3 className="mb-2 inline text-xl">
+          <b>
+            <span className="mr-2 text-green-400">reci.uy</span> v1.0.2
+          </b>{" "}
+          – <span className="text-sm">Marzo 2024</span>
+        </h3>{" "}
+        <ul className="space-y-2 text-lg">
+          {[{ text: "Teléfono y dirección actualizados" }].map((item) => (
+            <DevlogItem key={item.text} text={item.text} />
+          ))}
+        </ul>
+      </Box>
+
+      {/* admin.reci.uy */}
+      <Box className="w-full">
+        <h3 className="mb-2 inline text-xl">
+          <b>
             <span className="mr-2 text-blue-400">admin.reci.uy</span> v1.2.1
           </b>{" "}
           – <span className="text-sm">Enero 2024</span>
