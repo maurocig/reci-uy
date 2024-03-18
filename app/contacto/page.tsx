@@ -1,5 +1,5 @@
-import Box from '@/components/box';
-import ContactForm from '@/components/contact-form';
+import Box from "@/components/box";
+import ContactForm from "@/components/contact-form";
 import {
   Clock,
   Instagram,
@@ -10,26 +10,26 @@ import {
   Phone,
   PhoneCall,
   PhoneIcon,
-} from 'lucide-react';
-import Link from 'next/link';
-import { FaWhatsapp } from 'react-icons/fa';
-import { IoLogoWhatsapp } from 'react-icons/io';
-import { MdOutlineWhatsapp, MdWhatsapp } from 'react-icons/md';
+} from "lucide-react";
+import Link from "next/link";
+import { FaWhatsapp } from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { MdOutlineWhatsapp, MdWhatsapp } from "react-icons/md";
 
 export default function ContactoPage() {
   return (
     <>
-      <div className="grid gap-4 mb-4 lg:gap-6 sm:grid-cols-2 lg:mb-6">
+      <div className="mb-4 grid gap-4 sm:grid-cols-2 lg:mb-6 lg:gap-6">
         {/* form */}
         <Box>
-          <h2 className="w-full mb-4 text-2xl font-semibold">
+          <h2 className="mb-4 w-full text-2xl font-semibold">
             Dejanos tu consulta
           </h2>
           <ContactForm />
         </Box>
 
         <Box>
-          <h2 className="w-full mb-4 text-2xl font-semibold">
+          <h2 className="mb-4 w-full text-2xl font-semibold">
             Información de contacto
           </h2>
           <div className="space-y-3">
@@ -38,8 +38,8 @@ export default function ContactoPage() {
               <span className="font-bold text-white">ventasreci@gmail.com</span>
             </div>
             <div className="flex items-center gap-4">
-              <Phone size={22} />{' '}
-              <span className="font-bold text-white">22970648</span>
+              <Phone size={22} />{" "}
+              <span className="font-bold text-white">22928875</span>
             </div>
             {/*
             <div className="flex items-center gap-4">
@@ -70,7 +70,7 @@ export default function ContactoPage() {
                 target="_blank"
                 className="text-cyan-500 hover:underline"
               >
-                <b>Ruta 8 Km. 28.300, Barros Blancos</b>
+                <b>Ruta 8 Km. 28.800, Barros Blancos</b>
               </Link>
             </div>
             <div className="flex items-center gap-4">
