@@ -73,6 +73,9 @@ export default async function DevlogPage({}: DevlogPageProps) {
               text: "Ordenar por R. Social, Cantidad de equipos y número de cliente en sección clientes",
             },
             { text: "Estado de garantía del equipo indicado con colores" },
+            {
+              text: "Agregada opción 'Ir al equipo' en diálogo de confirmación al agregar un nuevo equipo",
+            },
           ].map((item) => (
             <DevlogItem key={item.text} text={item.text} />
           ))}
