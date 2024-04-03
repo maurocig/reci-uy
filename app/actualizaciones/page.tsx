@@ -63,6 +63,26 @@ export default async function DevlogPage({}: DevlogPageProps) {
       <Box className="w-full">
         <h3 className="mb-2 inline text-xl">
           <b>
+            <span className="mr-2 text-blue-400">admin.reci.uy</span> v1.2.3
+          </b>{" "}
+          – <span className="text-sm">Abril 2024</span>
+        </h3>{" "}
+        <ul className="space-y-2 text-lg">
+          {[
+            {
+              text: "Ordenar por R. Social, Cantidad de equipos y número de cliente en sección clientes",
+            },
+            { text: "Estado de garantía del equipo indicado con colores" },
+          ].map((item) => (
+            <DevlogItem key={item.text} text={item.text} />
+          ))}
+        </ul>
+      </Box>
+
+      {/* admin.reci.uy */}
+      <Box className="w-full">
+        <h3 className="mb-2 inline text-xl">
+          <b>
             <span className="mr-2 text-blue-400">admin.reci.uy</span> v1.2.2
           </b>{" "}
           – <span className="text-sm">Marzo 2024</span>
