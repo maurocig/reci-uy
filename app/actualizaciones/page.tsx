@@ -71,12 +71,13 @@ export default async function DevlogPage({}: DevlogPageProps) {
         <ul className="space-y-2 text-lg">
           {[
             {
-              text: "Nueva sección de carrocerías y servicios de carrocerías",
+              text: "Nueva sección de carrocerías",
             },
             {
               text: "Nueva sección de servicios para carrocerías",
             },
             { text: "Búsqueda mejorada" },
+            { text: "Home y barra de navegación actualizadas" },
           ].map((item) => (
             <DevlogItem key={item.text} text={item.text} />
           ))}
