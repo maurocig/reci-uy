@@ -63,6 +63,34 @@ export default async function DevlogPage({}: DevlogPageProps) {
       <Box className="w-full">
         <h3 className="mb-2 inline text-xl">
           <b>
+            <span className="mr-2 text-blue-400">admin.reci.uy</span> v1.4
+          </b>{" "}
+          – <span className="text-sm">Agosto 2024</span>
+        </h3>{" "}
+        <ul className="space-y-2 text-lg">
+          {[
+            {
+              text: "Arreglado bug de fecha incorrecta al guardar carrocerías",
+            },
+            {
+              text: "Nuevos campos en carrocerías (Dimensiones, Proveedor, Estado, Entrega est.)",
+            },
+            {
+              text: "Información del camión en carrocerías (Marca, Modelo, Dist. ejes)",
+            },
+            {
+              text: "Arreglado bug que no dejaba agregar carrocerías sin matrícula",
+            },
+          ].map((item) => (
+            <DevlogItem key={item.text} text={item.text} />
+          ))}
+        </ul>
+      </Box>
+
+      {/* admin.reci.uy */}
+      <Box className="w-full">
+        <h3 className="mb-2 inline text-xl">
+          <b>
             <span className="mr-2 text-blue-400">admin.reci.uy</span> v1.3
           </b>{" "}
           – <span className="text-sm">Mayo 2024</span>
