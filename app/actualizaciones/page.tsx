@@ -74,7 +74,7 @@ export default async function DevlogPage({}: DevlogPageProps) {
               text: "Arreglado bug de fecha incorrecta al guardar carrocerías",
             },
             {
-              text: "Nuevos campos en carrocerías (Dimensiones, Proveedor, Estado, Entrega est.)",
+              text: "Nuevos campos en carrocerías (Dimensiones, Proveedor, Estado, Entrega estimada, Accesorios)",
             },
             {
               text: "Información del camión en carrocerías (Marca, Modelo, Dist. ejes)",
