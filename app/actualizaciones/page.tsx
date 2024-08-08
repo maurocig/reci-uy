@@ -63,7 +63,8 @@ export default async function DevlogPage({}: DevlogPageProps) {
       <Box className="w-full">
         <h3 className="mb-2 inline text-xl">
           <b>
-            <span className="mr-2 text-blue-400">admin.reci.uy</span> v1.4
+            <span className="mr-2 text-blue-400">admin.reci.uy</span>{" "}
+            <span className="text-emerald-400">v1.4</span>
           </b>{" "}
           – <span className="text-sm">Agosto 2024</span>
         </h3>{" "}
