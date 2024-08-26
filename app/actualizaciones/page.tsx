@@ -61,10 +61,33 @@ export default async function DevlogPage({}: DevlogPageProps) {
 
       {/* admin.reci.uy */}
       <Box className="w-full">
-        <h3 className="mb-2 inline text-xl">
+        <h3 className="inline mb-2 text-xl">
           <b>
             <span className="mr-2 text-blue-400">admin.reci.uy</span>{" "}
-            <span className="text-emerald-400">v1.4</span>
+            <span className="text-emerald-400">v1.5</span>
+          </b>{" "}
+          – <span className="text-sm">Agosto 2024</span>
+        </h3>{" "}
+        <ul className="space-y-2 text-lg">
+          {[
+            {
+              text: "Se puede adjuntar archivos en servicios",
+            },
+            {
+              text: "Subida de archivo a carpeta de Google Drive de RECI",
+            },
+          ].map((item) => (
+            <DevlogItem key={item.text} text={item.text} />
+          ))}
+        </ul>
+      </Box>
+
+      {/* admin.reci.uy */}
+      <Box className="w-full">
+        <h3 className="inline mb-2 text-xl">
+          <b>
+            <span className="mr-2 text-blue-400">admin.reci.uy</span>{" "}
+            <span className="">v1.4</span>
           </b>{" "}
           – <span className="text-sm">Agosto 2024</span>
         </h3>{" "}
@@ -90,7 +113,7 @@ export default async function DevlogPage({}: DevlogPageProps) {
 
       {/* admin.reci.uy */}
       <Box className="w-full">
-        <h3 className="mb-2 inline text-xl">
+        <h3 className="inline mb-2 text-xl">
           <b>
             <span className="mr-2 text-blue-400">admin.reci.uy</span> v1.3
           </b>{" "}
@@ -114,7 +137,7 @@ export default async function DevlogPage({}: DevlogPageProps) {
 
       {/* admin.reci.uy */}
       <Box className="w-full">
-        <h3 className="mb-2 inline text-xl">
+        <h3 className="inline mb-2 text-xl">
           <b>
             <span className="mr-2 text-blue-400">admin.reci.uy</span> v1.2.3
           </b>{" "}
@@ -137,7 +160,7 @@ export default async function DevlogPage({}: DevlogPageProps) {
 
       {/* admin.reci.uy */}
       <Box className="w-full">
-        <h3 className="mb-2 inline text-xl">
+        <h3 className="inline mb-2 text-xl">
           <b>
             <span className="mr-2 text-blue-400">admin.reci.uy</span> v1.2.2
           </b>{" "}
@@ -158,7 +181,7 @@ export default async function DevlogPage({}: DevlogPageProps) {
 
       {/* reci.uy */}
       <Box className="w-full">
-        <h3 className="mb-2 inline text-xl">
+        <h3 className="inline mb-2 text-xl">
           <b>
             <span className="mr-2 text-green-400">reci.uy</span> v1.0.2
           </b>{" "}
@@ -173,7 +196,7 @@ export default async function DevlogPage({}: DevlogPageProps) {
 
       {/* admin.reci.uy */}
       <Box className="w-full">
-        <h3 className="mb-2 inline text-xl">
+        <h3 className="inline mb-2 text-xl">
           <b>
             <span className="mr-2 text-blue-400">admin.reci.uy</span> v1.2.1
           </b>{" "}
@@ -193,7 +216,7 @@ export default async function DevlogPage({}: DevlogPageProps) {
 
       {/* reci.uy */}
       <Box className="w-full">
-        <h3 className="mb-2 inline text-xl">
+        <h3 className="inline mb-2 text-xl">
           <b>
             <span className="mr-2 text-green-400">reci.uy</span> v1.0.1
           </b>{" "}
