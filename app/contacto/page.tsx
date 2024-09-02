@@ -35,7 +35,7 @@ export default function ContactoPage() {
           <div className="space-y-3">
             <div className="flex items-center gap-4">
               <Mail size={21} />
-              <span className="font-bold text-white">ventasreci@gmail.com</span>
+              <span className="font-bold text-white">ventas@reci.uy</span>
             </div>
             <div className="flex items-center gap-4">
               <Phone size={22} />{" "}

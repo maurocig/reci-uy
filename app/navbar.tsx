@@ -45,7 +45,7 @@ export default function Navbar({}: NavbarProps) {
         <div className="hidden h-full flex-col items-start justify-center text-sm md:flex">
           <div className="flex items-center gap-2">
             <Mail size={12} />
-            <span className="text-slate-800">ventasreci@gmail.com</span>
+            <span className="text-slate-800">ventas@reci.uy</span>
           </div>
           <div className="flex items-center gap-2">
             <Phone size={12} /> <span className="text-slate-800">22928875</span>
