@@ -68,7 +68,7 @@ export default function Home() {
     },
   ];
 
-  const ev: Product[] = [equipos[equipos.length - 2]];
+  const ev: Product[] = [equipos[9]];
   const vx: Product[] = [equipos[equipos.length - 1]];
 
   return (
