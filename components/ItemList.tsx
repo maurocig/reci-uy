@@ -66,7 +66,7 @@ export default function ItemList({
       )}
       <div
         className={cn(
-          "grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3 xl:gap-6 ",
+          "grid grid-cols-1 gap-4 sm:gap-4 md:grid-cols-2 lg:grid-cols-3 xl:gap-6 ",
           gridCols
         )}
       >

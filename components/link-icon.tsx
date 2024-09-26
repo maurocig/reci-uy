@@ -1,6 +1,6 @@
-import { cn } from '@/lib/utils';
-import { ExternalLink, LucideIcon } from 'lucide-react';
-import Link from 'next/link';
+import { cn } from "@/lib/utils";
+import { ExternalLink, LucideIcon } from "lucide-react";
+import Link from "next/link";
 type LinkIconProps = {
   url: string;
   icon: LucideIcon;
@@ -21,14 +21,14 @@ export default function LinkIcon({
   return (
     <button
       className={cn(
-        'relative w-full p-4 text-lg transition rounded-lg bg-slate-400/90 hover:bg-slate-300/90 text-slate-800 group hover:text-slate-800 ',
+        "group relative w-full rounded-lg bg-slate-400/90 text-lg text-slate-800 transition hover:bg-slate-300/90 hover:text-slate-800 ",
         className
       )}
     >
       <Link
         href={url}
-        className="flex items-start justify-start gap-4"
-        target={newTab ? '_blank' : ''}
+        className="flex items-start justify-start w-full h-full gap-4 p-4"
+        target={newTab ? "_blank" : ""}
       >
         <div className="flex items-start justify-start gap-2 ">
           <Icon size={25} />
@@ -40,7 +40,7 @@ export default function LinkIcon({
         {newTab && (
           <ExternalLink
             size={15}
-            className="absolute opacity-0 group-hover:opacity-80 top-2 right-2"
+            className="absolute opacity-0 right-2 top-2 group-hover:opacity-80"
           />
         )}
       </Link>

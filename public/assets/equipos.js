@@ -224,7 +224,7 @@ export const equipos = [
     billboardImage: "/images/ev-500-billboard.jpg",
     image: "/images/ev-500-producto.jpg",
     stock: 3,
-    url: "/equipos/ev-500",
+    url: "/equipos/serie-vx",
     urlSpecs: "https://thermokingzapp.com/download/pdf-collection/EV_ES.pdf",
     urlTk:
       "https://europe.thermoking.com/es/ev/ev-range-and-specifications/ev-500",

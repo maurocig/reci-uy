@@ -87,7 +87,7 @@ export default function Home() {
 
         {/* VX Series */}
         <div className="grid gap-4 lg:grid-cols-3 lg:gap-6 ">
-          <Box className="hidden w-full col-span-2 border border-slate-200/10 bg-sky-400/10 lg:block ">
+          <Box className="hidden w-full col-span-2 border border-slate-200/10 bg-sky-400/10 lg:block">
             <h2 className="flex items-center w-full gap-2 mb-2 text-2xl font-semibold text-center sm:text-start">
               Nueva Serie VX
             </h2>
@@ -103,7 +103,7 @@ export default function Home() {
               total de propiedad y mucho más.
             </p>
             <a
-              href="/equipos/ev-500"
+              href="/equipos/serie-vx"
               className="flex items-center justify-start w-full gap-2 mt-4 group text-cyan-400 opacity-80 hover:opacity-100"
             >
               <span className="group-hover:underline">Ver producto</span>{" "}
@@ -111,7 +111,7 @@ export default function Home() {
             </a>
           </Box>
           <ItemList
-            gridCols="sm:grid-cols-1 lg:grid-cols-1"
+            gridCols="grid-cols-1 md:grid-cols-1 lg:grid-cols-1"
             // description="Unidades 100% eléctricas para camiones medianos y grandes"
             products={vx}
             buttonText="Ver producto"
@@ -119,11 +119,13 @@ export default function Home() {
         </div>
 
         {/* EV SERIES */}
-        <ItemList
-          // description="Unidades 100% eléctricas para camiones medianos y grandes"
-          products={ev}
-          buttonText="Ver producto"
-        >
+        <div className="grid gap-4 lg:grid-cols-3 lg:gap-6 ">
+          <ItemList
+            // description="Unidades 100% eléctricas para camiones medianos y grandes"
+            products={ev}
+            buttonText="Ver producto"
+            gridCols="grid-cols-1 md:grid-cols-1 lg:grid-cols-1"
+          />
           <Box className="hidden w-full col-span-2 border border-slate-200/10 bg-sky-400/10 lg:block ">
             <h2 className="flex items-center w-full gap-2 mb-2 text-2xl font-semibold text-center sm:text-start">
               Thermo King Serie EV para vehículos eléctricos
@@ -145,7 +147,7 @@ export default function Home() {
               <ArrowRightCircle size={15} />
             </a>
           </Box>
-        </ItemList>
+        </div>
       </Box>
 
       {/* Productos */}
