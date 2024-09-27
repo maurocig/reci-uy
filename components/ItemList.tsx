@@ -23,6 +23,7 @@ type ItemListProps = {
   buttonIcon?: IconType;
   newTab?: boolean;
   children?: React.ReactNode;
+  twClass?: string;
 };
 
 export default function ItemList({
@@ -36,6 +37,7 @@ export default function ItemList({
   buttonIcon,
   children,
   icon: Icon,
+  twClass,
 }: ItemListProps) {
   products.forEach((product) => {
     switch (product.brand) {
@@ -55,7 +57,7 @@ export default function ItemList({
   });
 
   return (
-    <div>
+    <div className={twClass}>
       {title && (
         <>
           <h2 className="flex items-center gap-2 mb-0 text-2xl font-semibold">

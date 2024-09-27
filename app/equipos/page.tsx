@@ -43,14 +43,15 @@ export default function EquiposPage() {
       {/* VX Series */}
       <Box className="overflow-hidden lg:p-6">
         {/* New tag */}
-        {/* <div
-          className={` mr-[-50px] flex rotate-45 items-center self-end rounded-none bg-red-500 px-10 py-1 text-start font-semibold text-gray-900 shadow-sm ring-black transition lg:mr-[-60px]`}
+        <div
+          className={`mr-[-50px] flex rotate-45 items-center self-end rounded-none bg-red-500 px-10 py-1 text-start font-semibold text-gray-900 shadow-sm ring-black transition lg:mr-[-60px]`}
         >
           <span className="flex items-center justify-end ml-2 text-white">
             Nuevos!
           </span>
-        </div> */}
+        </div>
         <ItemList
+          twClass="mt-[-30px]"
           title="Serie VX"
           description="Refrigeración silenciosa para camiones pequeños, medianos y grandes"
           products={vx}
