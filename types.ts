@@ -1,12 +1,12 @@
 export type SidebarItem = {
   active:
-    | 'inicio'
-    | 'equipos'
-    | 'carrocerias'
-    | 'accesorios'
-    | 'servicios'
-    | 'nosotros'
-    | 'contacto';
+    | "inicio"
+    | "equipos"
+    | "carrocerias"
+    | "accesorios"
+    | "servicios"
+    | "nosotros"
+    | "contacto";
 };
 
 export type Product = {
@@ -16,9 +16,9 @@ export type Product = {
   brand: string;
   model: string;
   price: number;
-  pictureUrls?: string[];
   stock: number;
   url: string;
+  pictureUrls?: string[];
   line?: string;
   shortDescription?: string;
   description?: string;
@@ -28,4 +28,14 @@ export type Product = {
   urlTk?: string;
   features?: string[];
   isNew?: boolean;
+};
+
+export type Accesorio = {
+  label: string;
+  brand: string;
+  code: string;
+  description: string;
+  colors: string[];
+  images: string[];
+  observations: string;
 };
