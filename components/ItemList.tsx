@@ -60,7 +60,7 @@ export default function ItemList({
     <div className={twClass}>
       {title && (
         <>
-          <h2 className="flex items-center gap-2 mb-0 text-2xl font-semibold">
+          <h2 className="flex items-center gap-2 mb-0 text-3xl font-semibold">
             {Icon && <Newspaper size={19} />} {title}
           </h2>
           <p className="mb-4 text-lg text-slate-400">{description}</p>

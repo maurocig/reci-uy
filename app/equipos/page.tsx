@@ -31,15 +31,6 @@ export default function EquiposPage() {
         bgPosition="sm:bg-[right_top_-5rem] md:bg-[right_top_-10rem] lg:bg-[right_top_-10rem] xl:bg-[right_top_-20rem]"
       />
 
-      <Box className="lg:p-6">
-        <ItemList
-          title="Línea EV"
-          description="Unidades 100% eléctricas para camiones medianos y grandes"
-          products={ev}
-          buttonText="Ver producto"
-        ></ItemList>
-      </Box>
-
       {/* VX Series */}
       <Box className="overflow-hidden lg:p-6">
         {/* New tag */}
@@ -83,6 +74,15 @@ export default function EquiposPage() {
           title="Trailer"
           description="Trailers y semirremolques"
         />
+      </Box>
+
+      <Box className="lg:p-6">
+        <ItemList
+          title="Línea EV"
+          description="Unidades 100% eléctricas para camiones medianos y grandes"
+          products={ev}
+          buttonText="Ver producto"
+        ></ItemList>
       </Box>
     </div>
   );

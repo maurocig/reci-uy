@@ -51,3 +51,36 @@ export const luminaria = [
     observations: "",
   },
 ];
+
+export const parachoques = [
+  {
+    label: "Parachoque trasero de goma",
+    brand: "MA Borrachas",
+    code: "22148",
+    description:
+      "Parachoque trasero de goma para camiones. Dimensiones: 150 x 84 mm. Incluye tuercas.",
+    colors: ["Negro"],
+    images: ["ma-22148.png"],
+    observations: "",
+  },
+  {
+    label: "Parachoque trasero de goma elíptico",
+    brand: "MA Borrachas",
+    code: "22276",
+    description:
+      "Parachoque trasero de goma para camiones. Dimensiones: 151 x 88 mm. Incluye tuercas.",
+    colors: ["Negro"],
+    images: ["ma-22276.png"],
+    observations: "",
+  },
+  {
+    label: "Parachoque Truckvan de goma",
+    brand: "MA Borrachas",
+    code: "22148",
+    description:
+      "Parachoque trasero de goma para camiones modelo Truckvan. Dimensiones: 240 x 80 mm.",
+    colors: ["Negro"],
+    images: ["ma-23065.png"],
+    observations: "",
+  },
+];

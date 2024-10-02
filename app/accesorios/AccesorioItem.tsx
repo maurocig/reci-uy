@@ -12,15 +12,16 @@ export default function AccesorioItem({
 }: Accesorio) {
   return (
     <a
-      className="flex flex-col p-4 space-y-4 transition duration-500 rounded-lg hover: group bg-gradient-to-b from-white/30 to-sky-300/70 text-slate-800 opacity-80 backdrop-blur hover:bg-gradient-to-b hover:opacity-100 hover:shadow-xl lg:space-y-6 lg:p-6"
+      className="hover: group flex h-[300px] flex-col space-y-4 rounded-lg bg-gradient-to-b from-white/30 to-sky-300/70 p-4 text-slate-800 opacity-90 backdrop-blur transition duration-500 hover:bg-gradient-to-b hover:opacity-100 hover:shadow-xl md:h-[370px] lg:space-y-6 lg:p-6"
       href={`/accesorios/{code}`}
     >
-      <div className="transition duration-500 group-hover:scale-[105%]">
+      <div className="flex max-h-[60%] place-content-center p-2 transition duration-500 group-hover:scale-[105%] md:max-h-[65%]">
         <Image
           src={`/images/accesorios/${images[0]}`}
           alt={label}
           width="300"
           height="300"
+          className="object-cover"
         />
       </div>
       <div className="flex flex-col justify-between h-full space-y-2">
