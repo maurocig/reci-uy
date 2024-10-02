@@ -17,15 +17,15 @@ export default function AccesoriosPage() {
       />
 
       <AccesoriosList
-        accesorios={luminaria}
-        title="Luminaria"
-        description="Línea Sinasul"
-      />
-
-      <AccesoriosList
         accesorios={tabiques}
         title="Paneles divisorios"
         description="Línea Soluforte"
+      />
+
+      <AccesoriosList
+        accesorios={luminaria}
+        title="Luminaria"
+        description="Línea Sinasul"
       />
 
       <AccesoriosList
