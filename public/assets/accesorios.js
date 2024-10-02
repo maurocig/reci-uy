@@ -84,3 +84,61 @@ export const parachoques = [
     observations: "",
   },
 ];
+
+export const tabiques = [
+  {
+    label: "Panel divisorio de carga seca bipartito",
+    brand: "Soluforte",
+    code: "sf-carga-seca",
+    description:
+      "El uso de la separadora de cargas tiene como principal beneficio la optimización logística, pudiendo el transportista cargar más de una carga y realizar la entrega en más de un lugar. En el fin de aumentar la durabilidad, facilitar la limpieza y reducir el peso, Soluforte trabaja con las mejores materias primas en la composición de sus productos.",
+    colors: [],
+    images: ["sf-carga-seca-1.png", "sf-carga-seca-2.png"],
+    observations:
+      "Estructura de aluminio y revestimiento con láminas plásticas de 4 mm de espesor. Laterales de espuma de alta densidad con 5 cm de espesor revestidos con lona de 300 micras, que proporciona un mejor ajuste a los lados del vehículo.",
+  },
+  {
+    label: "Panel divisorio térmico bipartito",
+    brand: "Soluforte",
+    code: "sf-termica-bi",
+    description:
+      "La división térmica se utiliza para separar cargas congeladas, refrigeradas y secas en vehículos refrigerados. Optimice su logística transportando más de una carga en un solo vehículo. Ideal para el transporte de carnes en natura y congeladas, frutas, verduras, lácteos, embutidos y mucho más.",
+    colors: [],
+    images: ["sf-termica-bi-1.png", "sf-termica-bi-2.png"],
+    observations:
+      "Estructurado y ligero, el divisor térmico bipartito Soluforte se fabrica a medida, con placas de EPS y EPE, tiene un grosor de 90 mm y está revestido con lona de vinilo de 530 micras, pesa alrededor de 12 kg y puede ser utilizado en cualquier vehículo refrigerado.",
+  },
+  {
+    label: "Cortina divisoria térmica",
+    brand: "Soluforte",
+    code: "sf-termica-cortina",
+    description:
+      "La división térmica se utiliza para separar cargas congeladas, refrigeradas y secas en vehículos refrigerados. Fácil de utilizar, se extiende durante el uso y se enrolla al finalizar. Son ligeros, sin estructura, unidos al techo a través de un pestillo, y de bajo costo. También se puede utilizar para proteger la carga a la espera de la descarga.",
+    colors: [],
+    images: ["sf-termica-cortina-1.png", "sf-termica-cortina-2.png"],
+    observations:
+      "En el fin de aumentar la durabilidad, facilitar la limpieza y disminuir el peso, Soluforte trabaja con los mejores materiales en la composición de la cortina térmica. Revestimiento de nylon impermeabilizado, ligero y de fácil limpieza. Las capas térmicas internas siguen el mismo concepto de ligereza y durabilidad, estando unidas por costuras de compresión, garantizando una larga vida útil del producto.",
+  },
+  {
+    label: "Panel divisorio térmico móvil",
+    brand: "Soluforte",
+    code: "sf-termica-movil",
+    description:
+      "La división térmica se utiliza para separar cargas congeladas, refrigeradas y secas en vehículos refrigerados. Estructurada de aluminio, se utiliza principalmente en baúles frigoríficos, y se instala en un riel estándar de 3 metros, dando flexibilidad en la carga y descarga de mercancías. Este modelo se puede fabricar con puerta, kit de ventilación y con riel superior o lateral.",
+    colors: [],
+    images: ["sf-termica-movil-1.png", "sf-termica-movil-2.png"],
+    observations:
+      "Modelo fabricado con estructura de aluminio, material ligero y resistente al óxido. Relleno de EPS y revestido con lona de 550 micras. Incluye placa de refuerzo en la base. Su estructura está fijada al vehículo a través de rieles. Opciones de puerta, kit de ventilación y riel superior o lateral.",
+  },
+  {
+    label: "Panel divisorio térmico para ganchera",
+    brand: "Soluforte",
+    code: "sf-termica-ganchera",
+    description:
+      "La división térmica se utiliza para separar cargas congeladas, refrigeradas y secas en vehículos refrigerados. Para su uso en remolques de gancho, con una parte basculante para ser almacenada junto al equipo de refrigeración. ",
+    colors: [],
+    images: ["sf-termica-ganchera-1.png", "sf-termica-ganchera-2.png"],
+    observations:
+      "Fabricados con estructura de aluminio, recubiertos con lona de gramaje 530, con refuerzo en la base con plástico. Barras de protección laterales de aluminio y kit de ventilación. Fabricación a medida.",
+  },
+];
