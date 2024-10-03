@@ -9,6 +9,7 @@ export default function AccesorioItem({
   colors,
   images,
   observations,
+  category,
 }: Accesorio) {
   return (
     <a
@@ -24,7 +25,7 @@ export default function AccesorioItem({
           className="object-contain"
         />
       </div>
-      <div className="flex flex-col justify-between h-full space-y-2">
+      <div className="flex h-full flex-col justify-between space-y-2">
         <h2 className="text-lg font-medium md:text-[1.3rem]">{label}</h2>
         <h3 className="text-md md:text-lg">{brand}</h3>
       </div>

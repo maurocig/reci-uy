@@ -1,8 +1,11 @@
 import BannerCategory from "@/components/banner-category";
 import Box from "@/components/box";
+import LinkIcon from "@/components/link-icon";
 import { accesorios } from "@/public/assets/accesorios";
+import { ChevronRightCircle, Info } from "lucide-react";
 import Image from "next/image";
 import { RiErrorWarningLine } from "react-icons/ri";
+import AccesoriosList from "../AccesoriosList";
 
 export default function AccesorioDetails({
   params,
@@ -10,6 +13,13 @@ export default function AccesorioDetails({
   params: { code: string };
 }) {
   const accesorio = accesorios.find((acc) => acc.code === params.code);
+  const related = accesorio
+    ? accesorios.filter(
+        (acc) =>
+          acc.category === accesorio.category && acc.code !== accesorio.code
+      )
+    : //   .splice(0, 3)
+      [];
 
   return accesorio ? (
     <div className="flex flex-col space-y-4 lg:space-y-6">
@@ -21,7 +31,12 @@ export default function AccesorioDetails({
         className="bg-gradient-to-r from-slate-200/80 to-transparent backdrop-blur-[2px] md:backdrop-blur-0"
       />
 
+      {/* Product details */}
       <Box className="grid items-center gap-4 md:grid-cols-2 md:p-6 lg:gap-6">
+        <div className="">
+          <h2 className="mb-2 text-2xl">{accesorio.label}</h2>
+          <p>{accesorio.description}</p>
+        </div>
         <div className="flex w-full place-content-center">
           <Image
             src={`/images/accesorios/${accesorio.images[0]}`}
@@ -30,17 +45,8 @@ export default function AccesorioDetails({
             height="300"
           />
         </div>
-        <div className="">
-          <h2 className="mb-2 text-2xl">{accesorio.label}</h2>
-          <p>{accesorio.description}</p>
-        </div>
-        {accesorio.observations && (
-          <div className="order-2 md:order-1">
-            <p>{accesorio.observations}</p>
-          </div>
-        )}
         {accesorio.images[1] && (
-          <div className="flex order-1 w-full place-content-center md:order-2">
+          <div className="order-2 flex w-full place-content-center md:order-1">
             <Image
               src={`/images/accesorios/${accesorio.images[1]}`}
               alt={accesorio.label}
@@ -49,9 +55,39 @@ export default function AccesorioDetails({
             />
           </div>
         )}
+        {accesorio.observations && (
+          <div className="order-1 md:order-2">
+            <p>{accesorio.observations}</p>
+          </div>
+        )}
       </Box>
+
+      {/* <div className="grid gap-4 w-fit md:grid-cols-2">
+        <LinkIcon
+          text="Más información"
+          subText="Sitio oficial de Thermo King"
+          newTab
+          icon={Info}
+          url={accesorio.url}
+        />
+        <LinkIcon
+          text="Contactanos"
+          icon={ChevronRightCircle}
+          url="/contacto"
+          newTab={false}
+          subText="Brindamos asesoramiento personalizado"
+          className="bg-teal-400/70 hover:bg-teal-400/90 "
+        />
+      </div> */}
+
+      {/* Related products */}
+      <AccesoriosList
+        accesorios={related}
+        description="Productos relacionados"
+      />
     </div>
   ) : (
+    // Accesory not found
     <div className="flex flex-col space-y-4 lg:space-y-6">
       <BannerCategory
         title="Accesorios"

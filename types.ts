@@ -1,3 +1,5 @@
+import { EnumType } from "typescript";
+
 export type SidebarItem = {
   active:
     | "inicio"
@@ -38,4 +40,6 @@ export type Accesorio = {
   colors: string[];
   images: string[];
   observations: string;
+  category: "luminaria" | "parachoques" | "tabiques";
+  //   url: string;
 };
