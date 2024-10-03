@@ -105,7 +105,7 @@ export const tabiques: Accesorio[] = [
     colors: [],
     images: ["sf-carga-seca-1.png", "sf-carga-seca-2.png"],
     observations:
-      "Estructura de aluminio y revestimiento con láminas plásticas de 4 mm de espesor. Laterales de espuma de alta densidad con 5 cm de espesor revestidos con lona de 300 micras, que proporciona un mejor ajuste a los lados del vehículo.",
+      "Su estructura está hecha de aluminio, revestida con láminas plásticas de 4 mm de espesor. Laterales de espuma de alta densidad con 5 cm de espesor revestidos con lona de 300 micras, que proporciona un mejor ajuste a los lados del vehículo.",
     category: "tabiques",
   },
   {
@@ -153,7 +153,7 @@ export const tabiques: Accesorio[] = [
     colors: [],
     images: ["sf-termica-ganchera-1.png", "sf-termica-ganchera-2.png"],
     observations:
-      "Fabricados con estructura de aluminio, recubiertos con lona de gramaje 530 con base reforzada. Incluye barras de protección laterales de aluminio y kit de ventilación. Hechos a medida.",
+      "Fabricados con estructura de aluminio y recubiertos con lona de gramaje 530 con base reforzada. Incluye barras de protección laterales de aluminio y kit de ventilación. Fabricados a medida en su lugar de origen.",
     category: "tabiques",
   },
 ];
