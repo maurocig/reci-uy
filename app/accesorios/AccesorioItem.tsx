@@ -15,7 +15,7 @@ export default function AccesorioItem({
       className="hover: group flex h-[300px] flex-col space-y-4 rounded-lg bg-gradient-to-b from-white/30 to-sky-300/70 p-4 text-slate-800 opacity-90 backdrop-blur transition duration-500 hover:bg-gradient-to-b hover:opacity-100 hover:shadow-xl md:h-[370px] lg:space-y-6 lg:p-6"
       href={`/accesorios/${code}`}
     >
-      <div className="flex max-h-[70%] place-content-center p-2 transition duration-500 group-hover:scale-[105%] md:max-h-[65%]">
+      <div className="flex max-h-[65%] place-content-center p-2 transition duration-500 group-hover:scale-[105%] md:max-h-[65%]">
         <Image
           src={`/images/accesorios/${images[0]}`}
           alt={label}
@@ -25,8 +25,8 @@ export default function AccesorioItem({
         />
       </div>
       <div className="flex flex-col justify-between h-full space-y-2">
-        <h2 className="text-[1.3rem] font-medium">{label}</h2>
-        <h3 className="text-lg">{brand}</h3>
+        <h2 className="text-lg font-medium md:text-[1.3rem]">{label}</h2>
+        <h3 className="text-md md:text-lg">{brand}</h3>
       </div>
       {/* <p className="text-lg">{code}</p> */}
       {/* <p className="text-lg">{description}</p> */}
