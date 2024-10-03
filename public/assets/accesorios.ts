@@ -85,7 +85,7 @@ export const parachoques: Accesorio[] = [
   {
     label: "Parachoque Truckvan de goma",
     brand: "MA Borrachas",
-    code: "22148",
+    code: "23065",
     description:
       "Parachoque trasero de goma para camiones modelo Truckvan. Dimensiones: 240 x 80 mm.",
     colors: ["Negro"],
@@ -117,7 +117,7 @@ export const tabiques: Accesorio[] = [
     colors: [],
     images: ["sf-termica-bi-1.png", "sf-termica-bi-2.png"],
     observations:
-      "Estructurado y ligero, este panel se fabrica a medida, con placas de EPS y EPE, tiene un grosor de 90 mm y está revestido con lona de vinilo de 530 micras, pesa alrededor de 12 kg y puede ser utilizado en cualquier vehículo refrigerado.",
+      "Estructurado y ligero, este panel se fabrica a medida, con placas de EPS y EPE, tiene un grosor de 90 mm y está revestido con lona de vinilo de 530 micras. Pesa alrededor de 12 kg y puede ser utilizado en cualquier vehículo refrigerado.",
     category: "tabiques",
   },
   {
@@ -125,11 +125,11 @@ export const tabiques: Accesorio[] = [
     brand: "Soluforte",
     code: "sf-termica-cortina",
     description:
-      "La división térmica se utiliza para separar cargas congeladas, refrigeradas y secas en vehículos refrigerados. Fácil de utilizar, se extiende durante el uso y se enrolla al finalizar. Son ligeros, sin estructura, unidos al techo a través de un pestillo, y de bajo costo. También se puede utilizar para proteger la carga a la espera de la descarga.",
+      "La cortina térmica se utiliza para separar cargas congeladas, refrigeradas y secas en vehículos refrigerados. Fácil de utilizar, se extiende durante el uso y se enrolla al finalizar. Son ligeras, sin estructura y de bajo costo. Se unen al techo a través de una barra de sujeción. También se puede utilizar para proteger la carga a la espera de la descarga.",
     colors: [],
     images: ["sf-termica-cortina-1.png", "sf-termica-cortina-2.png"],
     observations:
-      "En el fin de aumentar la durabilidad, facilitar la limpieza y disminuir el peso, Soluforte trabaja con los mejores materiales en la composición de la cortina térmica. Revestimiento de nylon impermeabilizado, ligero y de fácil limpieza. Las capas térmicas internas siguen el mismo concepto de ligereza y durabilidad, estando unidas por costuras de compresión, garantizando una larga vida útil del producto.",
+      "En el fin de aumentar la durabilidad, facilitar la limpieza y disminuir el peso, Soluforte trabaja con los mejores materiales en la composición de la cortina térmica. Cuenta con revestimiento de nylon impermeabilizado, ligero y de fácil limpieza. Las capas térmicas internas siguen el mismo concepto de ligereza y durabilidad, estando unidas por costuras de compresión, garantizando una larga vida útil del producto.",
     category: "tabiques",
   },
   {
@@ -137,11 +137,11 @@ export const tabiques: Accesorio[] = [
     brand: "Soluforte",
     code: "sf-termica-movil",
     description:
-      "La división térmica se utiliza para separar cargas congeladas, refrigeradas y secas en vehículos refrigerados. Estructurada de aluminio, se utiliza principalmente en baúles frigoríficos, y se instala en un riel estándar de 3 metros, dando flexibilidad en la carga y descarga de mercancías. Este modelo se puede fabricar con puerta, kit de ventilación y con riel superior o lateral.",
+      "La división térmica se utiliza para separar cargas congeladas, refrigeradas y secas en vehículos refrigerados. Cuenta con estructura de aluminio, se utiliza principalmente en baúles frigoríficos, y se instala en un riel estándar de 3 metros, dando flexibilidad en la carga y descarga de mercancías. Este modelo se puede fabricar con puerta, kit de ventilación y con riel superior o lateral.",
     colors: [],
     images: ["sf-termica-movil-1.png", "sf-termica-movil-2.png"],
     observations:
-      "Modelo fabricado con estructura de aluminio, material ligero y resistente al óxido. Relleno de EPS y revestido con lona de 550 micras. Incluye placa de refuerzo en la base. Su estructura está fijada al vehículo a través de rieles. Opciones de puerta, kit de ventilación y riel superior o lateral.",
+      "Modelo fabricado con estructura de aluminio, material ligero y resistente al óxido. Está relleno de EPS y revestido con lona de 550 micras. Incluye placa de refuerzo en la base. Su estructura está fijada al vehículo a través de rieles. Contamos con opciones de puerta, kit de ventilación y riel superior o lateral.",
     category: "tabiques",
   },
   {
@@ -153,7 +153,7 @@ export const tabiques: Accesorio[] = [
     colors: [],
     images: ["sf-termica-ganchera-1.png", "sf-termica-ganchera-2.png"],
     observations:
-      "Fabricados con estructura de aluminio, recubiertos con lona de gramaje 530, con refuerzo en la base con plástico. Barras de protección laterales de aluminio y kit de ventilación. Fabricación a medida.",
+      "Fabricados con estructura de aluminio, recubiertos con lona de gramaje 530 con base reforzada. Incluye barras de protección laterales de aluminio y kit de ventilación. Hechos a medida.",
     category: "tabiques",
   },
 ];
