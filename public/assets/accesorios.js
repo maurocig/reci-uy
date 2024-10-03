@@ -106,7 +106,7 @@ export const tabiques = [
     colors: [],
     images: ["sf-termica-bi-1.png", "sf-termica-bi-2.png"],
     observations:
-      "Estructurado y ligero, el divisor térmico bipartito Soluforte se fabrica a medida, con placas de EPS y EPE, tiene un grosor de 90 mm y está revestido con lona de vinilo de 530 micras, pesa alrededor de 12 kg y puede ser utilizado en cualquier vehículo refrigerado.",
+      "Estructurado y ligero, este panel se fabrica a medida, con placas de EPS y EPE, tiene un grosor de 90 mm y está revestido con lona de vinilo de 530 micras, pesa alrededor de 12 kg y puede ser utilizado en cualquier vehículo refrigerado.",
   },
   {
     label: "Cortina divisoria térmica",
@@ -142,3 +142,5 @@ export const tabiques = [
       "Fabricados con estructura de aluminio, recubiertos con lona de gramaje 530, con refuerzo en la base con plástico. Barras de protección laterales de aluminio y kit de ventilación. Fabricación a medida.",
   },
 ];
+
+export const accesorios = [...luminaria, ...parachoques, ...tabiques];
