@@ -41,5 +41,5 @@ export type Accesorio = {
   images: string[];
   observations: string;
   category: "luminaria" | "parachoques" | "tabiques";
-  //   url: string;
+  url?: string;
 };

@@ -12,6 +12,7 @@ export const luminaria: Accesorio[] = [
     observations:
       "Homologación ECE para funciones de posición lateral (AM) y posición delantera (CR)",
     category: "luminaria",
+    url: "https://www.sinalsul.com.br/produtos?verifier=&termo=2043#/2042-2043",
   },
   {
     label: "Linterna de posición y delimitadora dot light LED",
@@ -23,6 +24,7 @@ export const luminaria: Accesorio[] = [
     images: ["2280.webp"],
     observations: "",
     category: "luminaria",
+    url: "https://www.sinalsul.com.br/produtos?verifier=&termo=2280#/2280",
   },
   {
     label: "Linterna delimitadora LED",
@@ -34,6 +36,7 @@ export const luminaria: Accesorio[] = [
     images: ["2264.webp"],
     observations: "",
     category: "luminaria",
+    url: "https://www.sinalsul.com.br/produtos?verifier=&termo=2264#/2064-2066-2264",
   },
   {
     label: "Linterna para iluminación interna 6 LEDs con lente difusa",
@@ -45,6 +48,7 @@ export const luminaria: Accesorio[] = [
     images: ["2269.webp"],
     observations: "Temperatura de color: 5000K",
     category: "luminaria",
+    url: "https://www.sinalsul.com.br/produtos?verifier=&termo=2269#/2269%2021%2030%2040",
   },
   {
     label: "Linterna para iluminación interna I-45 10 LEDs",
@@ -56,6 +60,7 @@ export const luminaria: Accesorio[] = [
     images: ["2400.webp"],
     observations: "",
     category: "luminaria",
+    url: "https://www.sinalsul.com.br/produtos?verifier=&termo=2400#/2400",
   },
 ];
 
@@ -70,6 +75,7 @@ export const parachoques: Accesorio[] = [
     images: ["ma-22148.png"],
     observations: "",
     category: "parachoques",
+    url: "http://www.maborrachas.com.br/produto/batente-para-choque",
   },
   {
     label: "Parachoque trasero de goma elíptico",
@@ -81,6 +87,7 @@ export const parachoques: Accesorio[] = [
     images: ["ma-22276.png"],
     observations: "",
     category: "parachoques",
+    url: "http://www.maborrachas.com.br/produto/batente-traseiro",
   },
   {
     label: "Parachoque Truckvan de goma",
@@ -107,6 +114,7 @@ export const tabiques: Accesorio[] = [
     observations:
       "Su estructura está hecha de aluminio, revestida con láminas plásticas de 4 mm de espesor. Laterales de espuma de alta densidad con 5 cm de espesor revestidos con lona de 300 micras, que proporciona un mejor ajuste a los lados del vehículo.",
     category: "tabiques",
+    url: "https://soluforte.com.br/produtos/transporte-terrestre/divisoria-carga-seca-bipartida",
   },
   {
     label: "Panel divisorio térmico bipartito",
@@ -119,6 +127,7 @@ export const tabiques: Accesorio[] = [
     observations:
       "Estructurado y ligero, este panel se fabrica a medida, con placas de EPS y EPE, tiene un grosor de 90 mm y está revestido con lona de vinilo de 530 micras. Pesa alrededor de 12 kg y puede ser utilizado en cualquier vehículo refrigerado.",
     category: "tabiques",
+    url: "https://soluforte.com.br/produtos/transporte-terrestre/divisoria-termica-bipartida",
   },
   {
     label: "Cortina divisoria térmica",
@@ -131,6 +140,7 @@ export const tabiques: Accesorio[] = [
     observations:
       "En el fin de aumentar la durabilidad, facilitar la limpieza y disminuir el peso, Soluforte trabaja con los mejores materiales en la composición de la cortina térmica. Cuenta con revestimiento de nylon impermeabilizado, ligero y de fácil limpieza. Las capas térmicas internas siguen el mismo concepto de ligereza y durabilidad, estando unidas por costuras de compresión, garantizando una larga vida útil del producto.",
     category: "tabiques",
+    url: "https://soluforte.com.br/produtos/transporte-terrestre/divisoria-termica-cortina",
   },
   {
     label: "Panel divisorio térmico móvil",
@@ -143,6 +153,7 @@ export const tabiques: Accesorio[] = [
     observations:
       "Modelo fabricado con estructura de aluminio, material ligero y resistente al óxido. Está relleno de EPS y revestido con lona de 550 micras. Incluye placa de refuerzo en la base. Su estructura está fijada al vehículo a través de rieles. Contamos con opciones de puerta, kit de ventilación y riel superior o lateral.",
     category: "tabiques",
+    url: "https://soluforte.com.br/produtos/transporte-terrestre/divisoria-termica-movel",
   },
   {
     label: "Panel divisorio térmico para ganchera",
@@ -155,6 +166,7 @@ export const tabiques: Accesorio[] = [
     observations:
       "Fabricados con estructura de aluminio y recubiertos con lona de gramaje 530 con base reforzada. Incluye barras de protección laterales de aluminio y kit de ventilación. Fabricados a medida en su lugar de origen.",
     category: "tabiques",
+    url: "https://soluforte.com.br/produtos/transporte-terrestre/divisoria-termica-gancheira",
   },
 ];
 

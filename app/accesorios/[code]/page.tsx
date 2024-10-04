@@ -34,7 +34,9 @@ export default function AccesorioDetails({
       {/* Product details */}
       <Box className="grid items-center gap-4 md:grid-cols-2 md:p-6 lg:gap-6">
         <div className="">
-          <h2 className="mb-2 text-2xl">{accesorio.label}</h2>
+          <h2 className="mb-2 text-2xl font-semibold lg:text-3xl">
+            {accesorio.label}
+          </h2>
           <p>{accesorio.description}</p>
         </div>
         <div className="flex w-full place-content-center">
@@ -62,23 +64,26 @@ export default function AccesorioDetails({
         )}
       </Box>
 
-      {/* <div className="grid gap-4 w-fit md:grid-cols-2">
+      <div className="flex w-full flex-col gap-4 md:flex-row">
+        {accesorio.url && (
+          <LinkIcon
+            className=""
+            text="Más información del producto"
+            subText={`Sitio oficial de ${accesorio.brand}`}
+            newTab
+            icon={Info}
+            url={accesorio.url}
+          />
+        )}
         <LinkIcon
-          text="Más información"
-          subText="Sitio oficial de Thermo King"
-          newTab
-          icon={Info}
-          url={accesorio.url}
-        />
-        <LinkIcon
-          text="Contactanos"
+          text="Pedir cotización"
           icon={ChevronRightCircle}
           url="/contacto"
           newTab={false}
           subText="Brindamos asesoramiento personalizado"
-          className="bg-teal-400/70 hover:bg-teal-400/90 "
+          className="bg-teal-400/70 hover:bg-teal-400/90"
         />
-      </div> */}
+      </div>
 
       {/* Related products */}
       <AccesoriosList
