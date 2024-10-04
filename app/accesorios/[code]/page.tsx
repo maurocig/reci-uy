@@ -26,7 +26,7 @@ export default function AccesorioDetails({
       <BannerCategory
         title="Accesorios"
         description=""
-        image={`/images/accesorios/portada.avif`}
+        image={`/images/accesorios/portada-lower.jpg`}
         bgPosition="bg-center max-h-[150px]"
         className="bg-gradient-to-r from-slate-200/80 to-transparent backdrop-blur-[2px] md:backdrop-blur-0"
       />
