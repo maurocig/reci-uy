@@ -77,18 +77,18 @@ export default function Home() {
         title="Especialistas en transporte carretero"
         description="Contamos con más de 20 años de experiencia en el rubro."
         buttonText="Conocer más"
-        image="/images/edit/portada-a-2.png"
+        image="/images/edit/portada-a-2.webp"
       />
 
       <Box className="space-y-4 lg:space-y-6 lg:p-6">
-        <h2 className="flex items-center gap-2 mb-0 text-2xl font-semibold">
+        <h2 className="mb-0 flex items-center gap-2 text-2xl font-semibold">
           <Newspaper size={19} /> Novedades
         </h2>
 
         {/* VX Series */}
         <div className="grid gap-4 lg:grid-cols-3 lg:gap-6 ">
-          <Box className="hidden w-full col-span-2 border border-slate-200/10 bg-sky-400/10 lg:block">
-            <h2 className="flex items-center w-full gap-2 mb-2 text-2xl font-semibold text-center sm:text-start">
+          <Box className="col-span-2 hidden w-full border border-slate-200/10 bg-sky-400/10 lg:block">
+            <h2 className="mb-2 flex w-full items-center gap-2 text-center text-2xl font-semibold sm:text-start">
               Nueva Serie VX
             </h2>
             <p className="mb-2 text-lg text-slate-300">
@@ -104,7 +104,7 @@ export default function Home() {
             </p>
             <a
               href="/equipos/serie-vx"
-              className="flex items-center justify-start w-full gap-2 mt-4 group text-cyan-400 opacity-80 hover:opacity-100"
+              className="group mt-4 flex w-full items-center justify-start gap-2 text-cyan-400 opacity-80 hover:opacity-100"
             >
               <span className="group-hover:underline">Ver producto</span>{" "}
               <ArrowRightCircle size={15} />
@@ -126,8 +126,8 @@ export default function Home() {
             buttonText="Ver producto"
             gridCols="grid-cols-1 md:grid-cols-1 lg:grid-cols-1"
           />
-          <Box className="hidden w-full col-span-2 border border-slate-200/10 bg-sky-400/10 lg:block ">
-            <h2 className="flex items-center w-full gap-2 mb-2 text-2xl font-semibold text-center sm:text-start">
+          <Box className="col-span-2 hidden w-full border border-slate-200/10 bg-sky-400/10 lg:block ">
+            <h2 className="mb-2 flex w-full items-center gap-2 text-center text-2xl font-semibold sm:text-start">
               Thermo King Serie EV para vehículos eléctricos
             </h2>
             <p className="mb-2 text-lg text-slate-300">
@@ -141,7 +141,7 @@ export default function Home() {
             </p>
             <a
               href="/equipos/ev-500"
-              className="flex items-center justify-start w-full gap-2 mt-4 group text-cyan-400 opacity-80 hover:opacity-100"
+              className="group mt-4 flex w-full items-center justify-start gap-2 text-cyan-400 opacity-80 hover:opacity-100"
             >
               <span className="group-hover:underline">Ver producto</span>{" "}
               <ArrowRightCircle size={15} />
@@ -157,9 +157,9 @@ export default function Home() {
 
       {/* Servicio técnico */}
       <Box className="">
-        <div className="grid w-full gap-6 h-fit sm:grid-cols-2 lg:gap-6 ">
-          <div className="bg-opacity-0 rounded-lg border-cyan-100/80 ">
-            <h2 className="flex items-center w-full gap-2 mt-0 text-2xl font-semibold text-center sm:text-start">
+        <div className="grid h-fit w-full gap-6 sm:grid-cols-2 lg:gap-6 ">
+          <div className="rounded-lg border-cyan-100/80 bg-opacity-0 ">
+            <h2 className="mt-0 flex w-full items-center gap-2 text-center text-2xl font-semibold sm:text-start">
               <Wrench className="inline" size={19} /> Servicio técnico
             </h2>
             <p className="mb-2 ms-[25px] text-gray-400 xl:text-lg">
@@ -179,7 +179,7 @@ export default function Home() {
               src={"/images/servicio-tk.jpg"}
               alt="Servicio técnico"
               fill
-              className="object-cover object-center rounded-lg shadow-lg"
+              className="rounded-lg object-cover object-center shadow-lg"
             />
           </div>
         </div>
@@ -189,10 +189,10 @@ export default function Home() {
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:gap-6">
         <div
           // style={{ backgroundImage: 'url(/images/asesoramiento-2.jpg' }}
-          className="bg-center bg-cover rounded-lg bg-opacity-5 "
+          className="rounded-lg bg-opacity-5 bg-cover bg-center "
         >
           <Box className="h-full backdrop-blur lg:p-6">
-            <h2 className="flex items-center w-full gap-2 mb-2 text-2xl font-semibold text-center sm:text-start">
+            <h2 className="mb-2 flex w-full items-center gap-2 text-center text-2xl font-semibold sm:text-start">
               <FileText className="inline" size={19} /> Asesoramiento
             </h2>
             <div className="space-y-2">
@@ -208,7 +208,7 @@ export default function Home() {
               </p>
               <a
                 href="/contacto"
-                className="flex items-center justify-start w-full gap-2 group text-cyan-400 opacity-80 hover:opacity-100"
+                className="group flex w-full items-center justify-start gap-2 text-cyan-400 opacity-80 hover:opacity-100"
               >
                 <span className="group-hover:underline">Quiero asesorarme</span>{" "}
                 <ArrowRightCircle size={15} />
@@ -218,10 +218,10 @@ export default function Home() {
         </div>
         <div
           // style={{ backgroundImage: 'url(/images/asesoramiento-stock.jpeg' }}
-          className="bg-center bg-cover rounded-lg bg-opacity-5 "
+          className="rounded-lg bg-opacity-5 bg-cover bg-center "
         >
           <Box className="h-full backdrop-blur lg:p-6">
-            <h2 className="flex items-center w-full gap-2 mb-2 text-2xl font-semibold text-center sm:text-start">
+            <h2 className="mb-2 flex w-full items-center gap-2 text-center text-2xl font-semibold sm:text-start">
               <CalendarCheck2 className="inline" size={18} /> Servicio post
               venta
             </h2>
@@ -245,7 +245,7 @@ export default function Home() {
       </div>
 
       {/* <Box className="bg-red-500 bg-opacity-100"> */}
-      <div className="p-4 rounded-lg shadow-lg bg-white/20 lg:p-6">
+      <div className="rounded-lg bg-white/20 p-4 shadow-lg lg:p-6">
         <BannerLogos
           logosUrl={[
             "/images/logos/logo-lk.png",

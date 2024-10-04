@@ -79,6 +79,15 @@ export default function ContactoPage() {
             </div>
           </div>
         </Box>
+
+        <Box className="col-span-1 w-full sm:col-span-2">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.7012985666406!2d-55.98214442372438!3d-34.73792286459914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a027b618c0b61d%3A0xe31da7d629ee9cf2!2sRECI%20IMPORTACIONES%20LTDA!5e0!3m2!1sen!2sar!4v1728050441116!5m2!1sen!2sar"
+            width="100%"
+            height="450"
+            loading="lazy"
+          ></iframe>
+        </Box>
       </div>
 
       {/* mapa */}
