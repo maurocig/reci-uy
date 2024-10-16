@@ -59,11 +59,33 @@ export default async function DevlogPage({}: DevlogPageProps) {
         </h2>
       </Box>
 
+      {/* reci.uy */}
+      <Box className="w-full">
+        <h3 className="inline mb-2 text-xl">
+          <b>
+            <span className="mr-2 text-sky-400">reci.uy</span>{" "}
+            <span className="text-emerald-400">v1.1</span>
+          </b>{" "}
+          – <span className="text-sm">Octubre 2024</span>
+        </h3>{" "}
+        <ul className="space-y-2 text-lg">
+          {[
+            { text: "Nueva sección de Accesorios" },
+            { text: "Fotos y descripción de cada accesorio" },
+            { text: "Página de serie VX" },
+            { text: "Banner de serie VX en homepage" },
+            { text: "Mapa de Google Maps en página de contacto" },
+          ].map((item) => (
+            <DevlogItem key={item.text} text={item.text} />
+          ))}
+        </ul>
+      </Box>
+
       {/* admin.reci.uy */}
       <Box className="w-full">
         <h3 className="inline mb-2 text-xl">
           <b>
-            <span className="mr-2 text-blue-400">admin.reci.uy</span>{" "}
+            <span className="mr-2 text-blue-500">admin.reci.uy</span>{" "}
             <span className="text-emerald-400">v1.5</span>
           </b>{" "}
           – <span className="text-sm">Agosto 2024</span>
@@ -86,7 +108,7 @@ export default async function DevlogPage({}: DevlogPageProps) {
       <Box className="w-full">
         <h3 className="inline mb-2 text-xl">
           <b>
-            <span className="mr-2 text-blue-400">admin.reci.uy</span>{" "}
+            <span className="mr-2 text-blue-500">admin.reci.uy</span>{" "}
             <span className="">v1.4</span>
           </b>{" "}
           – <span className="text-sm">Agosto 2024</span>
@@ -115,7 +137,7 @@ export default async function DevlogPage({}: DevlogPageProps) {
       <Box className="w-full">
         <h3 className="inline mb-2 text-xl">
           <b>
-            <span className="mr-2 text-blue-400">admin.reci.uy</span> v1.3
+            <span className="mr-2 text-blue-500">admin.reci.uy</span> v1.3
           </b>{" "}
           – <span className="text-sm">Mayo 2024</span>
         </h3>{" "}
@@ -139,7 +161,7 @@ export default async function DevlogPage({}: DevlogPageProps) {
       <Box className="w-full">
         <h3 className="inline mb-2 text-xl">
           <b>
-            <span className="mr-2 text-blue-400">admin.reci.uy</span> v1.2.3
+            <span className="mr-2 text-blue-500">admin.reci.uy</span> v1.2.3
           </b>{" "}
           – <span className="text-sm">Abril 2024</span>
         </h3>{" "}
@@ -162,7 +184,7 @@ export default async function DevlogPage({}: DevlogPageProps) {
       <Box className="w-full">
         <h3 className="inline mb-2 text-xl">
           <b>
-            <span className="mr-2 text-blue-400">admin.reci.uy</span> v1.2.2
+            <span className="mr-2 text-blue-500">admin.reci.uy</span> v1.2.2
           </b>{" "}
           – <span className="text-sm">Marzo 2024</span>
         </h3>{" "}
@@ -183,7 +205,7 @@ export default async function DevlogPage({}: DevlogPageProps) {
       <Box className="w-full">
         <h3 className="inline mb-2 text-xl">
           <b>
-            <span className="mr-2 text-green-400">reci.uy</span> v1.0.2
+            <span className="mr-2 text-sky-400">reci.uy</span> v1.0.2
           </b>{" "}
           – <span className="text-sm">Marzo 2024</span>
         </h3>{" "}
@@ -198,7 +220,7 @@ export default async function DevlogPage({}: DevlogPageProps) {
       <Box className="w-full">
         <h3 className="inline mb-2 text-xl">
           <b>
-            <span className="mr-2 text-blue-400">admin.reci.uy</span> v1.2.1
+            <span className="mr-2 text-blue-500">admin.reci.uy</span> v1.2.1
           </b>{" "}
           – <span className="text-sm">Enero 2024</span>
         </h3>{" "}
@@ -218,7 +240,7 @@ export default async function DevlogPage({}: DevlogPageProps) {
       <Box className="w-full">
         <h3 className="inline mb-2 text-xl">
           <b>
-            <span className="mr-2 text-green-400">reci.uy</span> v1.0.1
+            <span className="mr-2 text-sky-400">reci.uy</span> v1.0.1
           </b>{" "}
           – <span className="text-sm">Noviembre 2023</span>
         </h3>{" "}
