@@ -64,6 +64,29 @@ export default async function DevlogPage({}: DevlogPageProps) {
         <h3 className="mb-2 inline text-xl">
           <b>
             <span className="mr-2 text-blue-500">admin.reci.uy</span>{" "}
+            <span className="text-emerald-400">v1.7</span>
+          </b>{" "}
+          – <span className="text-sm">Febrero 2025</span>
+        </h3>{" "}
+        <ul className="space-y-2 text-lg">
+          {[
+            {
+              text: "Nueva sección de instructivos",
+            },
+            {
+              text: "Instructivo para descarga y subida de archivos con Data Logger",
+            },
+          ].map((item) => (
+            <DevlogItem key={item.text} text={item.text} />
+          ))}
+        </ul>
+      </Box>
+
+      {/* admin.reci.uy */}
+      <Box className="w-full">
+        <h3 className="mb-2 inline text-xl">
+          <b>
+            <span className="mr-2 text-blue-500">admin.reci.uy</span>{" "}
             <span className="text-emerald-400">v1.6</span>
           </b>{" "}
           – <span className="text-sm">Enero 2025</span>
